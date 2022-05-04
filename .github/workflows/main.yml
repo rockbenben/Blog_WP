@@ -1,4 +1,4 @@
-name: fangyuanxiaozhan
+name: update_wp
 on:
   push:
     branches:    
