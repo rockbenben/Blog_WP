@@ -1,0 +1,37 @@
+name: fangyuanxiaozhan
+on:
+  push:
+    branches:    
+      - main
+jobs:
+  push:
+      runs-on: ${{ matrix.operating-system }}
+      strategy:
+        matrix:
+          # in this example, there is a newer version already installed, 3.7.7, so the older version will be downloaded
+          operating-system: ['ubuntu-18.04']
+      steps:
+      - uses: actions/checkout@v2 # Checking out the repo
+      - name: Run with setup-python 3.7
+        uses: actions/setup-python@v2.2.2
+        with:
+          python-version: 3.7
+      - name: Install pipenv
+        run: pip install pipenv
+      - name: Install dependecies
+        run:  |
+          pipenv  install  --dev
+      - name: Build
+        env:
+          USERNAME: ${{ secrets.USERNAME }}
+          PASSWORD: ${{ secrets.PASSWORD }}
+          XMLRPC_PHP: ${{ secrets.XMLRPC_PHP }}
+        run: pipenv run build
+      - name: Commit and push if changed   # 将.md_sha1 README.md 更新到仓库
+        run: |
+          git diff
+          git config --global user.email "zhaoolee@gmail.com"
+          git config --global user.name "zhaoolee"
+          git add .md_sha1 README.md
+          git commit -m "Github Action auto Updated"
+          git push
