@@ -1,7 +1,7 @@
 # 互联网小白
 
 ---start---
-## 目录(2022年05月05日更新)
+## 目录 (2022 年 05 月 05 日更新)
 [不想学 Python，零基础也能用的自动化工具-UI.Vision RPA](https://newzone.top/p/2022-04-21-UIVision_RPA/)
 
 [上海没吃的？割裂的城市，我真的生活在上海吗？](https://newzone.top/p/2022-04-20-Survivorship_Bias_in_Shanghai_2022/)
@@ -86,12 +86,12 @@
 
 1. 无法启动 github action，显示 git denied to github-actions[bot] 和 Process completed with exit code 128.
 
-Setting - Code and automation - Actions - General, Workflow permissions 中开启「Read and write permissions」。
+    Setting - Code and automation - Actions - General, Workflow permissions 中开启「Read and write permissions」。
 
 2. _post 中添加了文档，但并未在 README 中显示
 
-文档后缀必须为「.md」，不支持 .markdown。
+    文档后缀必须为「.md」，不支持 .markdown。
 
 3. 更新文章时报错`Error: Process completed with exit code 1`。
 
-检查服务器是否开启了防火墙，文章中含代码容易被误认木马。
+    检查服务器是否开启了防火墙，文章中含代码容易被误认木马。
