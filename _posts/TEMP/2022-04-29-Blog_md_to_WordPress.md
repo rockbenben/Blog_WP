@@ -7,6 +7,8 @@ author:       "Benson"
 header-img:   img/post-bg-20180108.jpg
 header-mask:  0.3
 catalog:      true
+categories:
+    - 博客
 tags: 
     - blog
     - WordPress

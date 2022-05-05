@@ -1,17 +1,19 @@
 ---
 layout:       post
 title:        "不想学 Python，零基础也能用的自动化工具-UI.Vision RPA"
-subtitle:     "无需懂编程代码，只需安装浏览器插件，3 分钟速成爬虫攻略"
+subtitle:     ""
 date:         2022-04-21
 author:       "Benson"
 header-img:   img/post-bg-20180108.jpg
 header-mask:  0.3
 catalog:      true
-tags: 
+categories:
     - 自动化
+tags: 
     - 浏览器插件
     - UI.Vision RPA
 ---
+> 无需懂编程代码，只需安装浏览器插件，3 分钟速成爬虫攻略
 
 Python 被认为是次时代必学语言，也就成为贩卖知识焦虑最好的标靶，各大平台隔三差五就想让我们买课程。
 
@@ -20,7 +22,8 @@ Python 被认为是次时代必学语言，也就成为贩卖知识焦虑最好�
 当然，程序员、金融等相关从业者学 Python 无可厚非。可是，请不要推荐小白学 Python，90% 的人学了只是浪费时间。花 3 个月编程，也不一定能解决我们的基础功能需求。
 
 请把你的时间花在更重要的事情上，克服知识焦虑。**学一百种热门语言，不如熟练掌握一个好的工具。**
-![工具图](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/e65dddcd-ea31-4601-9cc5-31ff4f009e2d/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220421%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220421T132143Z&X-Amz-Expires=86400&X-Amz-Signature=ed47e2bbc66b780d2a431b7e1efd7c84deca39e7d1d63f9152cefe16702584ed&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22&x-id=GetObject)
+![](http://tc.seoipo.com/2022-05-05-14-45-43.png)
+
 以下内容只适合不想学 Python，不懂编程，又想使用自动化和爬虫的小白，高手可以关闭页面了。
 
 UI.Vision RPA 是一款开源的全平台自动化工具，**无需懂编程**，即可完成**网页和桌面自动化操作**，包括文件上传、表单填写、内容抓取、定时截图、爬虫抓取等。
