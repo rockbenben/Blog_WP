@@ -2,6 +2,22 @@
 
 ---start---
 ## 目录(2022年05月05日更新)
+[Jekyll 博客迁移－从 Markdown 到 WordPress](https://newzone.top/p/2021-01-27-Blog_Jekyll_to_WordPress/)
+
+[最后一个密码管理器－KeePass](https://newzone.top/p/2021-01-02-KeePass_the_real_lastpassword/)
+
+[减肥日志：4 周 15 斤](https://newzone.top/p/2020-12-17-Weight_log/)
+
+[小狼毫 3 分钟入门及进阶指南](https://newzone.top/p/2020-11-27-RIME_input/)
+
+[这些全网卖爆的“必备”品，我劝你别买……](https://newzone.top/p/2020-11-01-Gym_equipment_throw_away/)
+
+[真·DPC_WATCHDOG_VIOLATION 蓝屏解决方案](https://newzone.top/p/2020-10-25-DPC_WATCHDOG_VIOLATION/)
+
+[无线路由调整，加快 WIFI 速度](https://newzone.top/p/2020-09-13-WIFI_speed_up/)
+
+[RSS 速成篇 2：RSSHub 自部署](https://newzone.top/p/2020-03-25-RSSHub_on_vps/)
+
 [这些「医院护肤品」你买了吗？](https://newzone.top/p/2019-10-04-Fake_AKA_hospital_skin_care_products/)
 
 [scrcpy - 手机无线投屏到电脑](https://newzone.top/p/2019-08-26-Scrcpy_screen_projection/)
