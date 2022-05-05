@@ -76,7 +76,21 @@
 
 [小型网站管理员，快放弃 CDN！](https://newzone.top/p/2018-01-19-Forget_the_cdn/)
 
-[怎么用 MarkDown 写博客](https://newzone.top/p/2018-01-07-Original_blog/)
+[光猫改造 篇二：光猫 + 路由器，实现端口映射](https://newzone.top/p/2017-10-18-Light_cat_Port_forwarding/)
+
+[光猫改造 篇一：超级管理员密码破解（E8-C-EPON RG201O-CA_V1A2)](https://newzone.top/p/2017-10-18-Light_cat_E8-C-EPON_admin/)
+
+[加速 SMB 协议，让 PC 变身小型 NAS](https://newzone.top/p/2017-09-03-SMB_LAN_sharing/)
+
+[电脑关机了，第二天一看确又开着的？让系统正常关机！](https://newzone.top/p/2017-09-02-Forced_shutdown/)
+
+[OneNote 2016 无法登陆问题解决](https://newzone.top/p/2017-07-29-OneNote_2016_cannot_be_logged_in/)
+
+[office 2016 安装程序报错解决办法](https://newzone.top/p/2017-07-28-Office_2016_installer_error/)
+
+[RSS 入门篇：Feed43&FeedEx-为静态网页定制 RSS 源](https://newzone.top/p/2017-04-22-RSS_FEED43_FeedEx/)
+
+[电脑上实现微信双开，无需网页版或第三方软件](https://newzone.top/p/2017-04-18-WeChat_multi_open/)
 
 ---end---
 
