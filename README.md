@@ -1,8 +1,26 @@
 # 互联网小白
 
 ---start---
+## 目录(2022年05月05日更新)
+[不想学 Python，零基础也能用的自动化工具-UI.Vision RPA](https://newzone.top/p/2022-04-21-UIVision_RPA/)
 
-## 目录 (2022 年 05 月 05 日更新)
+[上海没吃的？割裂的城市，我真的生活在上海吗？](https://newzone.top/p/2022-04-20-Survivorship_Bias_in_Shanghai_2022/)
+
+[一键安装 99 个程序，Windows 最强软件管理器](https://newzone.top/p/2022-03-21-Winget_ the_strongest_software_manager_for_Windows/)
+
+[官方 RSS 失效？自制 RSS 永久性链接合集](https://newzone.top/p/2022-03-17-RSS_Persistent_Link_Collection/)
+
+[联想黑金超核会员情报分享-2022 年 4 月更新](https://newzone.top/p/2022-03-09-Lenovo_black_card_member/)
+
+[Windows 应用商店 (Microsoft store) 打不开？100% 解决方法 - 兼容 Win10、Win11](https://newzone.top/p/2022-02-19-Microsoft_store_fixed/)
+
+[想要独一无二的微信红包，你也可以自己做](https://newzone.top/p/2022-01-23-WeChat_Lucky_Money_Cover/)
+
+[RSS 完结篇：节省千元服务费，RSSHub、Huginn 转移 NAS](https://newzone.top/p/2021-10-23-NAS_with_RSSHub_and_Huginn/)
+
+[普通人的生活原则－批评与自我批评](https://newzone.top/p/2021-05-31-Principles_Criticism_and_Self-Criticism/)
+
+[直播完全攻略：从直播小白到网红达人](https://newzone.top/p/2021-03-22-Live_Streaming/)
 
 [Jekyll 博客迁移－从 Markdown 到 WordPress](https://newzone.top/p/2021-01-27-Blog_Jekyll_to_WordPress/)
 
@@ -43,6 +61,8 @@
 [抛弃迅雷，Aria2 新手入门](https://newzone.top/p/2018-05-15-Aria2_a_new_download_tool-/)
 
 [怎么用 Adobe Audition 快速剪切音频？](https://newzone.top/p/2018-05-04-Audition_cut_mp3/)
+
+[Jekyll 篇二：自动部署服务器博客](https://newzone.top/p/2018-05-03-Jekyll_blog_autodeploy/)
 
 [Jekyll 扩展篇：服务器搭建 Jekyll 博客](https://newzone.top/p/2018-05-02-Jekyll_blog_on_vps/)
 
