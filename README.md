@@ -1,7 +1,7 @@
 # 互联网小白
 
 ---start---
-## 目录(2022年05月05日更新)
+## 目录(2022年05月06日更新)
 [不想学 Python，零基础也能用的自动化工具-UI.Vision RPA](https://newzone.top/p/2022-04-21-UIVision_RPA/)
 
 [上海没吃的？割裂的城市，我真的生活在上海吗？](https://newzone.top/p/2022-04-20-Survivorship_Bias_in_Shanghai_2022/)
