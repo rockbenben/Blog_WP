@@ -43,11 +43,15 @@ WordPressXMLRPCTools 能用 Markdown 生成博客，push 更新到 Github 后，
 
 安装步骤查看[WordPressXMLRPCTools 项目页](https://github.com/zhaoolee/WordPressXMLRPCTools)，如遇报错，按下列方法解决。
 
-1. 无法启动 github action，显示 git denied to github-actions[bot] 和 Process completed with exit code 128.
+`_post`路径内新建`TEMP`文件夹，用于放置文章草稿，推送程序不会推送`_post`子文件夹中的 md 文件，不会同步到 WordPress。
 
-    Setting - Code and automation - Actions - General, Workflow permissions 中开启「Read and write permissions」。
+## 常见问题
 
-2. _post 中添加了文档，但并未在 README 中显示
+1. 无法启动 github action，显示`git denied to github-actions[bot]`和`Process completed with exit code 128`。
+
+    依次点击该 repository 的 Setting - Code and automation - Actions - General，然后在 Workflow permissions 中开启「Read and write permissions」。
+
+2. `_post`中添加了文档，但并未在 README 中显示
 
     文档后缀必须为「.md」，不支持 .markdown。
 
@@ -59,11 +63,8 @@ WordPressXMLRPCTools 能用 Markdown 生成博客，push 更新到 Github 后，
 
 本地修改最大的问题是，标题不能
 
-草稿放入 TEMP 文件夹，不会上传到 WordPress。
-
-借助 Runany 
-
-markdown 
+用飞书多维表格保存本地 md 文章的标题、本地位置、链接和封面。借助 RunAny 的「一键直达」功能，点击表格中的「本地位置」，即可用默认编辑器打开 md 文件。
 ![](http://tc.seoipo.com/2022-05-06-12-43-36.png)
 
+表格切换为「画册视图」，达到 90% 的 Notion 视觉效果。
 ![](http://tc.seoipo.com/2022-05-06-12-28-41.png)

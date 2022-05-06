@@ -1,7 +1,9 @@
 # 互联网小白
 
 ---start---
-## 目录(2022年05月06日更新)
+
+## 目录 (2022 年 05 月 06 日更新)
+
 [不想学 Python，零基础也能用的自动化工具-UI.Vision RPA](https://newzone.top/p/2022-04-21-UIVision_RPA/)
 
 [上海没吃的？割裂的城市，我真的生活在上海吗？](https://newzone.top/p/2022-04-20-Survivorship_Bias_in_Shanghai_2022/)
@@ -96,16 +98,24 @@
 
 网站基于[WordPressXMLRPCTools](https://github.com/zhaoolee/WordPressXMLRPCTools)，能用 Markdown 生成博客，push 更新到 Github 后，Github Actions 自动将文章更新到 WordPress，并将 WordPres 站的文章索引更新到 Github 仓库的 README.md，供搜索引擎收录。
 
+## 使用思路
+
+`_post`路径内新建`TEMP`文件夹，用于放置文章草稿，推送程序不会推送`_post`子文件夹中的 md 文件。
+
 ## 常见问题
 
-1. 无法启动 github action，显示 git denied to github-actions[bot] 和 Process completed with exit code 128.
+1. 无法启动 github action，显示`git denied to github-actions[bot]`和`Process completed with exit code 128`。
 
-    Setting - Code and automation - Actions - General, Workflow permissions 中开启「Read and write permissions」。
+   依次点击该 repository 的 Setting - Code and automation - Actions - General，然后在 Workflow permissions 中开启「Read and write permissions」。
 
-2. _post 中添加了文档，但并未在 README 中显示
+2. `_post`中添加了文档，但并未在 README 中显示
 
-    文档后缀必须为「.md」，不支持 .markdown。
+   文档后缀必须为「.md」，不支持 .markdown。
 
 3. 更新文章时报错`Error: Process completed with exit code 1`。
 
-    检查服务器是否开启了防火墙，文章中含代码容易被误认木马。
+   检查服务器是否开启了防火墙，文章中含代码容易被误认木马。
+
+4. 修改文章后，WordPress 站的文章不会同步更新。
+
+   继续测试中，查看加新文章后，之前更改过的文章是否会同步更新。
