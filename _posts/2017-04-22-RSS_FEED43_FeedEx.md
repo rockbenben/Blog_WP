@@ -18,13 +18,13 @@ tags:
 
 **► 开始烧制属于自己的 feed**
 
-### 1. 进入网页
+## 1. 进入网页
 
 [FEED43](http://www.feed43.com/) 无需注册，点击 Create your own feed 直接使用。
 
 ![](https://pic1.zhimg.com/v2-b5da0b08f632376fad3925a779e373b4_r.jpg)
 
-### 2. 选定 RSS 网页
+## 2. 选定 RSS 网页
 
 将目标网址添入 Step1. Specify source page address (URL)，将输入的源代码复制到 txt 文档中（方便之后写抓取规则）
 
@@ -32,7 +32,7 @@ tags:
 
 如果 Page Source 显示为乱码，Encoding 可设为 **UTF-8** 。
 
-### 3. 定制 RSS 抓取规则
+## 3. 定制 RSS 抓取规则
 
 Global Search Pattern 是选择你要搜索的范围。可以不填，这样会搜索整个页面，一般新手都选择整个页面，即空白。Item (repeatable) Search Pattern 这部分最重要，是我们要抓取的内容。
 
@@ -68,7 +68,7 @@ Global Search Pattern 是选择你要搜索的范围。可以不填，这样会�
 
 ![](https://pic4.zhimg.com/v2-e9486741a6229ab258a95147f584571b_r.jpg)
 
-### 4. 整理 rss 输入格式
+## 4. 整理 rss 输入格式
 
 Define output format，一般情况下前面三个会已经写好，后三个就将前面得出的 item 里面的元素填入即可，我这里{%1}对应的是链接所以填入 Link，{%2}对于标题就填入 Title
 
@@ -80,7 +80,7 @@ Define output format，一般情况下前面三个会已经写好，后三个就
 
 如果注册了 FEED43 的账号，可以修改 rss 地址，但不能改为中文，否则会 rss 出错。
 
-### 5. 获取 RSS 地址
+## 5. 获取 RSS 地址
 
 点击 Feed URL 可得 rss 地址，我这里是 [https://www.feed43.com/dianji.xml](https://www.feed43.com/dianji.xml)
 
@@ -90,7 +90,7 @@ Define output format，一般情况下前面三个会已经写好，后三个就
 
 ![](https://pic4.zhimg.com/v2-6d8f503ff3da16eb985ca1d3ae2de98f_r.jpg)
 
-### 6. 全文抓取
+## 6. 全文抓取
 
 feed43 导出的条目必须点击链接才能看到内容。在 rss 展示全文，需要通过 FeedEx 再转一次。注意：feed43 免费用户过多，**需在浏览器中打开一次才能得到真实链接 (一般为 [http://node2.feed43.com](http://node2.feed43.com/))**，FeedEx 需使用真实链接，一般 3 分钟内转换好。
 

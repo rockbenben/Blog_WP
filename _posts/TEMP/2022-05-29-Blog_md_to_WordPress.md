@@ -13,6 +13,7 @@ tags:
     - blog
     - WordPress
 ---
+
 2005 年开始博客记录。第一个平台是 MSN space，并配合短命的 Google Sidewiki 记录感想。六年后，MSN space 关闭 ，旧博客被动转移到 WordPress 托管。之后改用 Blogger，没多久就暂停博客记录。
 
 2018 年偶尔接触到 Jekyll，被其简洁的界面和便捷性打动，博客复活。本地用 Markdown 编辑排版，同步 github 发布，博客方向则从感想记录转移到知识输出。Jekyll 体验感很好，但随着文章、分发渠道的增多，修改也愈加困难，甚至逐渐习惯只更新专栏，而博客仅发布初版。
@@ -25,6 +26,16 @@ tags:
 2022 年，晃了一圈后，博客平台再度更改。
 
 分发平台过多，导致一篇文章需要修 N 次。
+
+## 发布平台
+
+「原生 md」指修改 markdown 文件即可更新博客平台。
+
+* github：原生 md，支持自定义
+* WordPress：不支持原生 md
+* Notion：
+* [竹白](https://zhubai.love/)：Newsletter，微信订阅，支持付费订阅
+* [Substack](https://substack.com/)：Newsletter，支持付费订阅
 
 ## github 同步到 WordPress
 
@@ -48,11 +59,11 @@ WordPressXMLRPCTools 能用 Markdown 生成博客，push 更新到 Github 后，
 
 本地修改最大的问题是，标题不能
 
-## 各大博客平台汇总
+草稿放入 TEMP 文件夹，不会上传到 WordPress。
 
-「原生 md」指修改 markdown 文件即可更新博客平台。
+借助 Runany 
 
-* github：原生 md，支持自定义
-* WordPress：不支持原生 md
-* 竹白：Newsletter，微信订阅，支持付费订阅
-* substack：Newsletter，微信订阅，支持付费订阅
+markdown 
+![](http://tc.seoipo.com/2022-05-06-12-43-36.png)
+
+![](http://tc.seoipo.com/2022-05-06-12-28-41.png)
