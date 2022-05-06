@@ -1,8 +1,8 @@
 # 互联网小白
 
 ---start---
-
-## 目录 (2022 年 05 月 06 日更新)
+## 目录(2022年05月06日更新)
+[](https://newzone.top/p/test/)
 
 [不想学 Python，零基础也能用的自动化工具-UI.Vision RPA](https://newzone.top/p/2022-04-21-UIVision_RPA/)
 
