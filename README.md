@@ -3,7 +3,6 @@
 
 ---start---
 ## 目录(2022年05月09日更新)
-
 [不想学 Python，零基础也能用的自动化工具-UI.Vision RPA](https://newzone.top/p/2022-04-21-UIVision_RPA/)
 
 [上海没吃的？割裂的城市，我真的生活在上海吗？](https://newzone.top/p/2022-04-20-Survivorship_Bias_in_Shanghai_2022/)
@@ -26,7 +25,7 @@
 
 [Jekyll 博客迁移－从 Markdown 到 WordPress](https://newzone.top/p/2021-01-27-Blog_Jekyll_to_WordPress/)
 
-[最后一个密码管理器－KeePass](https://newzone.top/p/2021-01-02-KeePass_the_real_lastpassword/)
+[抛弃 Lastpass，拥抱免费开源的绿色密码管理软件 KeePass](https://newzone.top/p/2021-01-02-KeePass_the_real_lastpassword/)
 
 [减肥日志：4 周 15 斤](https://newzone.top/p/2020-12-17-Weight_log/)
 
