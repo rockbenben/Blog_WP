@@ -2,14 +2,14 @@
 > 盛年不重来，一日难再晨。
 
 ---start---
-## 目录(2022年05月09日更新)
+## 目录(2022年05月10日更新)
 [不想学 Python，零基础也能用的自动化工具-UI.Vision RPA](https://newzone.top/p/2022-04-21-UIVision_RPA/)
 
 [上海没吃的？割裂的城市，我真的生活在上海吗？](https://newzone.top/p/2022-04-20-Survivorship_Bias_in_Shanghai_2022/)
 
 [一键安装 99 个程序，Windows 最强软件管理器](https://newzone.top/p/2022-03-21-Winget_the_strongest_software_manager_for_Windows/)
 
-[官方 RSS 失效？自制 RSS 永久性链接合集](https://newzone.top/p/2022-03-17-RSS_Persistent_Link_Collection/)
+[RSS 汇总篇：RSS 永久链接合集，拒绝 RSS 失效](https://newzone.top/p/2022-03-17-RSS_Persistent_Link_Collection/)
 
 [联想黑金超核会员情报分享-2022 年 4 月更新](https://newzone.top/p/2022-03-09-Lenovo_black_card_member/)
 
