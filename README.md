@@ -59,7 +59,7 @@
 
 [真· Airtable 3 分钟菜鸟入门](https://newzone.top/p/2018-05-24-Airtable_noob/)
 
-[抛弃迅雷，Aria2 新手入门](https://newzone.top/p/2018-05-15-Aria2_a_new_download_tool-/)
+[抛弃迅雷，Aria2 新手入门](https://newzone.top/p/2018-05-15-Aria2_a_new_download_tool/)
 
 [怎么用 Adobe Audition 快速剪切音频？](https://newzone.top/p/2018-05-04-Audition_cut_mp3/)
 
