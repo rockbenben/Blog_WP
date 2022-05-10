@@ -33,6 +33,8 @@ KeePass 懒人包为绿色版，集成了常用插件，建立数据库即可使
 3. 依次点击`菜单栏 - 文件 - 新建`，建立属于你的密码数据库。
 ![KeePass 懒人包设置](https://tc.seoipo.com/KeePass_new_kdbx.gif)
 
+懒人包集成插件：AutoTypeSearch，Entry Templates，KeePassHttp，KeePassNatMsg，KeePassRpc，KeeTrayTOTP，KPEnhancedEntryView，SourceForgeUpdateChecker，WebAutoType。
+
 ---
 以下为 KeePass 的具体配置介绍，初阶用户可忽略，直接使用懒人包。
 
@@ -57,9 +59,9 @@ KeePass 懒人包为绿色版，集成了常用插件，建立数据库即可使
 
 连接浏览器、密码自动输入等主要功能，KeePass 均需配置插件。下载插件并放入指定文件夹`\Plugins`，重启 KeePass 即可使插件生效。
 
-### [keepasshttp](https://raw.github.com/pfn/keepasshttp/master/KeePassHttp.plgx)
+### [KeePassHttp](https://raw.github.com/pfn/keepasshttp/master/KeePassHttp.plgx)
 
-keepasshttp 需搭配浏览器插件 KeePassHttp-Connector，达到自动填充密码效果。
+KeePassHttp 需搭配浏览器插件 KeePassHttp-Connector，达到自动填充密码效果。
 
 ### [KPEnhancedEntryView](https://keepass.info/plugins.html#kpenhentryview)
 
@@ -101,16 +103,16 @@ WebAutoType 是很多人的推荐插件，启动密码热键后会自动匹配�
 
 该插件能自动匹配下载网站图标，但会大幅增加数据库的大小。不在意界面美观度的话，无需安装 Yet Another Favicon Downloader。
 
-### [keepassrpc](https://github.com/kee-org/keepassrpc/releases/)
+### [KeePassRpc](https://github.com/kee-org/keepassrpc/releases/)
 
-keepassrpc 搭配浏览器插件 Kee，能实现**自动填充密码并登录**。
+KeePassRpc 搭配浏览器插件 Kee，能实现**自动填充密码并登录**。
 其他插件不能自动登录，只有 Kee 能做到该功能。使用 Kee 的自动登录功能后，少数页面会出现循环登录，需暂停 Kee 扩展来停止循环错误。
 ![Kee 配置](http://tc.seoipo.com/2022-05-05-14-29-32.png)
 
-### [keepassnatmsg](https://github.com/smorks/keepassnatmsg)
+### [KeePassNatMsg](https://github.com/smorks/keepassnatmsg)
 
 浏览器插件 KeePassHttp-Connector 已不再更新，有段时间甚至不兼容新版 KeePass。
-如果遇到不兼容，可使用 keepassnatmsg 和 KeePassXC-Browser 连接浏览器，本方案不支持搜狗浏览器。
+如果遇到不兼容，可使用 KeePassNatMsg 和 KeePassXC-Browser 连接浏览器，本方案不支持搜狗浏览器。
 > 如果报错「proxy download error」，备份并删除文件夹  C:\Users\%Username%\AppData\Local\KeePassNatMsg，然后重新加载 Native Messaging Host
 
 ## 常见问题
