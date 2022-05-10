@@ -25,7 +25,7 @@
 
 [Jekyll 博客迁移－从 Markdown 到 WordPress](https://newzone.top/p/2021-01-27-Blog_Jekyll_to_WordPress/)
 
-[抛弃 Lastpass，拥抱免费开源的绿色密码管理软件 KeePass](https://newzone.top/p/2021-01-02-KeePass_the_real_lastpassword/)
+[抛弃 Lastpass，拥抱 KeePass-免费开源的绿色密码管理软件 ](https://newzone.top/p/2021-01-02-KeePass_the_real_lastpassword/)
 
 [减肥日志：4 周 15 斤](https://newzone.top/p/2020-12-17-Weight_log/)
 
