@@ -23,7 +23,7 @@ KeePass 官网下载：<https://keepass.info/download.html>
 
 ## KeePass 懒人包
 
-懒人包下载：<https://wwz.lanzouf.com/i1NUV04e398j>
+懒人包下载：<https://wwz.lanzouf.com/i8m0804lxp7g>
 KeePass 懒人包为绿色版，集成了常用插件，建立数据库即可使用 KeePass。
 
 **建立数据库：**
