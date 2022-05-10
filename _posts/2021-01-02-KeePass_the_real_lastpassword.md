@@ -1,6 +1,6 @@
 ---
 layout:       post
-title:        "抛弃 Lastpass，拥抱免费开源的绿色密码管理软件 KeePass"
+title:        "抛弃 Lastpass，拥抱 KeePass-免费开源的绿色密码管理软件 "
 subtitle:     "我的最后一款密码管理器"
 date:         2021-01-02
 author:       "Benson"
@@ -21,24 +21,9 @@ KeePass 的密码保存在本地的`.kdbx`数据库中，让你真正掌握自�
 KeePass 官网下载：<https://keepass.info/download.html>
 安卓客户端推荐`Keepass2Android`。
 
-## KeePass 懒人包
+以下会逐步介绍 KeePass 的配置和插件。小白可直接看文章底部，下载懒人包，开包即用。
 
-懒人包下载：<https://wwz.lanzouf.com/i8m0804lxp7g>
-KeePass 懒人包为绿色版，集成了常用插件，建立数据库即可使用 KeePass。
-
-**建立数据库：**
-
-1. 解压懒人包，打开程序`KeePass.exe`。
-2. 屏幕右下角托盘处，打开 KeePass。
-3. 依次点击`菜单栏 - 文件 - 新建`，建立属于你的密码数据库。
-![KeePass 懒人包设置](https://tc.seoipo.com/KeePass_new_kdbx.gif)
-
-懒人包集成插件：AutoTypeSearch，Entry Templates，KeePassHttp，KeePassNatMsg，KeePassRpc，KeeTrayTOTP，KPEnhancedEntryView，SourceForgeUpdateChecker，WebAutoType。
-
----
-以下为 KeePass 的具体配置介绍，初阶用户可忽略，直接使用懒人包。
-
-## 推荐设置
+## KeePass 设置
 
 **选项设置：**
 依次点击菜单栏 -「工具」-「选项」
@@ -73,7 +58,7 @@ KPEnhancedEntryView 增强视觉效果，为达到最佳显示效果，按以下
 ### [AutoTypeSearch](https://keepass.info/plugins.html#atsearch)
 
 AutoTypeSearch 提供全局框，输入热键`Ctrl+Shift+A`后，搜索关键词输入密码。
-![AutoTypeSearch 通用配置](http://tc.seoipo.com/20191013083950.png)
+![AutoTypeSearch 通用设置](http://tc.seoipo.com/20191013083950.png)
 
 ### [KP Entry Templates](https://github.com/mitchcapper/KPEntryTemplates)
 
@@ -107,7 +92,7 @@ WebAutoType 是很多人的推荐插件，启动密码热键后会自动匹配�
 
 KeePassRpc 搭配浏览器插件 Kee，能实现**自动填充密码并登录**。
 其他插件不能自动登录，只有 Kee 能做到该功能。使用 Kee 的自动登录功能后，少数页面会出现循环登录，需暂停 Kee 扩展来停止循环错误。
-![Kee 配置](http://tc.seoipo.com/2022-05-05-14-29-32.png)
+![Kee 设置](http://tc.seoipo.com/2022-05-05-14-29-32.png)
 
 ### [KeePassNatMsg](https://github.com/smorks/keepassnatmsg)
 
@@ -125,6 +110,20 @@ KeePassRpc 搭配浏览器插件 Kee，能实现**自动填充密码并登录**�
 
 3. Keepassxc 有官方浏览器插件，界面也比 KeePass 美观，为什么不推荐使用？
 Keepassxc 是 KeePass 的衍生版。虽然 KeePass 配置比 Keepassxc 复杂，但操控性更强。长期使用，个人推荐 Keepass 原版。
+
+## KeePass 懒人包
+
+懒人包下载：<https://wwz.lanzouf.com/i8m0804lxp7g>
+KeePass 懒人包为绿色版，集成了常用插件，建立数据库即可使用 KeePass。
+
+**建立数据库：**
+
+1. 解压懒人包，打开程序`KeePass.exe`。
+2. 屏幕右下角托盘处，打开 KeePass。
+3. 依次点击`菜单栏 - 文件 - 新建`，建立属于你的密码数据库。
+![KeePass 懒人包设置](https://tc.seoipo.com/KeePass_new_kdbx.gif)
+
+懒人包集成插件：AutoTypeSearch，Entry Templates，KeePassHttp，KeePassNatMsg，KeePassRpc，KeeTrayTOTP，KPEnhancedEntryView，SourceForgeUpdateChecker，WebAutoType。
 
 **参考资料：**
 
