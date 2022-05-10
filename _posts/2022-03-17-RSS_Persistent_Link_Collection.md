@@ -32,7 +32,7 @@ tags:
 
 ## 互联网资讯
 
-整合互联网资讯媒体，偏重电子硬件、手机应用
+整合互联网资讯媒体，偏重于前端科技、电子硬件、手机应用。
 
 **36kr**：[http://newzone.top/rss.php?type=36kr](http://newzone.top/rss.php?type=36kr)
 
@@ -54,7 +54,7 @@ tags:
 
 ## 教程：自制 RSS
 
-以上 RSS 链接均通过 RSSHub 和 Huginn 制作，教程参考下方。
+以上 RSS 链接均通过 RSSHub 和 Huginn 制作，下方为 RSS 制作教程。
 
 * [RSS 入门篇：FEED43&FeedEx-为静态网页定制 RSS 源](https://newzone.top/p/2017-04-22-RSS_FEED43_FeedEx/)
 
