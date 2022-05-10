@@ -65,3 +65,5 @@ tags:
 * [RSS 速成篇 2：RSSHub 自部署](https://newzone.top/p/2020-03-25-RSSHub_on_vps/)
 
 * [RSS 完结篇：节省千元服务费，RSSHub、Huginn 转移 NAS](https://newzone.top/p/2021-10-23-NAS_with_RSSHub_and_Huginn/)
+
+* [RSS 汇总篇：RSS 永久链接合集，拒绝 RSS 失效](https://newzone.top/p/2022-03-17-rss_persistent_link_collection)

@@ -78,3 +78,19 @@ NAS 替代服务器后，Huginn 不再定期崩溃，抓取也不再卡壳，也
 RSS 系列的初衷是，2017 年算法推送的愈加泛滥，定制化 rss 变成刚需，想着把定制化 rss 过程中的所得记录下来。没想到文章发布后收到很多人的支持，发觉并不是 rss 在没落，而是缺少 rss 的布道者。如果你也对 rss 感兴趣，希望也可以记录自己平常的疑问和所得。这会帮助你更好的整理知识，也能帮助越来越多的人了解 rss，掌握这项高效的信息获取方式。
 
 我坚信**rss 是最适合普通人的信息获取方式**，这可能有些反潮流，但这就是我内心的想法。
+
+## RSS 合集
+
+汇总 RSS 永久订阅链接，feeds 均通过 RSSHub 和 Huginn 制作。如果有兴趣自己制作 RSS，可查看以下教程。
+
+- [RSS 入门篇：FEED43&FeedEx-为静态网页定制 RSS 源](https://newzone.top/p/2017-04-22-RSS_FEED43_FeedEx/)
+
+- [RSS 进阶篇：Huginn - 真·为任意网页定制 RSS 源（PhantomJs 抓取）](https://newzone.top/p/2018-10-07-Huginn_scraping_any_website/)
+
+- [RSS 速成篇：RSSHub 捡现成的轮子](https://newzone.top/p/2019-04-01-RSSHub_noob/)
+
+- [RSS 速成篇 2：RSSHub 自部署](https://newzone.top/p/2020-03-25-RSSHub_on_vps/)
+
+- [RSS 完结篇：节省千元服务费，RSSHub、Huginn 转移 NAS](https://newzone.top/p/2021-10-23-NAS_with_RSSHub_and_Huginn/)
+
+- [RSS 汇总篇：RSS 永久链接合集，拒绝 RSS 失效](https://newzone.top/p/2022-03-17-rss_persistent_link_collection)

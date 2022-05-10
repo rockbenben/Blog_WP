@@ -19,10 +19,12 @@ RSSHub 使用非常简单，但随着使用者增多，微博、知乎加大了�
 
 ## 部署步骤
 
-1. 将 rsshub 代码下载到根目录 /root/
+1. 将 RSSHub 代码下载到根目录 /root/
+
 ```
 git clone https://github.com/DIYgod/RSSHub.git
 ```
+
 2. 安装宝塔面板，查看[官方安装教程](https://www.bt.cn/bbs/thread-19376-1-1.html)
 3. 登陆宝塔面板，点击「软件商店」-「运行环境」，找到并安装**PM2 管理器**
    ![](http://tc.seoipo.com/20200325120705.png)
@@ -37,8 +39,6 @@ git clone https://github.com/DIYgod/RSSHub.git
 
 程序运行，有时会报错，也可以直接用命令运行 pm2 `pm2 start /root/RSSHub/lib/index.js --name rsshub`。
 
-
-
 ## 使用步骤
 
 1. 打开 [RSSHub 接口指南](https://docs.rsshub.app/)，搜索需要订阅的网站。RSSHub 支持国内大部分的主流网站。
@@ -51,3 +51,19 @@ git clone https://github.com/DIYgod/RSSHub.git
 
 * RSSHub 使用简单，使用现成的抓取规则，适用于国内主流网站；但无法抓取对小众网站，必须 RSSHub 官方定制订阅源。
 * Huginn 适用于所有网站，可设定抓取频率、内容结构、js 结果、输出样式等；但部署、配置复杂，入门门槛高，需要针对网站单独定制抓取规则。
+
+## RSS 合集
+
+汇总 RSS 永久订阅链接，feeds 均通过 RSSHub 和 Huginn 制作。如果有兴趣自己制作 RSS，可查看以下教程。
+
+* [RSS 入门篇：FEED43&FeedEx-为静态网页定制 RSS 源](https://newzone.top/p/2017-04-22-RSS_FEED43_FeedEx/)
+
+* [RSS 进阶篇：Huginn - 真·为任意网页定制 RSS 源（PhantomJs 抓取）](https://newzone.top/p/2018-10-07-Huginn_scraping_any_website/)
+
+* [RSS 速成篇：RSSHub 捡现成的轮子](https://newzone.top/p/2019-04-01-RSSHub_noob/)
+
+* [RSS 速成篇 2：RSSHub 自部署](https://newzone.top/p/2020-03-25-RSSHub_on_vps/)
+
+* [RSS 完结篇：节省千元服务费，RSSHub、Huginn 转移 NAS](https://newzone.top/p/2021-10-23-NAS_with_RSSHub_and_Huginn/)
+
+* [RSS 汇总篇：RSS 永久链接合集，拒绝 RSS 失效](https://newzone.top/p/2022-03-17-rss_persistent_link_collection)
