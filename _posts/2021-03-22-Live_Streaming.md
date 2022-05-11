@@ -26,11 +26,12 @@ tags:
 
 手机一般为室外直播使用。如果没有桌面摄像头，又希望使用电脑直播，可以参考 NDI、IP Webcam 教程，将手机充当桌面摄像头。
 
-- 不推荐：国内大多使用无他伴侣，但实际应用中问题多多。手机摄像头容易与直播应用断开 (10 分钟)，摄影角度难以控制，无法使用 facerig 等变脸应用，无法长时间直播 (2 小时)。
-- NDI 最为稳定，可自由调节拍摄参数，为商业收费应用，安卓手机测试可用[调试 APK](https://wwe.lanzoup.com/iQCMh00b946b)。刚打开 NDI 应用，不会马上连接，等待 NDI 应用周边出现绿框或红框时，才可以正常链接视频。
-- **IP Webcam** 推流，稳定性一般，免费版足够个人使用，点击下载 [IP Webcam APK](https://wwz.lanzouf.com/iT6pH01tj7yb)。IP Webcam 设置网页将流质量调整至 90%，能有效减少卡顿。IP camera 耗电低，适合手机长时间直播，支持视频与浏览器等方式。
-  - OBS 场景 - 来源 - 视频源，「输入」项中填入 IP Webcam 视频地址，例如`http://192.168.2.234:8080/video`。
-  - OBS 场景 - 来源 - 添加浏览器，「URL」项中填入 IP Webcam 浏览器全屏地址，例如 `http://192.168.2.234:8080/jsfs.html`。注意：浏览器退流，容易出现闪屏。
+* 不推荐：国内大多使用无他伴侣，但实际应用中问题多多。手机摄像头容易与直播应用断开 (10 分钟)，摄影角度难以控制，无法使用 facerig 等变脸应用，无法长时间直播 (2 小时)。
+* NDI 最为稳定，可自由调节拍摄参数，为商业收费应用，安卓手机测试可用[调试 APK](https://wwe.lanzoup.com/iQCMh00b946b)。刚打开 NDI 应用，不会马上连接，等待 NDI 应用周边出现绿框或红框时，才可以正常链接视频。
+* **IP Webcam** 推流，稳定性一般，免费版足够个人使用，点击下载 [IP Webcam APK](https://wwz.lanzouf.com/iT6pH01tj7yb)。IP Webcam 设置网页将流质量调整至 90%，能有效减少卡顿。IP camera 耗电低，适合手机长时间直播，支持视频与浏览器等方式。
+  * OBS 场景 - 来源 - 视频源，「输入」项中填入 IP Webcam 视频地址，例如`http://192.168.2.234:8080/video`。
+  * OBS 场景 - 来源 - 添加浏览器，「URL」项中填入 IP Webcam 浏览器全屏地址，例如 `http://192.168.2.234:8080/jsfs.html`。注意：浏览器退流，容易出现闪屏。
+* iPhone 或 iPad 可使用 [Camo](https://apps.apple.com/app/reincubate-camo/id1514199064?platform=iphone) 推流。
 
 微单相机能达到真正的高清直播，索尼、佳能均有配套软件连接。唯一的缺点是价格偏高，配上镜头的微单直播方案，通常需要 2 万，建议有微单的人使用此方案。
 
@@ -62,48 +63,48 @@ OBS 可对直播界面进行重加购和美化，如对多个摄像头进行取�
 
 **常用滤镜：**
 
-- 色度键：一般是在抠绿幕的时候用到这个滤镜，通过关键的颜色我们可以将特定的颜色抠成透明，例如将绿幕背景抠掉，换成更有趣的背景。
-- 色彩校正：通过调整伽玛度、对比度、亮度、饱和度等信息调整摄像头的显示效果。
-- 裁剪/填充：对来源的显示进行裁剪，剪去多余的部分。
-- 增益：当麦克风声音过大或过小时，可以通过增益滤镜调整音量，但是不宜设置数值过大，容易造成声音失真。
-- 噪音阈值：当背景有噪音时，可以通过设置噪音阈值控制，但是并不是传统意义上的降噪，只能解决部分问题。
+* 色度键：一般是在抠绿幕的时候用到这个滤镜，通过关键的颜色我们可以将特定的颜色抠成透明，例如将绿幕背景抠掉，换成更有趣的背景。
+* 色彩校正：通过调整伽玛度、对比度、亮度、饱和度等信息调整摄像头的显示效果。
+* 裁剪/填充：对来源的显示进行裁剪，剪去多余的部分。
+* 增益：当麦克风声音过大或过小时，可以通过增益滤镜调整音量，但是不宜设置数值过大，容易造成声音失真。
+* 噪音阈值：当背景有噪音时，可以通过设置噪音阈值控制，但是并不是传统意义上的降噪，只能解决部分问题。
 
 ![色度键滤镜一键抠图](http://tc.seoipo.com/20210328235013.gif)
 
 **[常用插件](https://obsproject.com/forum/resources/categories/obs-studio-plugins.6/)：**
 
-- [StreamFX](https://github.com/Xaymar/obs-StreamFX/releases)：支持更多的信号源、滤镜和转场效果，如：模糊滤镜
-- [OBS Shaderfilter](https://obsproject.com/forum/resources/obs-shaderfilter.775/)：文字图片特效滤镜
-- [virtualcam](https://obsproject.com/forum/resources/obs-virtualcam.949/)：能让来源单独输出虚拟摄像头，仅支持横屏场景，在竖屏中使用会奔溃
-- [NDI](https://obsproject.com/forum/resources/obs-ndi-newtek-ndi%E2%84%A2-integration-into-obs-studio.528/) : 局域网视频无线传输技术 NDI 插件
-- [multi-rtmp](https://github.com/sorayuki/obs-multi-rtmp)：OBS 多地址推流，同时在多个平台上进行直播
-- [Asynchronous Source Duplication](https://obsproject.com/forum/resources/asynchronous-source-duplication.1483/)：复制来源以同时作用多个场景，复制源间会有延迟
-- [VLC](https://www.videolan.org/vlc/)：非插件，但安装 VLC 64 位后，才能使用「VLC 视频源」(播放列表)
+* [StreamFX](https://github.com/Xaymar/obs-StreamFX/releases)：支持更多的信号源、滤镜和转场效果，如：模糊滤镜
+* [OBS Shaderfilter](https://obsproject.com/forum/resources/obs-shaderfilter.775/)：文字图片特效滤镜
+* [virtualcam](https://obsproject.com/forum/resources/obs-virtualcam.949/)：能让来源单独输出虚拟摄像头，仅支持横屏场景，在竖屏中使用会奔溃
+* [NDI](https://obsproject.com/forum/resources/obs-ndi-newtek-ndi%E2%84%A2-integration-into-obs-studio.528/) : 局域网视频无线传输技术 NDI 插件
+* [multi-rtmp](https://github.com/sorayuki/obs-multi-rtmp)：OBS 多地址推流，同时在多个平台上进行直播
+* [Asynchronous Source Duplication](https://obsproject.com/forum/resources/asynchronous-source-duplication.1483/)：复制来源以同时作用多个场景，复制源间会有延迟
+* [VLC](https://www.videolan.org/vlc/)：非插件，但安装 VLC 64 位后，才能使用「VLC 视频源」(播放列表)
 
 **进阶插件**：
 
-- [Advanced Scene Switcher](https://obsproject.com/forum/resources/advanced-scene-switcher.395/)：使用 "宏 "来自动完成各种任务，按条件切换场景、来源
-- [Move transition](https://obsproject.com/forum/resources/move-transition.913/)：记录来源的位置变化，生成元素移动的动画效果。如，视频演讲时，相机从右下移动到中央。
-- [Transition Table](https://obsproject.com/forum/resources/transition-table.1174/)：场景切换效果，设定不同场景间的切换规则
-- [Source Dock](https://obsproject.com/forum/resources/source-dock.1317/)：为单独场景或来源建立控制栏，能小窗口预览场景
-- [Source Copy](https://obsproject.com/forum/resources/source-copy.1261/)：更方便地复制、保存场景设置
-- [Scene Collection Manager](https://obsproject.com/forum/resources/scene-collection-manager.1434/)：自动备份场景，防止误操作
-- [Audio Monitor](https://obsproject.com/forum/resources/audio-monitor.1186/)：将来源声音输出给指定设备播放，方便单独调节音量，能让主播与观众听到不同的音频效果
-- [Downstream Keyer](https://obsproject.com/forum/resources/downstream-keyer.1254/)：切换场景时，置顶指定场景
-- [Multi Source Effect](https://github.com/norihiro/obs-multisource-effect)：滤镜效果？
-- [Teleport](https://github.com/fzwoch/obs-teleport)：NDI 替代品，局域网设备推流到直播
-- [spectralizer](https://github.com/univrsal/spectralizer)：音频频谱，用滤镜「图像掩码」的「混合图层」给频谱遮罩滤镜
-- [obs-websocket](https://obsproject.com/forum/resources/obs-websocket-remote-control-obs-studio-from-websockets.466/)：远程控制插件
-- transition matrix 过渡矩阵
-- scrab 截图
-- lower third in html/css 文字运动特效
-- input overlay 输入显示
-- motion-effect 动画效果
-- reply source 回放控制
-- advanced scene switcher 高级场景切换器
-- PTZ controller PTZ 摄影机云台控制器
-- [Animated captions](https://obsproject.com/forum/resources/animated-captions-with-obs-controller-and-a-preview-function.1407/)：自定义弹幕功能，无漂浮弹幕，适用较少
-- [Background Removal](https://github.com/royshil/obs-backgroundremoval)：无绿幕移除背景，需搭配神经网络环境
+* [Advanced Scene Switcher](https://obsproject.com/forum/resources/advanced-scene-switcher.395/)：使用 "宏 "来自动完成各种任务，按条件切换场景、来源
+* [Move transition](https://obsproject.com/forum/resources/move-transition.913/)：记录来源的位置变化，生成元素移动的动画效果。如，视频演讲时，相机从右下移动到中央。
+* [Transition Table](https://obsproject.com/forum/resources/transition-table.1174/)：场景切换效果，设定不同场景间的切换规则
+* [Source Dock](https://obsproject.com/forum/resources/source-dock.1317/)：为单独场景或来源建立控制栏，能小窗口预览场景
+* [Source Copy](https://obsproject.com/forum/resources/source-copy.1261/)：更方便地复制、保存场景设置
+* [Scene Collection Manager](https://obsproject.com/forum/resources/scene-collection-manager.1434/)：自动备份场景，防止误操作
+* [Audio Monitor](https://obsproject.com/forum/resources/audio-monitor.1186/)：将来源声音输出给指定设备播放，方便单独调节音量，能让主播与观众听到不同的音频效果
+* [Downstream Keyer](https://obsproject.com/forum/resources/downstream-keyer.1254/)：切换场景时，置顶指定场景
+* [Multi Source Effect](https://github.com/norihiro/obs-multisource-effect)：滤镜效果？
+* [Teleport](https://github.com/fzwoch/obs-teleport)：NDI 替代品，局域网设备推流到直播
+* [spectralizer](https://github.com/univrsal/spectralizer)：音频频谱，用滤镜「图像掩码」的「混合图层」给频谱遮罩滤镜
+* [obs-websocket](https://obsproject.com/forum/resources/obs-websocket-remote-control-obs-studio-from-websockets.466/)：远程控制插件
+* transition matrix 过渡矩阵
+* scrab 截图
+* lower third in html/css 文字运动特效
+* input overlay 输入显示
+* motion-effect 动画效果
+* reply source 回放控制
+* advanced scene switcher 高级场景切换器
+* PTZ controller PTZ 摄影机云台控制器
+* [Animated captions](https://obsproject.com/forum/resources/animated-captions-with-obs-controller-and-a-preview-function.1407/)：自定义弹幕功能，无漂浮弹幕，适用较少
+* [Background Removal](https://github.com/royshil/obs-backgroundremoval)：无绿幕移除背景，需搭配神经网络环境
 
 **使用技巧：**
 
@@ -152,28 +153,28 @@ prprlive 是国内的变脸软件，基础版免费，同样在 steam 销售，�
 ## 直播技巧
 
 1. 选题
-    - 最新热点：热榜话题、新品发布等；**看到热点直接开始，用现有内容来做，抢黄金流量时间**；
-    - 热门问题：关注、互动较多；
-    - 系列直播：知识娱乐化。
+    * 最新热点：热榜话题、新品发布等；**看到热点直接开始，用现有内容来做，抢黄金流量时间**；
+    * 热门问题：关注、互动较多；
+    * 系列直播：知识娱乐化。
 2. 命题：关键词搜索站内热门问答，参考标题。**直播准备 15－20 分钟话题，然后循环说**。没人的话，也别停，否则进入流量会变少。
 3. 环境：环境灯光要亮；灯光要在脸部前方。
 4. 时间：选择白天等冷门时间，**长期并固定时间直播，稳定开播频次与时间段**。新人直播有流量扶持，初期没有观众也要坚持开播。直播保持 2.5 小时以上，电商保持 3.5 小时以上才会有官方稳定推流。
 5. 直播预告：开播前一定要先发预告
-    - 提前发布视频，在直播前二至三小时发布预告视频，可以有机会让更多观众通过视频进入到直播间看到你；
-    - 开播页添加特色信息，在每场开播时，一定要记得在开播页上提前设置好封面标题并勾选定位，优质有特色的封面能够提升观众对直播间的点击欲望，但应尽量选择本人或和内容相关的图片作为封面；
-    - 打开定位，将会有更多的同城观众看到你的直播间对直播间提升流量是非常有好处的。如果你不知道什么是好的封面标题可以多参考其他观众较多的直播间。
+    * 提前发布视频，在直播前二至三小时发布预告视频，可以有机会让更多观众通过视频进入到直播间看到你；
+    * 开播页添加特色信息，在每场开播时，一定要记得在开播页上提前设置好封面标题并勾选定位，优质有特色的封面能够提升观众对直播间的点击欲望，但应尽量选择本人或和内容相关的图片作为封面；
+    * 打开定位，将会有更多的同城观众看到你的直播间对直播间提升流量是非常有好处的。如果你不知道什么是好的封面标题可以多参考其他观众较多的直播间。
 6. 互动：主动互动，时常口播；直面镜头，展现自我。
-    - 暖场：开场前 10 - 15 分钟可先与用户互动，等人多了再正式开始
-    - 有新观众进入直播间时，要主动欢迎
-    - 有意识地引导用户关注、互动
-    - 要「读出」用户的弹幕，再做出回答
-    - 及时感谢礼物
+    * 暖场：开场前 10 - 15 分钟可先与用户互动，等人多了再正式开始
+    * 有新观众进入直播间时，要主动欢迎
+    * 有意识地引导用户关注、互动
+    * 要「读出」用户的弹幕，再做出回答
+    * 及时感谢礼物
 7. 直播间优化方向
-    - 保持长时间和持续开播
-    - 优化直播标题 + 直播封面 + 直播间背景
-    - 多参与直播平台的官方活动
-    - 多使用直播道具，适当购买直播推流产品
-    - 多拍优质短视频引流
+    * 保持长时间和持续开播
+    * 优化直播标题 + 直播封面 + 直播间背景
+    * 多参与直播平台的官方活动
+    * 多使用直播道具，适当购买直播推流产品
+    * 多拍优质短视频引流
 
 ### 直播定位
 
