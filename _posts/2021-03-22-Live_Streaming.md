@@ -16,7 +16,7 @@ tags:
 
 ## 直播硬件
 
-直播设备主要有为视频采集（摄像头）、音频采集（收音话筒）、稳定器（三脚架）。
+直播设备主要有为视频采集（摄像头）、音频采集（收音器）、稳定器（三脚架）。
 
 ### 摄像头
 
@@ -35,7 +35,7 @@ tags:
 
 微单相机能达到真正的高清直播，索尼、佳能均有配套软件连接。唯一的缺点是价格偏高，配上镜头的微单直播方案，通常需要 2 万，只建议有微单的人使用此方案。
 
-### 收音话筒
+### 收音器
 
 收音设备费用从 10 元到几千元不等。
 
@@ -67,11 +67,19 @@ tags:
 
 OBS 可对直播界面进行重加购和美化，如对多个摄像头进行取景，添加文字、窗口、媒体采集等。市面有成熟的直播美化插件，如[跨播](https://console.kuabo.cn/widgets?id=20)、[智能云插件](http://zbmate.com/)。
 
-直播界面模糊，需将`文件－设置－输出－串流 - 视频比特率`设为 4000-6000 Kbps，`文件－设置－视频`中的输出分辨率确保与基础分辨率一致，游戏直播将`常用 FPS 值 (帧率)`从 30 调整到 60 。
-
 如果电脑配置超过 5 年，可考虑使用两台主机 (PC、手机均可)，NDI 双机推流，避免卡顿。
 
-**常用滤镜：**
+#### OBS 设置
+
+打开菜单栏的`文件－设置`，进入 OBS 设置区域。
+
+* 直播推流：`设置－通用－推流`中的服务调整为「自定义」，服务器和串流密钥则按平台要求输入。
+* 直播清晰度：直播并非越清晰越好，对网络稳定性要求较高，建议将`设置－输出－串流－视频比特率`设为 4000-6000 Kbps。
+* 直播分辨率：分辨率一般 1080p 或 720p，帧率为 30。注意`设置－视频`中的输出分辨率确保与基础分辨率一致，游戏直播将`常用 FPS 值 (帧率)`从 30 调整到 60 。
+
+#### OBS 滤镜
+
+OBS 滤镜是对音视频来源进行裁减、过滤、增益等多种处理处理的工具。
 
 * 色度键：一般是在抠绿幕的时候用到这个滤镜，通过关键的颜色我们可以将特定的颜色抠成透明，例如将绿幕背景抠掉，换成更有趣的背景。
 * 色彩校正：通过调整伽玛度、对比度、亮度、饱和度等信息调整摄像头的显示效果。
@@ -81,7 +89,7 @@ OBS 可对直播界面进行重加购和美化，如对多个摄像头进行取�
 
 ![色度键滤镜一键抠图](http://tc.seoipo.com/20210328235013.gif)
 
-**[常用插件](https://obsproject.com/forum/resources/categories/obs-studio-plugins.6/)：**
+#### [常用插件](https://obsproject.com/forum/resources/categories/obs-studio-plugins.6/)
 
 * [StreamFX](https://github.com/Xaymar/obs-StreamFX/releases)：支持更多的信号源、滤镜和转场效果，如：模糊滤镜
 * [OBS Shaderfilter](https://obsproject.com/forum/resources/obs-shaderfilter.775/)：文字图片特效滤镜
@@ -91,7 +99,7 @@ OBS 可对直播界面进行重加购和美化，如对多个摄像头进行取�
 * [Asynchronous Source Duplication](https://obsproject.com/forum/resources/asynchronous-source-duplication.1483/)：复制来源以同时作用多个场景，复制源间会有延迟
 * [VLC](https://www.videolan.org/vlc/)：非插件，但安装 VLC 64 位后，才能使用「VLC 视频源」(播放列表)
 
-**进阶插件**：
+#### 进阶插件
 
 * [Advanced Scene Switcher](https://obsproject.com/forum/resources/advanced-scene-switcher.395/)：使用 "宏 "来自动完成各种任务，按条件切换场景、来源
 * [Move transition](https://obsproject.com/forum/resources/move-transition.913/)：记录来源的位置变化，生成元素移动的动画效果。如，视频演讲时，相机从右下移动到中央。
@@ -116,7 +124,7 @@ OBS 可对直播界面进行重加购和美化，如对多个摄像头进行取�
 * [Animated captions](https://obsproject.com/forum/resources/animated-captions-with-obs-controller-and-a-preview-function.1407/)：自定义弹幕功能，无漂浮弹幕，适用较少
 * [Background Removal](https://github.com/royshil/obs-backgroundremoval)：无绿幕移除背景，需搭配神经网络环境
 
-**使用技巧：**
+#### 使用技巧
 
 1. 来源使用窗口采集时，窗口不能最小化，否则窗口会卡住不同步。
 2. 不同界面切换可使用 OBS 的工作室模式，避免让观众看到不完整的直播画面。
