@@ -98,7 +98,9 @@ FeedEx：[https://feedex.net/](https://feedex.net/)
 
 ![](https://pic4.zhimg.com/v2-8e3701adffa1d6fb4ea10dda2704988b_r.jpg)
 
-feeds43 不能满足你的需求？准备服务器，开始搭建 Huginn ~
+feeds43 免费版每 6 小时抓取一次，显示最新的 20 条内容。
+
+如果网页源更新较频繁的话，可使用 RSSHub 和 Huginn。
 
 ## RSS 合集
 
