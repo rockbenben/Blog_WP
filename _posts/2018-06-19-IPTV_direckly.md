@@ -27,31 +27,33 @@ lucifersun 抓取了[上海电信 IPTV 视频回放源](https://github.com/lucif
 
 lucifersun 的 IPTV 直播源比电视直播**慢 15 秒**，对普通用户来说已经足够了。
 
-### 提取直播源列表
+## 提取直播源列表
 
 进入[上海电信 IPTV 视频流地址](https://htmlpreview.github.io/?https://raw.githubusercontent.com/lucifersun/China-Telecom-ShangHai-IPTV-list/master/IPTV.html)。点击「生成 txt 内容」，然后复制下方的**视频直播源列表**，保存为 tv.txt，并将 tv.txt 文本转为 **ANSI 编码**（避免节目名会出现中文乱码）。
 
 ![](http://tc.seoipo.com/20180619170944.png)
 
-### 电视盒子直播
+## 电视盒子直播
 
 1. 电视盒子上安装 APP-「[超级直播](http://down.znds.com/apk/tv/2017/0329/5375.html)」
 
-2. 进入「超级直播」应用后，点击「设置」-「二维码扫一扫 开启更多功能」，调出隐藏管理地址 192.168.2.203:9188
+2. 进入「超级直播」应用后，点击「设置」-「二维码扫一扫 开启更多功能」，调出隐藏管理地址 `192.168.2.203:9188`。
 
-3. 用与电视盒子位于同一局域网的电脑或手机访问**隐藏管理地址**，点击「我」-「上次自定义 (tv.txt)」-「上传」，上传刚保存好的 tv.txt
-![](http://tc.seoipo.com/20180619164137.png)
+3. 用与电视盒子位于同一局域网的电脑或手机访问**隐藏管理地址**，点击「我」-「上次自定义 (tv.txt)」-「上传」，上传刚保存好的 tv.txt。
+
+   ![](http://tc.seoipo.com/20180619164137.png)
 
 4. 将「超级直播」的播放列表切换到**自定义**，直接观看导入的电视节目。
 
-### PC 端电视直播
+## PC 端电视直播
 
-1. PC 端安排 [Potplayer](http://www.potplayer.org/)
+1. PC 端安排 [Potplayer](http://www.potplayer.org/)。
 
-2. 复制节目 rtsp 直播源链接，打开 Potplayer , 点击右键 - 打开 - 打开剪贴板
-![](http://tc.seoipo.com/20180619140722.png)
+2. 复制节目 rtsp 直播源链接，打开 Potplayer , 点击右键 - 打开 - 打开剪贴板。
 
-这样就可以在 PC 端看电视了
+   ![](http://tc.seoipo.com/20180619140722.png)
+
+这样就可以在 PC 端看电视了。
 
 参考资料：
 

@@ -1,8 +1,11 @@
 # 互联网小白
+
 > 盛年不重来，一日难再晨。
 
 ---start---
-## 目录(2022年05月16日更新)
+
+## 目录 (2022 年 05 月 16 日更新)
+
 [不想学 Python，零基础也能用的自动化工具-UI.Vision RPA](https://newzone.top/p/2022-04-21-UIVision_RPA/)
 
 [上海没吃的？割裂的城市，我真的生活在上海吗？](https://newzone.top/p/2022-04-20-Survivorship_Bias_in_Shanghai_2022/)
@@ -25,7 +28,7 @@
 
 [Jekyll 博客迁移－从 Markdown 到 WordPress](https://newzone.top/p/2021-01-27-Blog_Jekyll_to_WordPress/)
 
-[抛弃 Lastpass，拥抱 KeePass-免费开源的绿色密码管理软件 ](https://newzone.top/p/2021-01-02-KeePass_the_real_lastpassword/)
+[抛弃 Lastpass，拥抱 KeePass-免费开源的绿色密码管理软件](https://newzone.top/p/2021-01-02-KeePass_the_real_lastpassword/)
 
 [减肥日志：4 周 15 斤](https://newzone.top/p/2020-12-17-Weight_log/)
 
@@ -97,9 +100,10 @@
 
 网站基于[WordPressXMLRPCTools](https://github.com/zhaoolee/WordPressXMLRPCTools)，能用 Markdown 生成博客，push 更新到 Github 后，Github Actions 自动将文章更新到 WordPress，并将 WordPres 站的文章索引更新到 Github 仓库的 README.md，供搜索引擎收录。
 
-## 使用思路
+## 更改点
 
-`_post`路径内新建`TEMP`文件夹，用于放置文章草稿，推送程序不会推送`_post`子文件夹中的 md 文件。
+1. `_post`路径内新建`TEMP`文件夹，用于存放文章草稿，推送程序不会推送`_post`子文件夹内的 md 文件，也就不会发布到 WordPress 网站。
+2. 主目录新增`index.html`和`_sidebar.md`文件引入 docsify，将发布文章聚合在网页中，方便快速定位和位置管理。
 
 ## 常见问题
 

@@ -27,16 +27,19 @@ Github 上搭建 Jekyll 是最方便的，空间免费、流量免费、部署�
 * 服务器休眠 5 分钟后，Travis CI 通知服务器
 * 服务器拉取最新镜像，然后停止并删除原容器，用最新镜像重建容器
 
-## 一、Travis CI 基本配置
+## Travis CI 基本配置
 
 Travis CI 对于开源项目完全免费，并且能自动感知到 Github 的 commit，帮我们解决了静态文件生成问题。
 
 先用 Github 登录  Travis CI，然后点击最右侧的头像，开启想要使用 Travis CI 的项目
+
 ![](http://tc.seoipo.com/20180504135244.png)
+
 点击设置按钮，进入项目设置
+
 ![](http://tc.seoipo.com/20180504135541.png)
 
-## 二、静态文件更新
+## 静态文件更新
 
 Travis CI push 静态文件到 Github 通过 Github 的 token 实现授权，push 代码如下
 
@@ -51,15 +54,17 @@ after_success:
   - git push --force https://$DEPLOY_TOKEN@github.com/rockbenben/blog.git master
 ```
 
-`$DEPLOY_TOKEN` 是从 Github 授权得到的，`setting - Developer settings - Personal access tokens - Generate new token`, 然后给于相应权限即可，`admin:public_key, admin:repo_hook, repo`
+`$DEPLOY_TOKEN` 是从 Github 授权得到的，`setting - Developer settings - Personal access tokens - Generate new token`, 然后给于相应权限即可，`admin:public_key, admin:repo_hook, repo`。
+
 ![](http://tc.seoipo.com/20180504153729.png)
 
 进入 Travis 的 repo 项目，`More options - Settings - Environment Variables`, 新建一个变量`DEPLOY_TOKEN`，把 Github 的授权 token 保存在里面。
+
 ![](http://tc.seoipo.com/20180504154229.png)
 
-Travis CI 提供了存放加密文件的方式，参考[官方文档](https://docs.travis-ci.com/user/encrypting-files/)
+Travis CI 提供了存放加密文件的方式，参考[官方文档](https://docs.travis-ci.com/user/encrypting-files/)。
 
-## 三、Dockerfiles 设置
+## Dockerfiles 设置
 
 在 Github 中新建一个 repository，可以命名为`dockerfiles`, 专门用来存储 Docker 镜像的设置文件。在`dockerfiles`新建文件夹 `jekyll` ，并在 `jekyll` 中新建文件`Dockerfile`, 放入以下代码：
 
@@ -92,17 +97,19 @@ WORKDIR /usr/share/nginx/html
 
 样例 Dockerfile: <https://github.com/mritd/dockerfile/tree/master/mritd>
 
-## 四、Docker 镜像设置
+## Docker 镜像设置
 
 注册并登录 [Docker Hub](https://hub.docker.com)，点击`Create - Create Automated Build - Create Auto-build Github`, 选择之前新建的 `dockerfiles` repository 。
 
-建立 Automated Build 镜像后，进入 `Build Seeting`, 点击 Trigger ，建立第一个 Docker 镜像
+建立 Automated Build 镜像后，进入 `Build Seeting`, 点击 Trigger ，建立第一个 Docker 镜像。
+
 ![](http://tc.seoipo.com/20180504161016.png)
 
-然后在`Building Settings - Build Triggers - Activate Triggers` ，复制 Trigger URL
+然后在`Building Settings - Build Triggers - Activate Triggers` ，复制 Trigger URL。
+
 ![](http://tc.seoipo.com/20180504161245.png)
 
-然后在服务器上执行下列代码，拉取并**启动 Docker 镜像**
+然后在服务器上执行下列代码，拉取并**启动 Docker 镜像**。
 
 ```
 docker pull rockben/jekyll
@@ -111,15 +118,15 @@ docker rm jekyll_blog
 docker run --name=jekyll_blog -d -p 39100:80 --privileged=true rockben/jekyll:latest
 ```
 
---name=jekyll_blog 中的 `jekyll_blog`是对容器的命名，方便后续操作
+--name=jekyll_blog 中的 `jekyll_blog`是对容器的命名，方便后续操作。
 
 -d 让容器在后台运行。
 
 -p 映射端口: 80 是容器内对应的端口，39100 是主机端口，也就是最终用户访问的端口，本端口可以自由选择。
 
---privileged=true 关闭安全权限，否则你容器操作文件夹没有权限
+--privileged=true 关闭安全权限，否则你容器操作文件夹没有权限。
 
---`rockben/jekyll:latest`是容器名称，可省略 `:latest`
+--`rockben/jekyll:latest`是容器名称，可省略 `:latest`。
 
 运行容器后，访问 `seoipo.com:39100`就可以看到镜像网页。如果每次用端口访问，可以在域名 DNS 中设置显性 URL，将二级域名 `blog.seoipo.com` 指向 `seoipo.com:39100`
 
@@ -147,7 +154,7 @@ docker run --name=jekyll_blog -d -p 39100:80 -v /www/wwwroot/jekyll:/jekyll --pr
 -v 挂载目录/root/software 本地目录 /software 容器目录，在创建前容器是没有 software 目录的，docker 容器会自己创建
 --`/bin/bash` 这是 CMD 命令行，可不填
 
-## 五、SSH 免密码登录
+## SSH 免密码登录
 
 Travis 不能利用用户名和密码登陆，我们只有利用**SSH 免密登陆**服务器，更新并重启 Docker 容器。
 
@@ -185,7 +192,7 @@ IdentitiesOnly yes
 IdentityFile ~/.ssh/id_rsa
 ```
 
-**4、在 Linux 服务器安装 Travis 客户端** （rvm -> ruby -> gem ->Travis）
+**4、在 Linux 服务器安装 Travis 客户端**（rvm -> ruby -> gem ->Travis）
 
 `gem install travis`
 
@@ -225,17 +232,17 @@ Commit all changes to your .travis.yml.
 
 * **将新生成的`id_rsa.enc`文件上传到 Github 源文件 repository 中**
 
-* 将`.travis.yml`中的`openssl aes-256-cbc -K $encrypted_5c280379e96c_key -iv $encrypted_5c280379e96c_iv -in id_rsa.enc -out ~/.ssh/id_rsa -d` 放入最终的`.travis.yml`文件中
+* 将`.travis.yml`中的`openssl aes-256-cbc -K $encrypted_5c280379e96c_key -iv $encrypted_5c280379e96c_iv -in id_rsa.enc -out ~/.ssh/id_rsa -d` 放入最终的`.travis.yml`文件中。
 
-![](http://tc.seoipo.com/20180504184508.png)
+  ![](http://tc.seoipo.com/20180504184508.png)
 
-## 六、.travis.yml 配置
+## travis.yml 配置
 
-当项目内存在 `.travis.yml` 文件时，Travis CI 会按照其定义完成自动 build 过程，所以开启了上述配置以后还要在 Github 的 Jekyll 源文件项目下创建 `.travis.yml` 配置文件
+当项目内存在 `.travis.yml` 文件时，Travis CI 会按照其定义完成自动 build 过程，所以开启了上述配置以后还要在 Github 的 Jekyll 源文件项目下创建 `.travis.yml` 配置文件。
 
 ![](http://tc.seoipo.com/20180504141827.png)
 
-`.travis.yml` 配置文件内容样例如下
+`.travis.yml` 配置文件内容样例如下：
 
 ```
 language: ruby
@@ -288,7 +295,7 @@ addons:
 sudo: false # route your build to the container-based infrastructure for a faster build
 ```
 
-具体 .travis.yml 配置，请参考 [官方文档](https://docs.travis-ci.com/)
+具体 .travis.yml 配置，请参考 [官方文档](https://docs.travis-ci.com/)。
 
 参考资料&引用：
 

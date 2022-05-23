@@ -36,7 +36,7 @@ AI 会取代你的工作！
 
 Huginn 帮我将所有信息聚合成 RSS ，24 小时帮我获取我要的内容。
 
-* [网易热门新闻](http://news.163.com/rank)：抓取网易顶贴最多的 100 条新闻
-* [百度实时热点](http://top.baidu.com/buzz?b=1)：实时更新每天的百度热点
-* [果壳网](https://www.guokr.com/)：果壳首页推荐，官方更新速度较慢，刚好可以了解些奇思妙想
-* 工作类：梅花、SocialBeta、数英网、艾瑞网
+- [网易热门新闻](http://news.163.com/rank)：抓取网易顶贴最多的 100 条新闻
+- [百度实时热点](http://top.baidu.com/buzz?b=1)：实时更新每天的百度热点
+- [果壳网](https://www.guokr.com/)：果壳首页推荐，官方更新速度较慢，刚好可以了解些奇思妙想
+- 工作类：梅花、SocialBeta、数英网、艾瑞网

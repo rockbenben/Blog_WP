@@ -18,7 +18,8 @@ tags:
 2018 年偶尔接触到 Jekyll，被其简洁的界面和便捷性打动，博客复活。本地用 Markdown 编辑排版，同步 github 发布，博客方向则从感想记录转移到知识输出。
 
 Jekyll 用着太舒服，不知不觉就过了三年。但随着文章越来越多，修改也愈加困难，甚至逐渐习惯只更新专栏，而将博客仅作初版发布。Jekyll 已经失去了知识记录参考的初衷，决定将博客从  Jekyll 迁移到 WordPress，文章的初次排版编辑依旧使用 Markdown。
-![](http://tc.seoipo.com/20210128124408.png)
+
+<img src="http://tc.seoipo.com/20210128124408.png" width="60%">
 
 ## 迁移步骤
 
@@ -44,7 +45,8 @@ Jekyll 用着太舒服，不知不觉就过了三年。但随着文章越来越�
 4. 登录 WordPress 后台，工具－导入－安装并启用插件 **FeedWordPress** 。自带 RSS 导入器许久不更新，极易报错，不推荐。
 
 5. 后台－Syndication－添加 rss 源如`xxx.com/feed-wp.xml`，`xxx.com`为你的博客地址。然后导入`feed-wp.xml`。
- ![](http://tc.seoipo.com/20210128120956.gif)
+
+   ![](http://tc.seoipo.com/20210128120956.gif)
 
 **参考资料**：
 

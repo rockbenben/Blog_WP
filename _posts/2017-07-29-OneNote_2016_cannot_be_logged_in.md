@@ -22,14 +22,14 @@ office 版的 OneNote 安装后无法登陆，点击下一步没反应。问题�
 
 问题找到了，接下来开始解决。
 
-**1. 打开 IE 设置-Internet 选项**
+1. 打开 IE 设置-Internet 选项
 
-![](https://pic2.zhimg.com/v2-717bf3c8b62748b62a04219435b8a75d_r.jpg)
+   ![](https://pic2.zhimg.com/v2-717bf3c8b62748b62a04219435b8a75d_r.jpg)
 
-**2. 启用脚本-Java 小程序脚本和活动脚本**
+2. 启用脚本-Java 小程序脚本和活动脚本
 
-![](https://pic4.zhimg.com/v2-25697b0c27aa8780c532b7a03a78dcbf_r.jpg)
+   ![](https://pic4.zhimg.com/v2-25697b0c27aa8780c532b7a03a78dcbf_r.jpg)
 
-**3. 打开 OneNote2016**
+3. 打开 OneNote2016
 
-![](https://pic4.zhimg.com/v2-ff20ef8aa22215cba64b879775dfdf4f_r.jpg)
+   ![](https://pic4.zhimg.com/v2-ff20ef8aa22215cba64b879775dfdf4f_r.jpg)

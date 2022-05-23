@@ -13,6 +13,7 @@ tags:
     - office 2016
 ---
 重新安装 Office 系统或更改安装组件时，经常提示：「找不到有效的安装源」，但实际这些文件都能在安装包内找到。
+
 ![](https://pic3.zhimg.com/v2-85bd2a49a47ee6d0c8eade7b3c249516_r.jpg)
 
 ## 解决方法
@@ -23,7 +24,8 @@ tags:
     计算机\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Office\Delivery\SourceEngine\Downloads\{90160000-00BA-0804-1000-0000000FF1CE}-C\Sources\PROPLUS16(RG)-6186D162
     ```
 
-2. 修改 Path 数据，改为安装包位置，比如`F:\5.软件资源\系统重装\SW_DVD5_Office_Professional_Plus_2016_64Bit_ChnSimp_MLF_X20-42426\groove.zh-cn`
+2. 修改 Path 数据，改为安装包位置，比如`F:\5.软件资源\系统重装\SW_DVD5_Office_Professional_Plus_2016_64Bit_ChnSimp_MLF_X20-42426\groove.zh-cn`。
+
     ![](https://pic3.zhimg.com/v2-650ede86dd191a8f0a1cd6e9b815377a_r.jpg)
 
 3. 在 C 盘建立安装组件

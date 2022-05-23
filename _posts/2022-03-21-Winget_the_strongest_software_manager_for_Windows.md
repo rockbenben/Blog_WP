@@ -38,16 +38,19 @@ tags:
 **winget install appName**
 
 执行 winget install 命令，就能完成指定程序的下载、哈希验证、静默设置安装三个步骤，不需要人工干预。
+
 ![](http://tc.seoipo.com/2022-05-05-17-13-24.png)
 
 **winget search appName**
 
 当未找到或不确定 appName 时，使用 winget search 可以锁定程序名称。以「飞书」为例，飞书不支持中文锁定，搜索后发现有国内版「Feishu」和海外版「Lark」两个版本，国内版使用命令`winget install feishu`。
+
 ![](http://tc.seoipo.com/2022-05-05-17-13-45.png)
 
 **winget upgrade --all**
 
 `winget upgrade --all`会静默升级所有支持 winget 的程序，适合更新强迫症患者。不过，该升级流程暂时没有筛选办法，无法单独剔除应用。
+
 ![](http://tc.seoipo.com/2022-05-05-17-14-00.png)
 
 `winget upgrade --all --include-unknown` 升级包括未知版本在内的所有应用，一般用不到，适用于强迫症患者。
@@ -57,9 +60,11 @@ tags:
 Microsoft Store 不支持 winget 官方源，因此 winget 不能使用应用名称安装商店应用。winget 安装 Microsoft Store 应用前**，**需要 `winget search` 命令找到应用 id 和来源。
 
 msstore 源指 Miscrosoft Store，其使用唯一标识符作为程序包的“Id”。因此，snipaste 安装命令为`winget install 9P1WXPKB68KX -s msstore`。
+
 ![](http://tc.seoipo.com/2022-05-05-17-14-23.png)
 
 安装中会要求接受协议，点 Y 确认即可。
+
 ![](http://tc.seoipo.com/2022-05-05-17-14-35.png)
 
 ## 批量部署程序-winstall
@@ -67,6 +72,7 @@ msstore 源指 Miscrosoft Store，其使用唯一标识符作为程序包的“I
 [winstall](https://winstall.app/) 是 winget install 的网页管理工具。借助 winstall，用户不懂代码，也能轻松使用 winget，一次性安装所有应用程序。
 
 操作非常简单，winstall 页面选中程序，即可打包程序组或生成批量安装命令。
+
 ![](http://tc.seoipo.com/2022-05-05-17-14-50.png)
 
 winstall 的应用搜索继承了 winget 的问题，部分国产软件不支持中文搜索，比如「坚果云」只支持英文名称「Nutstore」。希望这一问题，可以随着国内用户群增多而被解决。
@@ -76,6 +82,7 @@ winstall 的应用搜索继承了 winget 的问题，部分国产软件不支持
 ![winstall 搜索](http://tc.seoipo.com/2022-05-05-17-15-37.png)
 
 winstall 页面选好程序后，导出自动生成的批量安装命令，并在命令提示符 (cmd) 中执行，系统将自动下载并静默配置程序。
+
 ![](http://tc.seoipo.com/2022-05-05-17-15-55.png)
 
 ## 部署 bug
