@@ -90,7 +90,7 @@ tags:
 
 DVR-Scan 操作很简单，视频目录内右键点击「在终端打开」，执行默认输出命令即可得到过滤后的视频。12 小时的视频，处理时间在二十分钟。DVR-Scan 有个限制，只能导出为`.avi`视频。
 
-```#shell
+```shell
 #默认输出命令
 dvr-scan -i some_video.mp4 -o some_video_motion_only.avi
 

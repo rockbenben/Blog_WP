@@ -67,17 +67,17 @@ WordPressXMLRPCTools 能用 Markdown 生成博客，push 更新到 Github 后，
 
    依次点击该 repository 的 Setting - Code and automation - Actions - General，然后在 Workflow permissions 中开启「Read and write permissions」。
 
-2. `_post`中添加了文档，但并未在 README 中显示
-
-   文档后缀必须为「.md」，不支持 .markdown。
-
-3. 更新文章时报错`Error: Process completed with exit code 1`。
+2. 更新文章时报错`Error: Process completed with exit code 1`。
 
    检查服务器是否开启了防火墙，文章中含代码容易被误认木马，比如宝塔的 Nginx 防火墙。
 
-4. 修改文章后，WordPress 站的文章不会同步更新，将新增一篇文章。
+3. `_post`中添加了文档，但并未在 README 中显示
 
-   手动将新文章内容覆盖旧文章，并删除新文章。
+   文档后缀必须为「.md」，不支持 .markdown。
+
+4. 修改文章后，WordPress 站的文章不会同步更新，反而会新增一篇文章。
+
+   这是 WordPressXMLRPCTools 的 bug，作者反馈会自动覆盖，但大家都反馈覆盖失败。暂时只能手动将新文章内容覆盖旧文章，并删除新文章。
 
 5. WordPress 默认时间是 push 时间，而非文章发布时间。
 

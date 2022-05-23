@@ -22,13 +22,13 @@ Jekyll 环境官方安装指南：<https://www.jekyll.com.cn/docs/quickstart/>
 
 2. 安装 jekyll
 
-    ```#jekyll
+    ```jekyll
     gem install jekyll
     ```
 
 3. 进入 jekyll 网站，执行命令行，生成 Jekyll 静态网页
 
-    ```#jekyll
+    ```jekyll
     cd /www/wwwroot/blog
     jekyll build  #生成静态页面，否则无法显示最新内容
     ```
