@@ -56,7 +56,7 @@ tags:
 
 1. 相机：Windows 自带应用，录制方便，但不能调节输出选项。
 2. [FlashBack Express](https://www.flashbackrecorder.com/zh/express/)：能调节帧率，镜像，虚化背景，但免费版只支持 2 小时内的录制。
-3. [Bandicam](https://www.bandicam.cn/)：录制时能抑制噪音，同步扬声器音频，自由调节编码、帧率，但免费版只支持录制 10 分钟且有水印。
+3. [Bandicam](https://www.bandicam.cn/)：录制时能抑制噪音，同步录制扬声器音频，自由调节编码、帧率，但免费版只支持录制 10 分钟且有水印。
 4. [Capture](https://github.com/MathewSachin/Captura/releases/tag/v8.0.0)：免费开源，但项目已经停止在 2018，使用前需手动[配置 ffmpeg](https://blog.csdn.net/dglx_/article/details/122389601)，应用不能对单独摄像头进行录制，不能调节摄像头所占画幅，帧率调节也仅限录屏画面。
 5. [oCam](https://ohsoft.net/eng/ocam/intro.php?cate=1002)：打着免费招牌但有弹窗广告，且录制视频偏大。
 6. [ShareX](https://getsharex.com/)：免费开源强大的截图软件，也具备录屏功能，能调节编码和帧率，但只能单一录屏或录像。
