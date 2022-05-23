@@ -3,8 +3,8 @@
 > 盛年不重来，一日难再晨。
 
 ---start---
-
-## 目录 (2022 年 05 月 16 日更新)
+## 目录(2022年05月23日更新)
+[疫情封控两个月后，我对自己开始 24 小时的自我监控录像](https://newzone.top/p/2022-05-22-Surveillance_video_for_myself/)
 
 [不想学 Python，零基础也能用的自动化工具-UI.Vision RPA](https://newzone.top/p/2022-04-21-UIVision_RPA/)
 
@@ -24,7 +24,7 @@
 
 [普通人的生活原则－批评与自我批评](https://newzone.top/p/2021-05-31-Principles_Criticism_and_Self-Criticism/)
 
-[直播完全攻略：从直播小白到网红达人](https://newzone.top/p/2021-03-22-Live_Streaming/)
+[直播入门攻略：从直播小白到网红达人](https://newzone.top/p/2021-03-22-Live_Streaming/)
 
 [Jekyll 博客迁移－从 Markdown 到 WordPress](https://newzone.top/p/2021-01-27-Blog_Jekyll_to_WordPress/)
 
