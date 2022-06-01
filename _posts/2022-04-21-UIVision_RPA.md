@@ -87,11 +87,14 @@ UI.Vision RPA 没有使用门槛。只需打开 UI.Vision 插件，点击右上�
 
 ## 常见问题
 
-如何在浏览器外使用 UI.Vision RPA？
+1. 如何在浏览器外使用 UI.Vision RPA？
+   1. 地址栏输入 `chrome://extensions/`，找到扩展 UI.Vision RPA，点击按钮「详情」，启用「允许访问文件网址」。
+   2. 右键点击指定脚本，点击「Create autorun HTML」，将自动输出两个 html 文件。
+   3. 点击与脚本同名的 html 即可启动脚本。
 
-1. 右键点击指定脚本，点击「Create autorun HTML」，将自动输出两个 html 文件。
-2. 点击与脚本同名的 html 即可启动脚本。
-3. 地址栏输入 `chrome://extensions/`，找到扩展 UI.Vision RPA，点击按钮「详情」，启用「允许访问文件网址」。
+2. 本地运行自动化文件，报错`No tab with id`。
+   这是自动化内存泄漏造成的报错，需要手动点击右上角的「Play Macro」按钮执行命令。
+   如果你不想手动执行，可以用编辑器打开与脚本同名的 html 文件，找到`href="ui.vision.html?direct=1`，在这后面加入参数`&continueInLastUsedTab=0`。
 
 ## 总结
 
