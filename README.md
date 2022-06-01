@@ -3,7 +3,9 @@
 > 盛年不重来，一日难再晨。
 
 ---start---
-## 目录(2022年06月01日更新)
+
+## 目录 (2022 年 06 月 01 日更新)
+
 [疫情封控两个月后，我对自己开始 24 小时的自我监控录像](https://newzone.top/p/2022-05-22-Surveillance_video_for_myself/)
 
 [不想学 Python，零基础也能用的自动化工具-UI.Vision RPA](https://newzone.top/p/2022-04-21-UIVision_RPA/)
@@ -14,7 +16,7 @@
 
 [RSS 汇总篇：RSS 永久链接合集，拒绝 RSS 失效](https://newzone.top/p/2022-03-17-RSS_Persistent_Link_Collection/)
 
-[联想黑金超核会员情报分享-2022 年 4 月更新](https://newzone.top/p/2022-03-09-Lenovo_black_card_member/)
+[联想黑金超核会员情报分享 -2022 年 4 月更新](https://newzone.top/p/2022-03-09-Lenovo_black_card_member/)
 
 [Windows 应用商店 (Microsoft store) 打不开？100% 解决方法 - 兼容 Win10、Win11](https://newzone.top/p/2022-02-19-Microsoft_store_fixed/)
 
@@ -97,6 +99,8 @@
 [电脑上实现微信双开，无需网页版或第三方软件](https://newzone.top/p/2017-04-18-WeChat_multi_open/)
 
 ---end---
+
+## 发布工具
 
 [WordPressXMLRPCTools](https://github.com/zhaoolee/WordPressXMLRPCTools) 能用 Markdown 生成博客，push 更新到 Github 后，Github Actions 自动将文章更新到 WordPress，并将 WordPres 站的文章索引更新到 Github 仓库的`README.md`，供搜索引擎收录。
 
