@@ -3,11 +3,7 @@
 > 盛年不重来，一日难再晨。
 
 ---start---
-<<<<<<< Updated upstream
-## 目录(2022年05月30日更新)
-=======
-## 目录 (2022 年 05 月 23 日更新)
->>>>>>> Stashed changes
+## 目录(2022年06月01日更新)
 [疫情封控两个月后，我对自己开始 24 小时的自我监控录像](https://newzone.top/p/2022-05-22-Surveillance_video_for_myself/)
 
 [不想学 Python，零基础也能用的自动化工具-UI.Vision RPA](https://newzone.top/p/2022-04-21-UIVision_RPA/)
@@ -54,7 +50,7 @@
 
 [OpenVPN 随时随地回家的路](https://newzone.top/p/2019-03-31-OpenVPN_back_to_home/)
 
-[加速打字，PC 端的语音输入方案](https://newzone.top/p/2018-12-28-Voice_input_try/)
+[等了十年，PC 端能用的语音输入方案来了](https://newzone.top/p/2018-12-28-Voice_input_try/)
 
 [RSS 进阶篇：Huginn - 真·为任意网页定制 RSS 源（PhantomJs 抓取）](https://newzone.top/p/2018-10-07-Huginn_scraping_any_website/)
 
