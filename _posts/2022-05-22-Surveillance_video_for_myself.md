@@ -60,9 +60,9 @@ tags:
 4. [Mirillis Action!](https://mirillis.com/zh/products/action.html)：高帧率录制游戏，自动分割视频，自定义叠加元素，但输入帧率不能自由调整，最低只能 15 帧，试用期 30 天。
 5. [oCam](https://ohsoft.net/eng/ocam/intro.php?cate=1002)：打着免费招牌但有弹窗广告，且录制视频偏大。
 6. [ShareX](https://getsharex.com/)：免费开源强大的截图软件，也具备录屏功能，能调节编码和帧率，但只能单一录屏或录像。
-7. [Capture](https://github.com/MathewSachin/Captura/releases/tag/v8.0.0)：免费开源，使用前需手动[配置 ffmpeg](https://blog.csdn.net/dglx_/article/details/122389601)，自定义叠加元素，但项目已经停止在 2018，而且应用不能调节摄像头的帧率。
+7. [Capture](https://github.com/MathewSachin/Captura/releases/tag/v8.0.0)：免费开源，使用前需手动[配置 ffmpeg](https://blog.csdn.net/dglx_/article/details/122389601)，自定义叠加元素，但项目已于 2018 年停止更新。推荐录制配置为`FFmpeg:x264|AAC, FPS:10, Quality:30%`。
 8. [OBS](https://obsproject.com/)：免费开源直播软件，也可以录制视频，操作性极强，但我工作时同时在多路推流直播，无法同时录制摄像头。
-9. [VLC](https://www.videolan.org/vlc/)：免费开源视频软件，能调节输出视频的编码、帧率、格式，几乎全能，相同环节下输出视频最小，但操作麻烦，只能单一录屏或录像，暂停录制容易有 bug。
+9.  [VLC](https://www.videolan.org/vlc/)：免费开源视频软件，能调节输出视频的编码、帧率、格式，几乎全能，相同环节下输出视频最小，但操作麻烦，只能单一录屏或录像，暂停录制容易有 bug。
 
 Bandicam、Mirillis Action！录制时，电脑无法进入睡眠，ManicTime 也不能检测到你的离开状态。
 
@@ -91,7 +91,7 @@ Bandicam、Mirillis Action！录制时，电脑无法进入睡眠，ManicTime �
 群里 @chen 推荐了 [DVR-Scan](https://github.com/Breakthrough/DVR-Scan)，能从画面判断是否需要过滤。
 > DVR-Scan 是一个跨平台命令行（CLI）应用程序，可以自动检测视频文件中的运动事件（例如安全摄像头镜头）。除了定位每个运动事件的时间和持续时间外，DVR 扫描还将每个运动事件的片段保存到一个新的单独的视频剪辑中。DVR-Scan 免费开源软件（FOSS）是用 Python 编写的，并且基于 Numpy 和 OpenCV，而且可以扩展和黑客入侵。
 
-DVR-Scan 操作很简单，视频目录内右键点击「在终端打开」，执行默认输出命令即可得到过滤后的视频。12 小时的视频，处理时间在二十分钟。DVR-Scan 有个限制，只能导出为`.avi`视频。
+DVR-Scan 操作很简单，视频目录内右键点击「在终端打开」，执行默认输出命令即可得到过滤后的视频。12 小时的视频，处理用时二十分钟，会占用大量 CPU。有点要注意，DVR-Scan 有个限制，只能导出为`.avi`视频。
 
 ```shell
 #默认输出命令
@@ -116,7 +116,7 @@ DVR-Scan 不同命令的测试效果如下：
 
 另外，DVR-Scan 可以使用`-roi`命令，指定监测区域，只对该区域的动作进行监测。
 
-DVR-Scan 进阶命令查看[官方文档](https://dvr-scan.readthedocs.io/en/latest/guide/examples/)。
+DVR-Scan 进阶命令查看 [官方文档](https://dvr-scan.readthedocs.io/en/latest/guide/examples/)。
 
 ## 播放降噪：PotPlayer
 
