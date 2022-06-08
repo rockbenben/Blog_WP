@@ -1,8 +1,8 @@
 ---
 layout:       post
-title:        "－从 Markdown 到 WordPress"
+title:        "集自动发布、本地管理于一身：WordPress 博客管理方案分享"
 subtitle:     "18 年博客探索总结"
-date:         2022-05-29
+date:         2022-06-07
 author:       "Benson"
 header-img:   img/post-bg-20180108.jpg
 header-mask:  0.3
@@ -50,7 +50,7 @@ tags:
 
 ## 发布工具：WordPressXMLRPCTools
 
-[WordPressXMLRPCTools](https://github.com/zhaoolee/WordPressXMLRPCTools) 能用 Markdown 生成博客，推送更新到 Github 后，通过 Github Actions 自动将文章更新到 WordPress，并将 WordPress 网站的文章索引更新到 Github 仓库的 README.md，供搜索引擎收录。​
+[WordPressXMLRPCTools](https://github.com/zhaoolee/WordPressXMLRPCTools) 能用 Markdown 生成博客，推送更新到 Github 后，通过 Github Actions 自动将文章更新到 WordPress，并将 WordPress 网站的文章索引更新到 Github 仓库的 README.md，供搜索引擎收录，方便 Windows 用户使用。iOS 用户有更成熟的发布工具，如 @ern 推荐的 MWeb/Ulysses，同步 WordPress 更简单。
 
 基于 WordPressXMLRPCTools，我做了两点修改：​
 
@@ -66,7 +66,7 @@ tags:
 1. 进入[项目页面](https://github.com/rockbenben/Blog_WP)，点击「Use this template」，复制模板文件。
 2. 回到你新建的 repo，删除 _post 文件夹中的所有文件，参照主目录下`example_article.md`的格式编辑文章。
 3. 按[WordPressXMLRPCTools 安装步骤](https://github.com/zhaoolee/WordPressXMLRPCTools#%E7%94%A8github-actions%E5%86%99markdown%E6%96%87%E7%AB%A0%E8%87%AA%E5%8A%A8%E6%9B%B4%E6%96%B0%E5%88%B0wordpress)执行，如遇报错，查看下方使用问题。
-4. 修改主目录下的`index.html`和`_sidebar.md`，调整 docsify 网页设置。
+4. 修改主目录下的`index.html`和`_sidebar.md`文件，调整 docsify 网页设置。
    - `index.html`修改 docsify 网页标题、描述和关键词。
    - `_sidebar.md`修改 docsify 网页侧边栏，加入博客文章的标题和位置。
 
@@ -74,7 +74,9 @@ tags:
 
 #### 文章发布不成功
 
-`_post`文件夹添加了文档，但同步后，`README.md`和 WordPress 并没更新文章。
+`_post`文件夹添加了文档，但同步后，`README.md`和 WordPress 并没有添加文章。
+
+检查以下两点：
 
 - 文章后缀必须为「.md」，不支持「.markdown」或其他后缀格式。
 - 进入 repo 页面中的`Actions`，检查最近一次的 update 是否正确。
@@ -83,7 +85,7 @@ tags:
 
 #### Error: git denied to github-actions[bot]
 
-遇到 GitHub Actions 报错：`git denied to github-actions[bot]`和`Process completed with exit code 128`。
+遇到 GitHub Actions 报错：`git denied to github-actions[bot]`或`Process completed with exit code 128`。
 
 依次点击该 repository 的`Setting - Code and automation - Actions - General`，然后在 Workflow permissions 中开启「Read and write permissions」。
 
@@ -119,7 +121,7 @@ tags:
 
 ### 飞书文档管理
 
-视觉和文章关键信息，为解决这几个问题，我用飞书多维表格保存本地 Markdown 文章的标题、本地位置、链接和封面。
+飞书文档功能与 Notion、Airtable 类似，可将文字、链接、图片聚合在同一页面，操作便捷。
 
 打开飞书多维表格，填入本地 Markdown 文章的标题、本地位置、链接、标签和封面，即可聚合本地文章的关键信息。将表格视图切换为「画册视图」，文档管理界面更达到 90% 的 Notion 视觉效果。
 
@@ -154,11 +156,14 @@ docsify 使用简单，如果使用了前文我修改过的[发布工具](https:
 
 40% 的网站基于 WordPress 架构，因此 WordPress 有超多的主题和插件，可以实现你想要的功能，比如 RSS、Newsletter。
 
-如果你不是小白，又拥有较多的粉丝，可以使用 [Substack](https://substack.com/) 和 [竹白](https://zhubai.love/) 来分发博客。这两者都支持 Newsletter 付费订阅。只针对国内用户的话，竹白可支持微信订阅。
+如果你拥有较多的粉丝，可以使用 [Substack](https://substack.com/) 和 [竹白](https://zhubai.love/) 来分发博客。这两者都支持 Newsletter 付费订阅。只针对国内用户的话，竹白可支持微信订阅。
 
 ## 后续
 
 比起原来的 Jekyll，新方案的配置要复杂些，但使用并不难，推荐稿件多的人采用。
+
 折腾新方案的过程中，我发现了篇 2021 年初写的文章。当时，稿子写到 90%，我就去忙其他事，忘了这篇文章。等到这次被发现，它已经在草稿箱待了一年半。
+
 用了新方案，稿件管理会变得很简单，稿件遗忘、找不到的情况也会减少许多。最近我出稿速度大增，也都跟这有关，都是从草稿箱捡回来的半成品。
-写完这篇稿子，疫情封控也正好结束，终于可以出门了，希望永远别给我「免费假期」了。
+
+写完这篇稿子，疫情封控也正好结束，终于可以出门了，希望永远别再给「免费假期」了。

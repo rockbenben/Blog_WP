@@ -3,7 +3,7 @@
 > 盛年不重来，一日难再晨。
 
 ---start---
-## 目录(2022年06月07日更新)
+## 目录 (2022 年 06 月 07 日更新)
 [疫情封控两个月后，我对自己开始 24 小时的自我监控录像](https://newzone.top/p/2022-05-22-Surveillance_video_for_myself/)
 
 [不想学 Python，零基础也能用的自动化工具-UI.Vision RPA](https://newzone.top/p/2022-04-21-UIVision_RPA/)
@@ -14,7 +14,7 @@
 
 [RSS 汇总篇：RSS 永久链接合集，拒绝 RSS 失效](https://newzone.top/p/2022-03-17-RSS_Persistent_Link_Collection/)
 
-[联想黑金超核会员情报分享-2022 年 4 月更新](https://newzone.top/p/2022-03-09-Lenovo_black_card_member/)
+[联想黑金超核会员情报分享 -2022 年 4 月更新](https://newzone.top/p/2022-03-09-Lenovo_black_card_member/)
 
 [Windows 应用商店 (Microsoft store) 打不开？100% 解决方法 - 兼容 Win10、Win11](https://newzone.top/p/2022-02-19-Microsoft_store_fixed/)
 
@@ -113,7 +113,7 @@
 
 ## 使用流程
 
-1. 进入项目页面，选择使用 [原版](https://github.com/zhaoolee/WordPressXMLRPCTools) 或 [修改版](https://github.com/rockbenben/Blog_WP)，点击「Use this template」，复制模板文件。
+1. 进入项目页面，选择 [原版](https://github.com/zhaoolee/WordPressXMLRPCTools) 或 [修改版](https://github.com/rockbenben/Blog_WP)，点击「Use this template」，复制模板文件。
 2. 回到你新建的 repo，删除 _post 文件夹中的所有文件，参照主目录下`example_article.md`的格式编辑文章。
 3. 按[WordPressXMLRPCTools 安装步骤](https://github.com/zhaoolee/WordPressXMLRPCTools#%E7%94%A8github-actions%E5%86%99markdown%E6%96%87%E7%AB%A0%E8%87%AA%E5%8A%A8%E6%9B%B4%E6%96%B0%E5%88%B0wordpress)执行，如遇报错，查看下方使用问题。
 4. 修改主目录下的`index.html`和`_sidebar.md`，调整 docsify 网页设置。
@@ -133,7 +133,7 @@
 
 ### Error: git denied to github-actions[bot]
 
-遇到 GitHub Actions 报错：`git denied to github-actions[bot]`和`Process completed with exit code 128`。
+遇到 GitHub Actions 报错：`git denied to github-actions[bot]`或`Process completed with exit code 128`。
 
 依次点击该 repository 的`Setting - Code and automation - Actions - General`，然后在 Workflow permissions 中开启「Read and write permissions」。
 
