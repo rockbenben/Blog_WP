@@ -3,7 +3,7 @@
 > 盛年不重来，一日难再晨。
 
 ---start---
-## 目录(2022年06月08日更新)
+## 目录(2022年06月11日更新)
 [集自动发布、本地管理于一身：WordPress 博客管理方案分享](https://newzone.top/p/2022-06-07-Blog_md_to_WordPress/)
 
 [疫情封控两个月后，我对自己开始 24 小时的自我监控录像](https://newzone.top/p/2022-05-22-Surveillance_video_for_myself/)
