@@ -53,7 +53,13 @@ tags:
 
 [WordPressXMLRPCTools](https://github.com/zhaoolee/WordPressXMLRPCTools) 能用 Markdown 生成博客，推送更新到 Github 后，通过 Github Actions 自动将文章更新到 WordPress，并将 WordPress 网站的文章索引更新到 Github 仓库的 README.md，供搜索引擎收录，方便 Windows 用户使用。iOS 用户有更成熟的发布工具，如 @ern 推荐的 MWeb/Ulysses，同步 WordPress 更简单。
 
-基于 WordPressXMLRPCTools，我做了两点修改：​
+基于 WordPressXMLRPCTools，我做了三点修改：​
+
+- 发布设置：修改`main.py`文件
+  - 修复无法覆盖更新文章的 bug。
+  - 调整项目页的时间格式。
+  - 增加文章子的最近编辑时间提示。
+  - 将文章页尾部的本文永久更新地址从标题格式调整为常规字母。
 
 - 草稿箱：`_post`路径内新建`TEMP`文件夹，用于存放文章草稿。WordPress 推送程序会忽略`_post`子文件夹的内容，换言之，`TEMP`文件夹不会发布到 WordPress 网站。
 
@@ -65,7 +71,7 @@ tags:
 ### 使用流程
 
 1. 进入[项目页面](https://github.com/rockbenben/Blog_WP)，点击「Use this template」，复制模板文件。
-2. 回到你新建的 repo，删除 \_post 文件夹中的所有文件，参照主目录下`example_article.md`的格式编辑文章。
+2. 回到你新建的 repo，删除 \_post 文件夹中的所有文件，参照主目录下`example_article.md`的格式编辑文章。注意：md 文件名不能包含大写字母。
 3. 按[WordPressXMLRPCTools 安装步骤](https://github.com/zhaoolee/WordPressXMLRPCTools#%E7%94%A8github-actions%E5%86%99markdown%E6%96%87%E7%AB%A0%E8%87%AA%E5%8A%A8%E6%9B%B4%E6%96%B0%E5%88%B0wordpress)执行，如遇报错，查看下方使用问题。
 4. 修改主目录下的`index.html`和`_sidebar.md`文件，调整 docsify 网页设置。
    - `index.html`修改 docsify 网页标题、描述和关键词。
@@ -96,11 +102,12 @@ tags:
 
 #### 无法覆盖更新原文章 ​
 
-修改旧文章并同步后，WordPress 站的文章没同步修改，而是新增了一篇相同的文章。这是 WordPressXMLRPCTools 项目的 bug。项目作者 @zhaoolee 说，「**只要不改文件名，就可以通过更新 markdown，更新对应的文章内容。**」​
+修改旧文章并同步后，WordPress 站的文章没同步修改，而是新增了一篇相同的文章。
 
-但我和 @clairyitinggu 在未改文件名的情况下，都没能更新对应文章内容，而是重新发布了篇新文章。如果你也遇到相同的问题，建议手动将新文章内容覆盖旧文章，然后删除新文章。​
+- 检查 md 文件名有没有出现大写字母，有没有更改文件名。
+- 进入 WordPress 后台，设置 - 固定链接，选中自定义结构，并将文章链接设为`/p/%postname%`。
 
-这个 bug 可以当作是强提醒。当 WordPress 新增了旧文章，你就被提醒要在其他平台修改该文章，让文章版本保持统一。​
+如果修改版在检查后依然出现此问题，建议手动将新文章内容覆盖旧文章，然后删除新文章。​ 这个 bug 可以当作是强提醒。当 WordPress 新增了旧文章，你就被提醒要在其他平台修改该文章，让文章版本保持统一。​
 
 #### WordPress 发布时间与实际不符 ​
 
