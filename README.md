@@ -4,6 +4,8 @@
 
 ---start---
 ## 目录 (2022年06月20日更新)
+[test_01](https://newzone.top/p/2022-06-20-test_01/)
+
 [集自动发布、本地管理于一身：WordPress 博客管理方案分享](https://newzone.top/p/2022-06-07-Blog_md_to_WordPress/)
 
 [疫情封控两个月后，我对自己开始 24 小时的自我监控录像](https://newzone.top/p/2022-05-22-Surveillance_video_for_myself/)
@@ -15,8 +17,6 @@
 [一键安装 99 个程序，Windows 最强软件管理器](https://newzone.top/p/2022-03-21-Winget_the_strongest_software_manager_for_Windows/)
 
 [RSS 汇总篇：RSS 永久链接合集，拒绝 RSS 失效](https://newzone.top/p/2022-03-17-RSS_Persistent_Link_Collection/)
-
-[联想黑金超核会员情报分享-2022 年 4 月更新](https://newzone.top/p/2022-03-09-Lenovo_black_card_member/)
 
 [Windows 应用商店 (Microsoft store) 打不开？100% 解决方法 - 兼容 Win10、Win11](https://newzone.top/p/2022-02-19-Microsoft_store_fixed/)
 
