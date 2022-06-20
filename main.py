@@ -260,15 +260,16 @@ def main():
             link = sha1_key.split(".")[0]
             content = markdown.markdown(content + href_info("https://"+domain_name+"/p/"+link+"/"), extensions=['tables', 'fenced_code'])
             # 如果文章无 id，则直接新建
-            if(("https://"+domain_name+"/p/"+link+"/" in link_id_dic.keys()) == False):
+            # 去掉链接尾部的/符号，原本为if(("https://"+domain_name+"/p/"+link+"/" in link_id_dic.keys()) == False):
+            if(("https://"+domain_name+"/p/"+link in link_id_dic.keys()) == False):
                 new_post(title, content, link, post_status, terms_names_post_tag, terms_names_category)
-                print("新建文章"+"https://"+domain_name+"/p/"+link+"/")
+                print("新建文章"+"https://"+domain_name+"/p/"+link)
             # 如果文章有 id, 则更新文章
             else:
                 # 获取 id
                 id = link_id_dic["https://"+domain_name+"/p/"+link+"/"]
                 edit_post(id, title, content, link, post_status, terms_names_post_tag, terms_names_category)
-                print("更新文章"+"https://"+domain_name+"/p/"+link+"/")
+                print("更新文章"+"https://"+domain_name+"/p/"+link)
             print(link_id_dic.keys())
     # 4. 重建 md_sha1_dic
     rebuild_md_sha1_dic(os.path.join(os.getcwd(), ".md_sha1"), os.path.join(os.getcwd(), "_posts"))
