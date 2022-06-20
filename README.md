@@ -3,7 +3,7 @@
 > 盛年不重来，一日难再晨。
 
 ---start---
-## 目录(2022年06月11日更新)
+## 目录 (2022 年 06 月 11 日更新)
 [集自动发布、本地管理于一身：WordPress 博客管理方案分享](https://newzone.top/p/2022-06-07-Blog_md_to_WordPress/)
 
 [疫情封控两个月后，我对自己开始 24 小时的自我监控录像](https://newzone.top/p/2022-05-22-Surveillance_video_for_myself/)
@@ -16,7 +16,7 @@
 
 [RSS 汇总篇：RSS 永久链接合集，拒绝 RSS 失效](https://newzone.top/p/2022-03-17-RSS_Persistent_Link_Collection/)
 
-[联想黑金超核会员情报分享-2022 年 4 月更新](https://newzone.top/p/2022-03-09-Lenovo_black_card_member/)
+[联想黑金超核会员情报分享](https://newzone.top/p/2022-03-09-Lenovo_black_card_member/)
 
 [Windows 应用商店 (Microsoft store) 打不开？100% 解决方法 - 兼容 Win10、Win11](https://newzone.top/p/2022-02-19-Microsoft_store_fixed/)
 
@@ -109,7 +109,7 @@
 - 草稿箱：`_post`路径内新建`TEMP`文件夹，用于存放文章草稿。WordPress 推送程序会忽略`_post`子文件夹的内容，换言之，`TEMP`文件夹不会发布到 WordPress 网站。
 
 - 文章聚合页：主目录新增`.nojekyll`，`index.html`，`_sidebar.md`文件，引入文档生成工具 docsify，将博客文章聚合在一个页面，方便快速定位和位置管理。
-  示例：[https://rockbenben.github.io/Blog_WP/](https://rockbenben.github.io/Blog_WP/) 或 [https://docs.newzone.top/](https://docs.newzone.top/)
+  示例：[https://rockbenben.github.io/Blog_WP/](https://rockbenben.github.io/Blog_WP/)
 
   ![](http://tc.seoipo.com/2022-05-26-20-12-56.png)
 
