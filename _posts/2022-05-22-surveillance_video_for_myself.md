@@ -129,7 +129,7 @@ DVR-Scan 进阶命令查看 [官方文档](https://dvr-scan.readthedocs.io/en/la
 - **关闭规格化**：这时声音就不会那么大，也不会过于杂了，这时的声音已经相比处理前干净多了。
 - **开启超高音**：打开均衡器，选择「超高音」方案。
 
-  ![PotPlayer 降噪设置](http://tc.seoipo.com/2022-05-19-10-47-18.png)
+  ![PotPlayer 播放降噪设置](http://tc.seoipo.com/2022-05-19-10-47-18.png)
 
 设置完成后，播放时 PotPlayer 会自动对视频进行降噪，无需额外花时间处理视频。
 
