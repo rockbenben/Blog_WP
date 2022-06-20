@@ -1,17 +1,18 @@
 ---
-layout:       post
-title:        "OneNote 2016 无法登陆问题解决"
-subtitle:     ""
-date:         2017-07-29 15:19:00
-author:       "Benson"
-header-img:   img/post-bg-20180108.jpg
-header-mask:  0.3
-catalog:      true
+layout: post
+title: "OneNote 2016 无法登陆问题解决"
+subtitle: ""
+date: 2017-07-29 15:19:00
+author: "Benson"
+header-img: img/post-bg-20180108.jpg
+header-mask: 0.3
+catalog: true
 categories:
-    - 系统
+  - 系统
 tags:
-    - OneNote 2016
+  - OneNote 2016
 ---
+
 office 版的 OneNote 安装后无法登陆，点击下一步没反应。问题的根源出在 IE 的设置上。
 
 ![](https://pic4.zhimg.com/v2-d5945359b896ffd09d9973e9597ec06b_r.jpg)

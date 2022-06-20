@@ -1,18 +1,19 @@
 ---
-layout:       post
-title:        "OpenVPN 随时随地回家的路"
-subtitle:     ""
-date:         2019-03-31
-author:       "Benson"
-header-img:   img/post-bg-20180108.jpg
-header-mask:  0.3
-catalog:      true
+layout: post
+title: "OpenVPN 随时随地回家的路"
+subtitle: ""
+date: 2019-03-31
+author: "Benson"
+header-img: img/post-bg-20180108.jpg
+header-mask: 0.3
+catalog: true
 categories:
-    - 网络
+  - 网络
 tags:
-    - OpenVPN
-    - 内网穿透
+  - OpenVPN
+  - 内网穿透
 ---
+
 有时在外面需要访问家里的文件，或直接利用家中网络设置翻墙。为此，利用路由器 OpenVPN 搭建了一条回家的路。
 
 ## 内网穿透

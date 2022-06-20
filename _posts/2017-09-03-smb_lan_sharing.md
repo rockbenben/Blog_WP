@@ -1,17 +1,18 @@
 ---
-layout:       post
-title:        "加速 SMB 协议，让 PC 变身小型 NAS"
-subtitle:     ""
-date:         2017-09-03 20:57:00
-author:       "Benson"
-header-img:   img/post-bg-20180108.jpg
-header-mask:  0.3
-catalog:      true
+layout: post
+title: "加速 SMB 协议，让 PC 变身小型 NAS"
+subtitle: ""
+date: 2017-09-03 20:57:00
+author: "Benson"
+header-img: img/post-bg-20180108.jpg
+header-mask: 0.3
+catalog: true
 categories:
-    - 系统
+  - 系统
 tags:
-    - smb
+  - smb
 ---
+
 **开启 SMB 协议**：
 
 1. 打开「控制面板」窗口，在「类别」查看方式下单击「程序」。

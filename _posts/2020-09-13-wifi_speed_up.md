@@ -1,17 +1,18 @@
 ---
-layout:       post
-title:        "无线路由调整，加快 WIFI 速度"
-subtitle:     ""
-date:         2020-09-13
-author:       "Benson"
-header-img:   img/post-bg-20180108.jpg
-header-mask:  0.3
-catalog:      true
+layout: post
+title: "无线路由调整，加快 WIFI 速度"
+subtitle: ""
+date: 2020-09-13
+author: "Benson"
+header-img: img/post-bg-20180108.jpg
+header-mask: 0.3
+catalog: true
 categories:
-    - 网络
+  - 网络
 tags:
-    - WIFI
+  - WIFI
 ---
+
 拖慢 WIFI 速度的最大元凶是**无线信号合并**。
 
 「双频合一」、「Smart Connect」听起来很美，信号不好就立刻切换信号更强的频道，速度慢就切换为更快的频道，似乎是个完美的方案。但使用后就知道它们的规则多傻了，速度慢到让你想用手机流量。任何将无线信号合一的功能都不推荐使用。

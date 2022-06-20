@@ -1,28 +1,28 @@
 ---
-layout:       post
-title:        "光猫改造 篇一：超级管理员密码破解（E8-C-EPON RG201O-CA_V1A2)"
-subtitle:     ""
-date:         2017-10-18 18:28:00
-author:       "Benson"
-header-img:   img/post-bg-20180108.jpg
-header-mask:  0.3
-catalog:      true
+layout: post
+title: "光猫改造 篇一：超级管理员密码破解（E8-C-EPON RG201O-CA_V1A2)"
+subtitle: ""
+date: 2017-10-18 18:28:00
+author: "Benson"
+header-img: img/post-bg-20180108.jpg
+header-mask: 0.3
+catalog: true
 categories:
-    - 网络
+  - 网络
 tags:
-    - 光猫
+  - 光猫
 ---
+
 ## 为什么要获得光猫超级密码？
 
-_端口映射 (eMule high ID)、桥接模式（路由器掌控拨号，不能兼容固定电话）。_网上关于光猫超级密码的获取攻略都在 2012-14 年，已经无法使用了。
+*端口映射 (eMule high ID)、桥接模式（路由器掌控拨号，不能兼容固定电话）。*网上关于光猫超级密码的获取攻略都在 2012-14 年，已经无法使用了。
 
-测试环境：
-```text
+### 测试环境
+
 运营商：上海电信
 设备：贝尔 E8-C-EPON
-硬件版本:  RG201O-CA_V1A2
-软件版本:  E201OCAA2V11S
-```
+硬件版本：RG201O-CA_V1A2
+软件版本：E201OCAA2V11S
 
 ## 光猫超级密码破解步骤
 

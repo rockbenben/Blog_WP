@@ -1,22 +1,23 @@
 ---
-layout:       post
-title:        "光猫改造 篇二：光猫 + 路由器，实现端口映射"
-subtitle:     ""
-date:         2017-10-18 22:00:00
-author:       "Benson"
-header-img:   img/post-bg-20180108.jpg
-header-mask:  0.3
-catalog:      true
+layout: post
+title: "光猫改造 篇二：光猫 + 路由器，实现端口映射"
+subtitle: ""
+date: 2017-10-18 22:00:00
+author: "Benson"
+header-img: img/post-bg-20180108.jpg
+header-mask: 0.3
+catalog: true
 categories:
-    - 网络
+  - 网络
 tags:
-    - 光猫
+  - 光猫
 ---
-光猫默认没有管理权限，需要先获得光猫的超管密码，参考[光猫改造 篇一：超级管理员密码破解（E8-C-EPON  RG201O-CA_V1A2）](https://newzone.top/p/2017-10-18-Light_cat_E8-C-EPON_admin/)
+
+光猫默认没有管理权限，需要先获得光猫的超管密码，参考[光猫改造 篇一：超级管理员密码破解（E8-C-EPON RG201O-CA_V1A2）](https://newzone.top/p/2017-10-18-Light_cat_E8-C-EPON_admin/)
 
 **光猫端口映射步骤：**
 
-1. 登陆光猫管理地址 192.168.1.1 ，应用→高级 NAT 设置→DMZ 设置，启用 DMZ 主机绑定路由器地址（路由器 WA 口 IP 地址-192.168.1.X)
+1. 登陆光猫管理地址 192.168.1.1，应用 → 高级 NAT 设置 →DMZ 设置，启用 DMZ 主机绑定路由器地址（路由器 WAN 口 IP 地址-192.168.1.X)
 
    ![](https://pic2.zhimg.com/v2-658d5433201b79da169a520f4b19d495_r.jpg)
 

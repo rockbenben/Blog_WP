@@ -1,17 +1,18 @@
 ---
-layout:       post
-title:        "Windows 应用商店 (Microsoft store) 打不开？100% 解决方法 - 兼容 Win10、Win11"
-subtitle:     ""
-date:         2022-02-19
-author:       "Benson"
-header-img:   img/post-bg-20180108.jpg
-header-mask:  0.3
-catalog:      true
+layout: post
+title: "Windows 应用商店 (Microsoft store) 打不开？100% 解决方法 - 兼容 Win10、Win11"
+subtitle: ""
+date: 2022-02-19
+author: "Benson"
+header-img: img/post-bg-20180108.jpg
+header-mask: 0.3
+catalog: true
 categories:
-    - 系统
+  - 系统
 tags:
-    - Microsoft store
+  - Microsoft store
 ---
+
 Microsoft store 页面无法打开，提示需要联网或刷新。大多数更新都将原因归咎于系统更新或 DNS 设置，但真实原因是 **IE 设置太旧了**。
 
 ![](http://tc.seoipo.com/2022-05-05-16-48-55.png)
@@ -34,7 +35,7 @@ Microsoft store 页面无法打开，提示需要联网或刷新。大多数更�
 
 网银用户会重复出现该问题，重新勾选 TLS 即可解决。
 
-如果你依然无法访问，可尝试重置网络连接、DNS、缓存、应用商店设置，操作参考[Microsoft Store 打不开，代码: 0x80131500](https://answers.microsoft.com/zh-hans/windows/forum/all/microsoft/43acd62e-a11e-449c-9fa4-50931ad38565)。
+如果你依然无法访问，可尝试重置网络连接、DNS、缓存、应用商店设置，操作参考[Microsoft Store 打不开，代码：0x80131500](https://answers.microsoft.com/zh-hans/windows/forum/all/microsoft/43acd62e-a11e-449c-9fa4-50931ad38565)。
 
 完整操作流程：
 

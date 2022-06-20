@@ -1,18 +1,19 @@
 ---
-layout:       post
-title:        "RSS 完结篇：节省千元服务费，RSSHub、Huginn 转移 NAS"
-subtitle:     ""
-date:         2021-10-23
-author:       "Benson"
-header-img:   img/post-bg-20180108.jpg
-header-mask:  0.3
-catalog:      true
+layout: post
+title: "RSS 完结篇：节省千元服务费，RSSHub、Huginn 转移 NAS"
+subtitle: ""
+date: 2021-10-23
+author: "Benson"
+header-img: img/post-bg-20180108.jpg
+header-mask: 0.3
+catalog: true
 categories:
-    - 自动化
-tags: 
-    - nas
-    - rss
+  - 自动化
+tags:
+  - nas
+  - rss
 ---
+
 作为重度 RSS 用户，90% 的讯息来自 rss。RSSHub 生成主流媒体 rss，Huginn 定制个性化 rss，TinyTinyRSS 过滤 rss，这帮我**从 3 小时的阅读时间节省到只需 1 小时**。
 
 这些服务原本托管在 1 核 1G 的低配服务器上，不过配置过低，频繁重启，维护成本持续上升。接着尝试了国外 2 核 4G 的低端服务器，超售严重，性能极度不稳定。买国外的低端服务器 (特别是**俄罗斯服务器**)，就是把钱丢水里了。
@@ -45,10 +46,11 @@ tags:
 1. **关闭光猫路由：**电话联系宽带运营商，要求关闭光猫的路由功能。少数运营商默认不提供公网 IP，也可以在这环节，让运营商给你分配公网 IP。碰到死板的客服，会找你开通理由，不要正面回答，借口可以网络搜索。
 2. 家用宽带多为动态 ip，且无对外 80 接口。使用动态 DNS 插件，可让域名时刻绑定家用宽带 ip，达到固定链接打开 NAS 服务。
 3. **动态 DNS(DDNS) 设置**，以下以 openwrt+cloudflare 为例。
-    1. cloudflare 动态 DNS 配置 ([教程](https://p3terx.com/archives/openwrt-cloudflare-ddns.html))：系统－软件包，搜索「cloudflare」，安装 ddns-scripts_cloudflare.com-v4，然后重启路由器。
-    2. 服务－动态 DNS，cloudflare 登录密码为 [cloudflare API](https://dash.cloudflare.com/profile/api-tokens) 中的 Glodbal API Key。阿里云用户可在 RAM 访问控制中创建专门的 AccessKey。
 
-        ![](http://tc.seoipo.com/2022-05-05-14-41-31.png)
+   1. cloudflare 动态 DNS 配置 ([教程](https://p3terx.com/archives/openwrt-cloudflare-ddns.html))：系统－软件包，搜索「cloudflare」，安装 ddns-scripts_cloudflare.com-v4，然后重启路由器。
+   2. 服务－动态 DNS，cloudflare 登录密码为 [cloudflare API](https://dash.cloudflare.com/profile/api-tokens) 中的 Glodbal API Key。阿里云用户可在 RAM 访问控制中创建专门的 AccessKey。
+
+      ![](http://tc.seoipo.com/2022-05-05-14-41-31.png)
 
 4. 如果没有宽带为内网，不能提供公网 ip，可借助花生壳等内网穿透工具达到类似效果。
 
@@ -87,14 +89,14 @@ RSS 系列的初衷是，2017 年算法推送的愈加泛滥，定制化 rss 变
 
 汇总 RSS 永久订阅链接，feeds 均通过 RSSHub 和 Huginn 制作。如果有兴趣自己制作 RSS，可查看以下教程。
 
-- [RSS 入门篇：FEED43&FeedEx-为静态网页定制 RSS 源](https://newzone.top/p/2017-04-22-RSS_FEED43_FeedEx/)
+- [RSS 入门篇：FEED43&FeedEx-为静态网页定制 RSS 源](https://newzone.top/p/2017-04-22-rss_feed43_feedex/)
 
-- [RSS 进阶篇：Huginn - 真·为任意网页定制 RSS 源（PhantomJs 抓取）](https://newzone.top/p/2018-10-07-Huginn_scraping_any_website/)
+- [RSS 进阶篇：Huginn - 真·为任意网页定制 RSS 源（PhantomJs 抓取）](https://newzone.top/p/2018-10-07-huginn_scraping_any_website/)
 
-- [RSS 速成篇：RSSHub 捡现成的轮子](https://newzone.top/p/2019-04-01-RSSHub_noob/)
+- [RSS 速成篇：RSSHub 捡现成的轮子](https://newzone.top/p/2019-04-01-rsshub_noob/)
 
-- [RSS 速成篇 2：RSSHub 自部署](https://newzone.top/p/2020-03-25-RSSHub_on_vps/)
+- [RSS 速成篇 2：RSSHub 自部署](https://newzone.top/p/2020-03-25-rsshub_on_vps/)
 
-- [RSS 完结篇：节省千元服务费，RSSHub、Huginn 转移 NAS](https://newzone.top/p/2021-10-23-NAS_with_RSSHub_and_Huginn/)
+- [RSS 完结篇：节省千元服务费，RSSHub、Huginn 转移 NAS](https://newzone.top/p/2021-10-23-nas_with_rsshub_and_huginn/)
 
 - [RSS 汇总篇：RSS 永久链接合集，拒绝 RSS 失效](https://newzone.top/p/2022-03-17-rss_persistent_link_collection)

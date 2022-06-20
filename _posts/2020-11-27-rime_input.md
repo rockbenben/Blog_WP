@@ -1,18 +1,19 @@
 ---
-layout:       post
-title:        "小狼毫 3 分钟入门及进阶指南"
-subtitle:     ""
-date:         2020-11-27
-author:       "Benson"
-header-img:   img/post-bg-20180108.jpg
-header-mask:  0.3
-catalog:      true
+layout: post
+title: "小狼毫 3 分钟入门及进阶指南"
+subtitle: ""
+date: 2020-11-27
+author: "Benson"
+header-img: img/post-bg-20180108.jpg
+header-mask: 0.3
+catalog: true
 categories:
-    - 工具
+  - 工具
 tags:
-    - 小狼毫
-    - 输入法
+  - 小狼毫
+  - 输入法
 ---
+
 常年使用搜狗输入法，备份时发现搜狗词库高达 27 万条，其中 99% 的内容是垃圾词条，即使偶尔输入过一次的内容也被输入法记录。更可怕的是，这次词库无法从云端删除，只要你输入过一次，搜狗就永远记住了。
 
 这哪里是输入法，根本是个**键盘记录器**。
@@ -61,7 +62,7 @@ librime 是 rime 输入法的核心库，小狼毫长久未更新，只能用此
 
 ```yaml
 patch:
-  app_options/windowsterminal.exe:  # 程序名字全用小寫字母
+  app_options/windowsterminal.exe: # 程序名字全用小寫字母
     ascii_mode: true
   app_options/powershell.exe:
     ascii_mode: true
@@ -86,32 +87,32 @@ patch:
 
 - **开机后，输入法不能输出中文？**
 
-    需手动打开程序文件夹中的`WeaselServer.exe`即可，默认位置为`C:\Program Files (x86)\Rime\weasel-0.14.3\WeaselServer.exe`。不要手动将`WeaselServer.exe`设为开机启动，否则程序容易报错。
-    不愿手动启动，可以使用 [WeaselServerAutostart](https://github.com/rockbenben/rime-WeaselServer) 脚本工具。将脚本放置于小狼毫「程序文件夹」内，并生成桌面快捷方式。将快捷方式移动至开机启动目录，Win10 默认位置为`%AppData%\Microsoft\Windows\Start Menu\Programs\Startup`。脚本国内下载：[https://wwx.lanzoux.com/if3znkka01g](https://wwx.lanzoux.com/if3znkka01g)
+  需手动打开程序文件夹中的`WeaselServer.exe`即可，默认位置为`C:\Program Files (x86)\Rime\weasel-0.14.3\WeaselServer.exe`。不要手动将`WeaselServer.exe`设为开机启动，否则程序容易报错。
+  不愿手动启动，可以使用 [WeaselServerAutostart](https://github.com/rockbenben/rime-WeaselServer) 脚本工具。将脚本放置于小狼毫「程序文件夹」内，并生成桌面快捷方式。将快捷方式移动至开机启动目录，Win10 默认位置为`%AppData%\Microsoft\Windows\Start Menu\Programs\Startup`。脚本国内下载：[https://wwx.lanzoux.com/if3znkka01g](https://wwx.lanzoux.com/if3znkka01g)
 
 - **将用户文件夹置为同步文件夹，提示`有错误，请查看日志%TEMP%\rime.weasel.*.INFO`？**
 
-    不要将用户文件夹完整置为同步文件夹，会导致进程冲突，日志中有提示`另一个程序正在使用此文件，进程无法访问`。出错后，关闭任务管理器中的`WeaselServer.exe`进程，然后重新执行小狼毫算法服务。
+  不要将用户文件夹完整置为同步文件夹，会导致进程冲突，日志中有提示`另一个程序正在使用此文件，进程无法访问`。出错后，关闭任务管理器中的`WeaselServer.exe`进程，然后重新执行小狼毫算法服务。
 
 - **中文输入法的候选框闪烁，无法显示候选词？**
 
-    排除键盘硬件问题，拔除或更换键盘，确认问题是否复现。Word 2016 下候选框闪烁参考 [issue 228](https://github.com/rime/weasel/issues/228)。
+  排除键盘硬件问题，拔除或更换键盘，确认问题是否复现。Word 2016 下候选框闪烁参考 [issue 228](https://github.com/rime/weasel/issues/228)。
 
 - **打错了字，之后就总在前排出现，如何删除错误「上屏」的词？**
 
-    将选字光标移到要删除的词组上，再按下 Shift+Delete 或 Control+Delete。
+  将选字光标移到要删除的词组上，再按下 Shift+Delete 或 Control+Delete。
 
 - **官方文档中的`%APPDATA%\Rime`是用户文档吗？为什么有时位置不同？**
 
-    `%APPDATA%\Rime`是小狼毫默认的用户文档。如果在安装时修改了用户文档位置，右键点击任务栏小狼毫图标，选「用户文件夹」，会出现当前的位置，所有文档只需在这里修改。
+  `%APPDATA%\Rime`是小狼毫默认的用户文档。如果在安装时修改了用户文档位置，右键点击任务栏小狼毫图标，选「用户文件夹」，会出现当前的位置，所有文档只需在这里修改。
 
 - **emoji 按教程设置，但始终无法显示？**
 
-    暂无解决方法。官方文档、三种集成词库都试过了，同样无法显示。特殊字符可使用 SuperRime 词库的 symbol 输出。
+  暂无解决方法。官方文档、三种集成词库都试过了，同样无法显示。特殊字符可使用 SuperRime 词库的 symbol 输出。
 
 - **SuperRime 词库安装后，无法完整触发特殊符号？**
 
-    SuperRime 词库自带的标点及特殊表情设置有问题。在`luna_pinyin_simp.custom.yaml`植入以下代码。
+  SuperRime 词库自带的标点及特殊表情设置有问题。在`luna_pinyin_simp.custom.yaml`植入以下代码。
 
   ```
   patch:

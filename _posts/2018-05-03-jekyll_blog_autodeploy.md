@@ -1,37 +1,38 @@
 ---
-layout:       post
-title:        "Jekyll 篇二：自动部署服务器博客"
-subtitle:     ""
-date:         2018-05-03
-author:       "Benson"
-header-img:   img/post-bg-20180108.jpg
-header-mask:  0.3
-catalog:      true
+layout: post
+title: "Jekyll 篇二：自动部署服务器博客"
+subtitle: ""
+date: 2018-05-03
+author: "Benson"
+header-img: img/post-bg-20180108.jpg
+header-mask: 0.3
+catalog: true
 categories:
-    - 博客
+  - 博客
 tags:
-    - Jekyll
-    - Travis CI
-    - Docker
+  - Jekyll
+  - Travis CI
+  - Docker
 ---
+
 Github 上搭建 Jekyll 是最方便的，空间免费、流量免费、部署简单。但 Github 属于被墙状态，将博客部署在那，速度实在太慢。在玩了几天后，我开始在服务器上直接搭建 Jekyll 博客。
 
 服务器搭建需要人工执行`jekyll build`, 完全背离了最开始搭建博客的初衷-**方便**。之后结合了网络上多个自动化方案，选定入门成本最低的 `Github` -> `Travis CI` -> `Docker`-> `VPS`。
 
 ## 搭建思路
 
-* 本地提交博客 Markdown 文件 到 Github 源文件 repository
-* Github 触发 Travis CI 执行自动编译
-* Travis CI 编译后 push 静态文件到 Github 静态文件 repository
-* Travis CI 通知 Docker 重建镜像（预计 5 分钟）
-* 服务器休眠 5 分钟后，Travis CI 通知服务器
-* 服务器拉取最新镜像，然后停止并删除原容器，用最新镜像重建容器
+- 本地提交博客 Markdown 文件 到 Github 源文件 repository
+- Github 触发 Travis CI 执行自动编译
+- Travis CI 编译后 push 静态文件到 Github 静态文件 repository
+- Travis CI 通知 Docker 重建镜像（预计 5 分钟）
+- 服务器休眠 5 分钟后，Travis CI 通知服务器
+- 服务器拉取最新镜像，然后停止并删除原容器，用最新镜像重建容器
 
 ## Travis CI 基本配置
 
 Travis CI 对于开源项目完全免费，并且能自动感知到 Github 的 commit，帮我们解决了静态文件生成问题。
 
-先用 Github 登录  Travis CI，然后点击最右侧的头像，开启想要使用 Travis CI 的项目
+先用 Github 登录 Travis CI，然后点击最右侧的头像，开启想要使用 Travis CI 的项目
 
 ![](http://tc.seoipo.com/20180504135244.png)
 
@@ -99,9 +100,9 @@ WORKDIR /usr/share/nginx/html
 
 ## Docker 镜像设置
 
-注册并登录 [Docker Hub](https://hub.docker.com)，点击`Create - Create Automated Build - Create Auto-build Github`, 选择之前新建的 `dockerfiles` repository 。
+注册并登录 [Docker Hub](https://hub.docker.com)，点击`Create - Create Automated Build - Create Auto-build Github`, 选择之前新建的 `dockerfiles` repository。
 
-建立 Automated Build 镜像后，进入 `Build Seeting`, 点击 Trigger ，建立第一个 Docker 镜像。
+建立 Automated Build 镜像后，进入 `Build Seeting`, 点击 Trigger，建立第一个 Docker 镜像。
 
 ![](http://tc.seoipo.com/20180504161016.png)
 
@@ -122,7 +123,7 @@ docker run --name=jekyll_blog -d -p 39100:80 --privileged=true rockben/jekyll:la
 
 -d 让容器在后台运行。
 
--p 映射端口: 80 是容器内对应的端口，39100 是主机端口，也就是最终用户访问的端口，本端口可以自由选择。
+-p 映射端口：80 是容器内对应的端口，39100 是主机端口，也就是最终用户访问的端口，本端口可以自由选择。
 
 --privileged=true 关闭安全权限，否则你容器操作文件夹没有权限。
 
@@ -213,7 +214,7 @@ travis login     #用 GitHub 账户登陆 travis
 #-r 之后是 Github 源文件目录
 travis encrypt-file ~/.ssh/id_rsa --add -r rockbenben/rockbenben.github.io
 
-#保存加密后的私钥 id_rsa.enc，上传到 Github 源文件 repository 中 
+#保存加密后的私钥 id_rsa.enc，上传到 Github 源文件 repository 中
 
 #.travis.yml 中也自动添加了解密命令
 cat /home/travis/.travis.yml  #打开服务器的 .travis.yml 文件并保存
@@ -225,14 +226,14 @@ before_install:
 **成功加密后，会提示**
 
 ```
-Make sure to add id_rsa.enc to the git repository. 
+Make sure to add id_rsa.enc to the git repository.
 Make sure not to add ~/.ssh/id_rsa to the git repository.
 Commit all changes to your .travis.yml.
 ```
 
-* **将新生成的`id_rsa.enc`文件上传到 Github 源文件 repository 中**
+- **将新生成的`id_rsa.enc`文件上传到 Github 源文件 repository 中**
 
-* 将`.travis.yml`中的`openssl aes-256-cbc -K $encrypted_5c280379e96c_key -iv $encrypted_5c280379e96c_iv -in id_rsa.enc -out ~/.ssh/id_rsa -d` 放入最终的`.travis.yml`文件中。
+- 将`.travis.yml`中的`openssl aes-256-cbc -K $encrypted_5c280379e96c_key -iv $encrypted_5c280379e96c_iv -in id_rsa.enc -out ~/.ssh/id_rsa -d` 放入最终的`.travis.yml`文件中。
 
   ![](http://tc.seoipo.com/20180504184508.png)
 
@@ -257,7 +258,7 @@ before_script:
 
 # Assume bundler is being used, therefore
 # the `install` step will run `bundle install` by default.
-install: 
+install:
 - gem install jekyll
 - gem install jekyll-paginate
 
@@ -299,22 +300,22 @@ sudo: false # route your build to the container-based infrastructure for a faste
 
 参考资料&引用：
 
-* [Jekyll 模板 hux blog](https://github.com/Huxpro/huxpro.github.io)
+- [Jekyll 模板 hux blog](https://github.com/Huxpro/huxpro.github.io)
 
-* [一点都不高大上，手把手教你使用 Travis CI 实现持续部署](https://zhuanlan.zhihu.com/p/25066056)
+- [一点都不高大上，手把手教你使用 Travis CI 实现持续部署](https://zhuanlan.zhihu.com/p/25066056)
 
-* [Jekyll + Travis CI 自动化部署博客](https://mritd.me/2017/02/25/jekyll-blog-+-travis-ci-auto-deploy/)
+- [Jekyll + Travis CI 自动化部署博客](https://mritd.me/2017/02/25/jekyll-blog-+-travis-ci-auto-deploy/)
 
-* [Travis-CI 自动化测试并部署至自己的 CentOS 服务器](https://juejin.im/post/5a9e1a5751882555712bd8e1)
+- [Travis-CI 自动化测试并部署至自己的 CentOS 服务器](https://juejin.im/post/5a9e1a5751882555712bd8e1)
 
-* [Travis CI 系列：自动化部署博客](https://segmentfault.com/a/1190000011218410)
+- [Travis CI 系列：自动化部署博客](https://segmentfault.com/a/1190000011218410)
 
-* [SSH 免密登录远程服务器](https://juejin.im/post/5a2941ad6fb9a045030ffc95)
+- [SSH 免密登录远程服务器](https://juejin.im/post/5a2941ad6fb9a045030ffc95)
 
-* [SSH 公钥登录原理](http://www.cnblogs.com/scofi/p/6617394.html)
+- [SSH 公钥登录原理](http://www.cnblogs.com/scofi/p/6617394.html)
 
-* [如何将 dockerhub 与 github 关联](https://blog.csdn.net/yinweitao12/article/details/73165914)
+- [如何将 dockerhub 与 github 关联](https://blog.csdn.net/yinweitao12/article/details/73165914)
 
-* [docker 启动，端口映射，挂载本地目录](http://www.cnblogs.com/YasinXiao/p/7736075.html)
+- [docker 启动，端口映射，挂载本地目录](http://www.cnblogs.com/YasinXiao/p/7736075.html)
 
-* [Docker — 从入门到实践](https://yeasy.gitbooks.io/docker_practice/)
+- [Docker — 从入门到实践](https://yeasy.gitbooks.io/docker_practice/)

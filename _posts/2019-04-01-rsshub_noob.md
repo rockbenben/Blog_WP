@@ -1,18 +1,19 @@
 ---
-layout:       post
-title:        "RSS 速成篇：RSSHub 捡现成的轮子"
-subtitle:     ""
-date:         2019-04-01
-author:       "Benson"
-header-img:   img/post-bg-20180108.jpg
-header-mask:  0.3
-catalog:      true
+layout: post
+title: "RSS 速成篇：RSSHub 捡现成的轮子"
+subtitle: ""
+date: 2019-04-01
+author: "Benson"
+header-img: img/post-bg-20180108.jpg
+header-mask: 0.3
+catalog: true
 categories:
-    - 自动化
+  - 自动化
 tags:
-    - rss
-    - RSSHub
+  - rss
+  - RSSHub
 ---
+
 RSS 使用已经介绍了 feed43 和 Huginn，但这些工具或需要学习，或需要硬件。与之相比，RSSHub 有着成熟的配置，可以直接使用。
 
 **RSSHub** 是个开源项目，对微博、知乎、豆瓣、bilibili、Youtube 等主流网站进行 RSS 转化。我们只要访问 [RSSHub 官网](https://docs.rsshub.app/) ，上面定期更新了主流媒体的 rss 项目。
@@ -21,7 +22,7 @@ RSS 使用已经介绍了 feed43 和 Huginn，但这些工具或需要学习，�
 
 ## 抓取示例：bilibili 番剧
 
-1. 打开  [RSSHub bilibili 专区](https://docs.rsshub.app/social-media.html#bilibili) ，上面能根据番剧、UP 主等定制 rss。
+1. 打开 [RSSHub bilibili 专区](https://docs.rsshub.app/social-media.html#bilibili) ，上面能根据番剧、UP 主等定制 rss。
 
    ![](http://tc.seoipo.com/20190406131343.png)
 
@@ -37,14 +38,14 @@ p.s. RSSHub 使用非常简单，但现在已经太过流行，微博、知乎�
 
 汇总 RSS 永久订阅链接，feeds 均通过 RSSHub 和 Huginn 制作。如果有兴趣自己制作 RSS，可查看以下教程。
 
-- [RSS 入门篇：FEED43&FeedEx-为静态网页定制 RSS 源](https://newzone.top/p/2017-04-22-RSS_FEED43_FeedEx/)
+- [RSS 入门篇：FEED43&FeedEx-为静态网页定制 RSS 源](https://newzone.top/p/2017-04-22-rss_feed43_feedex/)
 
-- [RSS 进阶篇：Huginn - 真·为任意网页定制 RSS 源（PhantomJs 抓取）](https://newzone.top/p/2018-10-07-Huginn_scraping_any_website/)
+- [RSS 进阶篇：Huginn - 真·为任意网页定制 RSS 源（PhantomJs 抓取）](https://newzone.top/p/2018-10-07-huginn_scraping_any_website/)
 
-- [RSS 速成篇：RSSHub 捡现成的轮子](https://newzone.top/p/2019-04-01-RSSHub_noob/)
+- [RSS 速成篇：RSSHub 捡现成的轮子](https://newzone.top/p/2019-04-01-rsshub_noob/)
 
-- [RSS 速成篇 2：RSSHub 自部署](https://newzone.top/p/2020-03-25-RSSHub_on_vps/)
+- [RSS 速成篇 2：RSSHub 自部署](https://newzone.top/p/2020-03-25-rsshub_on_vps/)
 
-- [RSS 完结篇：节省千元服务费，RSSHub、Huginn 转移 NAS](https://newzone.top/p/2021-10-23-NAS_with_RSSHub_and_Huginn/)
+- [RSS 完结篇：节省千元服务费，RSSHub、Huginn 转移 NAS](https://newzone.top/p/2021-10-23-nas_with_rsshub_and_huginn/)
 
 - [RSS 汇总篇：RSS 永久链接合集，拒绝 RSS 失效](https://newzone.top/p/2022-03-17-rss_persistent_link_collection)

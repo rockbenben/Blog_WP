@@ -1,17 +1,18 @@
 ---
-layout:       post
-title:        "电脑关机了，第二天一看确又开着的？让系统正常关机！"
-subtitle:     ""
-date:         2017-09-02 00:38:00
-author:       "Benson"
-header-img:   img/post-bg-20180108.jpg
-header-mask:  0.3
-catalog:      true
+layout: post
+title: "电脑关机了，第二天一看确又开着的？让系统正常关机！"
+subtitle: ""
+date: 2017-09-02 00:38:00
+author: "Benson"
+header-img: img/post-bg-20180108.jpg
+header-mask: 0.3
+catalog: true
 categories:
-    - 系统
+  - 系统
 tags:
-    - 关机
+  - 关机
 ---
+
 电脑晚上明明按下关机键，第二天早上却发现电脑开了一晚上？
 
 这是因为后台应用程序和 GUI 应用程序在阻止或取消关机，系统未能按正常关机。按下列方法授予系统自动关机权限，就能让系统正常关机。

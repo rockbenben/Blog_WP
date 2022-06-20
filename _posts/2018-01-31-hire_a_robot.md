@@ -1,22 +1,22 @@
 ---
-layout:       post
-title:        "雇个机器人帮你干活"
-subtitle:     ""
-date:         2018-01-31 22:51:00
-author:       "Benson"
-header-img:   img/post/wallhaven-586105.jpg
-header-mask:  0.3
-catalog:      true
+layout: post
+title: "雇个机器人帮你干活"
+subtitle: ""
+date: 2018-01-31 22:51:00
+author: "Benson"
+header-img: img/post/wallhaven-586105.jpg
+header-mask: 0.3
+catalog: true
 categories:
-    - 自动化
+  - 自动化
 tags:
-    - Huginn
-    - rss
+  - Huginn
+  - rss
 ---
 
 > 机器人会取代你工作！
-计算云会取代你工作！
-AI 会取代你的工作！
+> 计算云会取代你工作！
+> AI 会取代你的工作！
 
 我相信科技终究有一天会消灭所有工作，但我们这代人的无奈就是很难等到这一天。
 
@@ -30,11 +30,11 @@ AI 会取代你的工作！
 
 - [ ] 增加`Alfred`搜索
 
-**直到遇到了我的第一个机器人雇员 [Huginn](https://github.com/huginn/huginn )**
+**直到遇到了我的第一个机器人雇员 [Huginn](https://github.com/huginn/huginn)**
 
 > Huginn 是一个可以创建为你在线执行自动化任务的系统。Huginn 可以读取网页，监测事件并且执行符合你需求的动作。Huginn 通过 agents 创建并执行任务（事件流）。你可以将它看作是一个运行在你自己服务器上的 IFTTT 或 Zapier。
 
-Huginn 帮我将所有信息聚合成 RSS ，24 小时帮我获取我要的内容。
+Huginn 帮我将所有信息聚合成 RSS，24 小时帮我获取我要的内容。
 
 - [网易热门新闻](http://news.163.com/rank)：抓取网易顶贴最多的 100 条新闻
 - [百度实时热点](http://top.baidu.com/buzz?b=1)：实时更新每天的百度热点

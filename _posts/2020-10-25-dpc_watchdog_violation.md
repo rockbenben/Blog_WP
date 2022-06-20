@@ -1,17 +1,18 @@
 ---
-layout:       post
-title:        "真·DPC_WATCHDOG_VIOLATION 蓝屏解决方案"
-subtitle:     ""
-date:         2020-10-25
-author:       "Benson"
-header-img:   img/post-bg-20180108.jpg
-header-mask:  0.3
-catalog:      true
+layout: post
+title: "真·DPC_WATCHDOG_VIOLATION 蓝屏解决方案"
+subtitle: ""
+date: 2020-10-25
+author: "Benson"
+header-img: img/post-bg-20180108.jpg
+header-mask: 0.3
+catalog: true
 categories:
-    - 系统
+  - 系统
 tags:
-    - 蓝屏
+  - 蓝屏
 ---
+
 DPC_WATCHDOG_VIOLATION 多为硬件驱动出现问题。当驱动大规模报错时，厂家会更新并推送解决方法。所以，不要继续尝试其他人的解决方案，你的问题是独一无二的。分析 dmp 日志才是能百分百解决蓝屏的方法。
 
 ## 分析 dmg 日志
@@ -58,13 +59,13 @@ DPC_WATCHDOG_VIOLATION 多为硬件驱动出现问题。当驱动大规模报错
 评论区很多重复问蓝屏原因的，这里会定期更新出现比较多的蓝屏原因
 
 1. 系统性模块报错：ntkrnlmp.exe、xxx.symbols.exe。日志尾部仅有系统模块报错，实际是由应用进程与系统冲突引起的蓝屏，需深入分析日志。
-2. 驱动冲突：nvlddmkm、amdkmdag。N 卡、 A 卡或硬件进程报错，建议先回退到旧驱动。这样不会对电脑产生很大影响。如果驱动不对，可重新安装。驱动无法回退，则去官网下载旧驱动，或尝试最新驱动，或卸载为系统默认驱动。驱动若不行，则尝试更新主板 BIOS，关闭超频。
+2. 驱动冲突：nvlddmkm、amdkmdag。N 卡、A 卡或硬件进程报错，建议先回退到旧驱动。这样不会对电脑产生很大影响。如果驱动不对，可重新安装。驱动无法回退，则去官网下载旧驱动，或尝试最新驱动，或卸载为系统默认驱动。驱动若不行，则尝试更新主板 BIOS，关闭超频。
 3. 未知报错：xxx.sys。尝试多种方法，依然无法修复，则可用最后一步 - 强行删除。但删除前，必须备份好文件和位置。如果删除后进入不了系统，需使用 PE 系统还原备份文件。如不清楚如何使用 PE，不要删除任何 xxx.sys 文件。
 
 ## 蓝屏解决集锦
 
 如果无蓝屏日志，不能确定蓝屏原因，尝试下列方法，可以解决 80% 的蓝屏。
 
-* 驱动类：更新显卡驱动；更新网卡驱动；重置声卡驱动；重置 SATA AHCI 驱动；
-* 主板类：擦拭内存条；重置 BIOS；增加 CPU 电压；关闭超线程；
-* 终极方法：重装系统。
+- 驱动类：更新显卡驱动；更新网卡驱动；重置声卡驱动；重置 SATA AHCI 驱动；
+- 主板类：擦拭内存条；重置 BIOS；增加 CPU 电压；关闭超线程；
+- 终极方法：重装系统。

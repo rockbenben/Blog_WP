@@ -1,22 +1,23 @@
 ---
-layout:       post
-title:        "RSS 进阶篇：Huginn - 真·为任意网页定制 RSS 源（PhantomJs 抓取）"
-subtitle:     ""
-date:         2018-10-7
-author:       "Benson"
-header-img:   img/post-bg-20180108.jpg
-header-mask:  0.3
-catalog:      true
+layout: post
+title: "RSS 进阶篇：Huginn - 真·为任意网页定制 RSS 源（PhantomJs 抓取）"
+subtitle: ""
+date: 2018-10-7
+author: "Benson"
+header-img: img/post-bg-20180108.jpg
+header-mask: 0.3
+catalog: true
 categories:
-    - 自动化
+  - 自动化
 tags:
-    - Huginn
-    - rss
+  - Huginn
+  - rss
 ---
+
 烧制网页 RSS 源，主要有**FEED43**和**Huginn**两种方法。
 
-1. FEED43：简单免费，六小时抓取一次，每次抓取 20 条静态页面。
-2. Huginn：自由度高，可设定**抓取频率、内容结构、js 结果、输出样式**等；需要搭建服务器，学习 Huginn 抓取规则。
+- FEED43：简单免费，六小时抓取一次，每次抓取 20 条静态页面。
+- Huginn：自由度高，可设定**抓取频率、内容结构、js 结果、输出样式**等；需要搭建服务器，学习 Huginn 抓取规则。
 
 微信有各类屏蔽措施，可以尝试[wechat-feeds](https://wechat.privacyhide.com/)抓取。
 
@@ -43,20 +44,20 @@ tags:
 
 ### Phantom Js Cloud Agent 抓取页面缓存
 
-   *Name: 国内应急新闻 #1 获取 JS 缓存*
-   *Schedule: Every 1h*
+_Name: 国内应急新闻 #1 获取 JS 缓存_
+_Schedule: Every 1h_
 ![](http://tc.seoipo.com/20181008111704.png)
 
 ### WebsiteAgent 获取页面详情
 
-   *Name: 国内应急新闻 #2 抓取全页*
-   *Schedule: Every 1h*
+_Name: 国内应急新闻 #2 抓取全页_
+_Schedule: Every 1h_
 ![](http://tc.seoipo.com/20181008112658.png)
 
 ### css path 路径获取
 
 1. 使用火狐浏览器打开抓取页面
-2. 按下`F12`, 然后点击 *Developer Tools* 左上角的*检查指针*。
+2. 按下`F12`, 然后点击 _Developer Tools_ 左上角的*检查指针*。
 
    ![](http://tc.seoipo.com/20181008114911.png)
 
@@ -64,7 +65,7 @@ tags:
 
    ![](http://tc.seoipo.com/20181008113925.png)
 
-4. 回到 *Developer Tools* 窗口，右键选中的蓝色部分，获取 css path、Xpath。这里以 css path 为例。
+4. 回到 _Developer Tools_ 窗口，右键选中的蓝色部分，获取 css path、Xpath。这里以 css path 为例。
 
    ![](http://tc.seoipo.com/20181008114207.png)
 
@@ -77,13 +78,13 @@ tags:
    css path 原始路径过长，删去不带 `.` 或 `#` 的节点（节点间以空格“ ”分割），并删去每个节点在 `.` 或 `#`前的第一个标签，得到：
 
    ```css
-   .area.areabg1 .area-half.right .tabBox .tabContents.active .red a
+   .area.areabg1 .area-half.right .tabBox .tabContents.active .red a;
    ```
 
    前半部分对节点定位无用，继续省略（比如：中国上海，省略掉中国，大家也知道上海在哪）
 
    ```css
-   .tabContents.active .red a
+   .tabContents.active .red a;
    ```
 
    **非常规情况处理**：
@@ -91,17 +92,17 @@ tags:
    b. 当抓取**多种 css path 规则**时，用逗号，分割
 
    ```css
-   "css": ".focus-title .current a , .stress h2 a",
+   "css":".focus-title.currenta,.stressh2a", ;
    ```
 
 ### DataOutputAgent 导出 RSS
 
-   *Name: 国内应急新闻 #3 排序生成 RSS*
-   *Propagate immediately: Yes*
+_Name: 国内应急新闻 #3 排序生成 RSS_
+_Propagate immediately: Yes_
 
 ![](http://tc.seoipo.com/20181008130943.png)
 
-回到 Scenarios，点击最后一步的 Actions - Show ，复制导出的 xml 链接 `http://xxx.xxxxxx/users/1/web_requests/xxx/xxxx.xml`
+回到 Scenarios，点击最后一步的 Actions - Show，复制导出的 xml 链接 `http://xxx.xxxxxx/users/1/web_requests/xxx/xxxx.xml`
 
 ![](http://tc.seoipo.com/20181008131059.png)
 
