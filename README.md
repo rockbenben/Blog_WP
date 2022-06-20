@@ -4,7 +4,7 @@
 
 ---start---
 ## 目录 (2022年06月20日更新)
-[test_01](https://newzone.top/p/2022-06-20-test_01/)
+[ 修改好的测试 test_01](https://newzone.top/p/2022-06-20-test_01/)
 
 [集自动发布、本地管理于一身：WordPress 博客管理方案分享](https://newzone.top/p/2022-06-07-Blog_md_to_WordPress/)
 
