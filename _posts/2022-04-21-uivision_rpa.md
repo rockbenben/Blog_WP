@@ -1,19 +1,20 @@
 ---
-layout:       post
-title:        "不想学 Python，零基础也能用的自动化工具-UI.Vision RPA"
-subtitle:     ""
-date:         2022-04-21
-author:       "Benson"
-header-img:   img/post-bg-20180108.jpg
-header-mask:  0.3
-catalog:      true
+layout: post
+title: "不想学 Python，零基础也能用的自动化工具-UI.Vision RPA"
+subtitle: ""
+date: 2022-04-21
+author: "Benson"
+header-img: img/post-bg-20180108.jpg
+header-mask: 0.3
+catalog: true
 categories:
-    - 自动化
-tags: 
-    - 浏览器插件
-    - UI.Vision RPA
+  - 自动化
+tags:
+  - 浏览器插件
+  - UI.Vision RPA
 ---
-> 无需懂编程代码，只需安装浏览器插件，3 分钟速成爬虫攻略
+
+> 无需懂编程代码，只需安装浏览器插件，3 分钟速成爬虫攻略。
 
 Python 被认为是次时代必学语言，也就成为贩卖知识焦虑最好的标靶，各大平台隔三差五就想让我们买课程。
 
@@ -33,9 +34,9 @@ UI.Vision RPA 是一款开源的全平台自动化工具，**无需懂编程**�
 
 UI.Vision RPA 的主体是浏览器插件，只需去应用商店即可完成安装。
 
-* Chrome 插件：<https://chrome.google.com/webstore/detail/uivision-rpa/gcbalfbdmfieckjlnblleoemohcganoc>
-* Firefox 插件：<https://addons.mozilla.org/zh-CN/firefox/addon/rpa/>
-* Edge 插件：<https://microsoftedge.microsoft.com/addons/detail/uivision-rpa-%E6%B5%8F%E8%A7%88%E5%99%A8%E8%87%AA%E5%8A%A8%E5%8C%96%E5%B7%A5%E5%85%B7/goapmjinbaeomoemgdcnnhoedopjnddd>
+- Chrome 插件：<https://chrome.google.com/webstore/detail/uivision-rpa/gcbalfbdmfieckjlnblleoemohcganoc>
+- Firefox 插件：<https://addons.mozilla.org/zh-CN/firefox/addon/rpa/>
+- Edge 插件：<https://microsoftedge.microsoft.com/addons/detail/uivision-rpa-%E6%B5%8F%E8%A7%88%E5%99%A8%E8%87%AA%E5%8A%A8%E5%8C%96%E5%B7%A5%E5%85%B7/goapmjinbaeomoemgdcnnhoedopjnddd>
 
 ## UI.Vision RPA 界面
 
@@ -88,6 +89,7 @@ UI.Vision RPA 没有使用门槛。只需打开 UI.Vision 插件，点击右上�
 ## 常见问题
 
 1. 如何在浏览器外使用 UI.Vision RPA？
+
    1. 地址栏输入 `chrome://extensions/`，找到扩展 UI.Vision RPA，点击按钮「详情」，启用「允许访问文件网址」。
    2. 右键点击指定脚本，点击「Create autorun HTML」，将自动输出两个 html 文件。
    3. 点击与脚本同名的 html 即可启动脚本。
@@ -109,6 +111,6 @@ UI.Vision RPA 操作简单，定制脚本宏只需录制和完善两步。
 
 **参考资料**：
 
-* [UI.Vision RPA 浏览器自动化工具：表单填写、网页内容抓取、网页操作录制](https://www.appinn.com/ui-vision-rpa/)
-* [UI.Vision 命令官方文档](https://ui.vision/rpa/docs/selenium-ide)
-* [白话 UI.Vision Kantu 插件](https://github.com/LoveOctocat/UI.Vision-Kantu-ZH)
+- [UI.Vision RPA 浏览器自动化工具：表单填写、网页内容抓取、网页操作录制](https://www.appinn.com/ui-vision-rpa/)
+- [UI.Vision 命令官方文档](https://ui.vision/rpa/docs/selenium-ide)
+- [白话 UI.Vision Kantu 插件](https://github.com/LoveOctocat/UI.Vision-Kantu-ZH)
