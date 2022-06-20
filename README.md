@@ -3,8 +3,8 @@
 > 盛年不重来，一日难再晨。
 
 ---start---
-## 目录 (2022年06月20日更新)
-[电脑上实现微信双开，无需网页版或第三方软件](https://newzone.top/p/2017-04-18-wechat_multi_open/)
+
+## 目录 (2022 年 06 月 20 日更新)
 
 ---end---
 
@@ -24,7 +24,7 @@
 ## 使用流程
 
 1. 进入项目页面，选择 [原版](https://github.com/zhaoolee/WordPressXMLRPCTools) 或 [修改版](https://github.com/rockbenben/Blog_WP)，点击「Use this template」，复制模板文件。
-2. 回到你新建的 repo，删除 _post 文件夹中的所有文件，参照主目录下`example_article.md`的格式编辑文章。
+2. 回到你新建的 repo，删除 \_post 文件夹中的所有文件，参照主目录下`example_article.md`的格式编辑文章。
 3. 按[WordPressXMLRPCTools 安装步骤](https://github.com/zhaoolee/WordPressXMLRPCTools#%E7%94%A8github-actions%E5%86%99markdown%E6%96%87%E7%AB%A0%E8%87%AA%E5%8A%A8%E6%9B%B4%E6%96%B0%E5%88%B0wordpress)执行，如遇报错，查看下方使用问题。
 4. 修改主目录下的`index.html`和`_sidebar.md`，调整 docsify 网页设置。
    - `index.html`修改 docsify 网页标题、描述和关键词。
@@ -39,7 +39,7 @@
 - 文章后缀必须为「.md」，不支持「.markdown」或其他后缀格式。
 - 进入 repo 页面中的`Actions`，检查最近一次的 update 是否正确。
 
-   ![](http://tc.seoipo.com/2022-05-26-20-36-56.png)
+  ![](http://tc.seoipo.com/2022-05-26-20-36-56.png)
 
 ### Error: git denied to github-actions[bot]
 
@@ -51,7 +51,7 @@
 
 遇到 GitHub Actions 报错：`Error: Process completed with exit code 1`，检查服务器是否开启了防火墙，含代码的文章容易被误认为木马。暂时关闭服务器防火墙，如 Nginx 防火墙、宝塔系统加固，可解决该问题。
 
-### 无法覆盖更新原文章​
+### 无法覆盖更新原文章 ​
 
 修改旧文章并同步后，WordPress 站的文章没同步修改，而是新增了一篇相同的文章。这是 WordPressXMLRPCTools 项目的 bug。项目作者 @zhaoolee 说，「**只要不改文件名，就可以通过更新 markdown，更新对应的文章内容。**」​
 
@@ -59,7 +59,7 @@
 
 这个 bug 可以当作是强提醒。当 WordPress 新增了旧文章，你就被提醒要在其他平台修改该文章，让文章版本保持统一。​
 
-### WordPress 发布时间与实际不符​
+### WordPress 发布时间与实际不符 ​
 
 同步文章后，WordPress 显示的文章发布时间是 GitHub push 时间，而非文章真实的发布时间。​
 

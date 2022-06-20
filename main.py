@@ -62,12 +62,11 @@ def get_posts():
     return post_link_id_list
 
 # 创建 post 对象
-def create_post_obj(title, content, link, post_date, post_status, terms_names_post_tag, terms_names_category):
+def create_post_obj(title, content, link, post_status, terms_names_post_tag, terms_names_category):
     post_obj = WordPressPost()
     post_obj.title = title
     post_obj.content = content
     post_obj.link = link
-    post_obj.post_date = post_date
     post_obj.post_status = post_status
     post_obj.comment_status = "open"
     print(post_obj.link)
@@ -83,13 +82,12 @@ def create_post_obj(title, content, link, post_date, post_status, terms_names_po
 
 
 # 新建文章
-def new_post(title, content, link, post_date, post_status, terms_names_post_tag, terms_names_category):
+def new_post(title, content, link, post_status, terms_names_post_tag, terms_names_category):
 
     post_obj = create_post_obj(
         title = link, 
         content = content, 
         link = link, 
-        post_date=post_date,
         post_status = post_status, 
         terms_names_post_tag = terms_names_post_tag, 
         terms_names_category = terms_names_category)
@@ -99,19 +97,17 @@ def new_post(title, content, link, post_date, post_status, terms_names_post_tag,
     edit_post(id, title, 
         content, 
         link, 
-        post_date,
         post_status, 
         terms_names_post_tag, 
         terms_names_category)
 
 
 # 更新文章
-def edit_post(id, title, content, link, post_date, post_status, terms_names_post_tag, terms_names_category):
+def edit_post(id, title, content, link, post_status, terms_names_post_tag, terms_names_category):
     post_obj = create_post_obj(
         title, 
         content, 
         link, 
-        post_date,
         post_status, 
         terms_names_post_tag, 
         terms_names_category)
@@ -213,7 +209,7 @@ def insert_index_info_in_readme():
         insert_info = insert_info + "[" + title +"](" + "https://"+domain_name + "/p/" + os.path.basename(md).split(".")[0] +"/" + ")\n\n"
     # 替换 ---start--- 到 ---end--- 之间的内容
 
-    insert_info = "---start---\n## 目录 (" + time.strftime('%Y年%m月%d日') + "更新)" +"\n" + insert_info + "---end---"
+    insert_info = "---start---\n\n## 目录 (" + time.strftime('%Y 年 %m 月 %d 日') + "更新)" +"\n\n" + insert_info + "---end---"
 
     # 获取 README.md 内容
     with open (os.path.join(os.getcwd(), "README.md"), 'r', encoding='utf-8') as f:
@@ -259,7 +255,6 @@ def main():
             (content, metadata) = read_md(md)
             # 获取 title
             title = metadata.get("title", "")
-            post_date = metadata.get("date", "")
             terms_names_post_tag = metadata.get("tags",  domain_name)
             terms_names_category = metadata.get("categories", domain_name)
             post_status = "publish"
@@ -268,14 +263,14 @@ def main():
             # 如果文章无 id，则直接新建
             # 去掉链接尾部的/符号，原本为 if(("https://"+domain_name+"/p/"+link+"/" in link_id_dic.keys()) == False):
             if(("https://"+domain_name+"/p/"+link in link_id_dic.keys()) == False):
-                new_post(title, content, link, post_status,post_date,terms_names_post_tag, terms_names_category)
+                new_post(title, content, link, post_status, terms_names_post_tag, terms_names_category)
                 print("新建文章：https://"+domain_name+"/p/"+link+"/")
             # 如果文章有 id, 则更新文章
             else:
                 # 获取 id
                 # 去掉链接尾部的/符号，原本为 id = link_id_dic["https://"+domain_name+"/p/"+link+"/"]
                 id = link_id_dic["https://"+domain_name+"/p/"+link]
-                edit_post(id, title, content, link, post_status, post_date,terms_names_post_tag, terms_names_category)
+                edit_post(id, title, content, link, post_status, terms_names_post_tag, terms_names_category)
                 print("更新文章：https://"+domain_name+"/p/"+link+"/")
             print(link_id_dic.keys())
     # 4. 重建 md_sha1_dic
