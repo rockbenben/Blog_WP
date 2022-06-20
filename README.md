@@ -4,8 +4,6 @@
 
 ---start---
 ## 目录(2022年06月20日更新)
-[使用小滑线](https://newzone.top/p/2022-06-20-test-1/)
-
 [集自动发布、本地管理于一身：WordPress 博客管理方案分享](https://newzone.top/p/2022-06-07-Blog_md_to_WordPress/)
 
 [疫情封控两个月后，我对自己开始 24 小时的自我监控录像](https://newzone.top/p/2022-05-22-Surveillance_video_for_myself/)
