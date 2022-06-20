@@ -1,16 +1,16 @@
 ---
-layout:       post
-title:        "电脑上实现微信双开，无需网页版或第三方软件"
-subtitle:     ""
-date:         2017-04-18 12:41:00
-author:       "Benson"
-header-img:   img/post-bg-20180108.jpg
-header-mask:  0.3
-catalog:      true
+layout: post
+title: "电脑上实现微信双开，无需网页版或第三方软件"
+subtitle: ""
+date: 2017-04-18 12:41:00
+author: "Benson"
+header-img: img/post-bg-20180108.jpg
+header-mask: 0.3
+catalog: true
 categories:
-    - 工具
+  - 工具
 tags:
-    - 微信
+  - 微信
 ---
 
 由于工作原因，有时候我们需要在电脑上登录多个微信。但微信限制一个客户端只能登陆一个账号，PC 端 + 网页版就成了通用方案，操作效率下降许多。
@@ -29,15 +29,16 @@ tags:
 
 ## 开机启动两个微信
 
-1. 找到系统启动文件夹，文件夹路径为：%AppData%\Microsoft\Windows\Start Menu\Programs\Startup 。或者打开「运行」对话框，输入命令「shell:startup」，回车即可打开「启动文件夹」。
+1. 找到系统启动文件夹，文件夹路径为：`%AppData%\Microsoft\Windows\Start Menu\Programs\Startup`。或者打开「运行」对话框，输入命令「shell:startup」，回车即可打开「启动文件夹」。
 
-2. 将微信 for windows 10 的快捷方式放到「启动」文件夹里
+2. 将微信 for windows 10 的快捷方式放到「启动」文件夹里。
 
    ![](http://tc.seoipo.com/2022-05-06-04-23-49.png)
 
 3. 三开的话，可以在 Microsoft Store 上安装 微信 (UWP) 。
 
 如果还需要继续多开微信，可以参考 @刘舒怡 的方法：
+
 > 只要在 2 秒内快速连续双击打开软件，就能弹出很多登录界面，你想登多少个就登多少个
 
 另外，有人专门开发了微信/QQ 多开的补丁，需要四开以上的可以试试 [RevokeMsgPatcher](https://github.com/huiyadanli/RevokeMsgPatcher)。
