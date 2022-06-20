@@ -262,11 +262,14 @@ def main():
             # 如果文章无 id，则直接新建
             if(("https://"+domain_name+"/p/"+link+"/" in link_id_dic.keys()) == False):
                 new_post(title, content, link, post_status, terms_names_post_tag, terms_names_category)
+                print("新建文章"+"https://"+domain_name+"/p/"+link+"/")
             # 如果文章有 id, 则更新文章
             else:
                 # 获取 id
                 id = link_id_dic["https://"+domain_name+"/p/"+link+"/"]
                 edit_post(id, title, content, link, post_status, terms_names_post_tag, terms_names_category)
+                print("更新文章"+"https://"+domain_name+"/p/"+link+"/")
+            print(link_id_dic.keys())
     # 4. 重建 md_sha1_dic
     rebuild_md_sha1_dic(os.path.join(os.getcwd(), ".md_sha1"), os.path.join(os.getcwd(), "_posts"))
     # 5. 将链接信息写入 insert_index_info_in_readme
