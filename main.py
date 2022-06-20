@@ -1,3 +1,4 @@
+from datetime import date
 from wordpress_xmlrpc import Client, WordPressPost
 from wordpress_xmlrpc.methods.posts import GetPosts, NewPost, EditPost
 from urllib.parse import urlparse
@@ -192,7 +193,7 @@ def post_link_id_list_2_link_id_dic(post_link_id_list):
 
 
 def href_info(link):
-    return "<br/><br/><br/>\n\n\n\n## 本文永久更新地址：\n[" + link + "](" + link + ")"
+    return "<br/><br/><br/>\n\n\n\n本文永久更新地址：\n[" + link + "](" + link + ")"
 
 # 在 README.md 中插入信息文章索引信息，更容易获取 google 的收录
 def insert_index_info_in_readme():
@@ -254,6 +255,7 @@ def main():
             (content, metadata) = read_md(md)
             # 获取 title
             title = metadata.get("title", "")
+            post_date = metadata.get("date", "")
             terms_names_post_tag = metadata.get("tags",  domain_name)
             terms_names_category = metadata.get("categories", domain_name)
             post_status = "publish"
@@ -262,14 +264,14 @@ def main():
             # 如果文章无 id，则直接新建
             # 去掉链接尾部的/符号，原本为 if(("https://"+domain_name+"/p/"+link+"/" in link_id_dic.keys()) == False):
             if(("https://"+domain_name+"/p/"+link in link_id_dic.keys()) == False):
-                new_post(title, content, link, post_status, terms_names_post_tag, terms_names_category)
+                new_post(title, content, link, post_status,post_date,terms_names_post_tag, terms_names_category)
                 print("新建文章：https://"+domain_name+"/p/"+link+"/")
             # 如果文章有 id, 则更新文章
             else:
                 # 获取 id
                 # 去掉链接尾部的/符号，原本为 id = link_id_dic["https://"+domain_name+"/p/"+link+"/"]
                 id = link_id_dic["https://"+domain_name+"/p/"+link]
-                edit_post(id, title, content, link, post_status, terms_names_post_tag, terms_names_category)
+                edit_post(id, title, content, link, post_status, post_date,terms_names_post_tag, terms_names_category)
                 print("更新文章：https://"+domain_name+"/p/"+link+"/")
             print(link_id_dic.keys())
     # 4. 重建 md_sha1_dic
