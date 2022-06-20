@@ -117,10 +117,11 @@
 
 - 草稿箱：`_post`路径内新建`TEMP`文件夹，用于存放文章草稿。WordPress 推送程序会忽略`_post`子文件夹的内容，换言之，`TEMP`文件夹不会发布到 WordPress 网站。
 
-- 文章聚合页：主目录新增`.nojekyll`，`index.html`，`_sidebar.md`文件，引入文档生成工具 docsify，将博客文章聚合在一个页面，方便快速定位和位置管理。
-  示例：[https://rockbenben.github.io/Blog_WP/](https://rockbenben.github.io/Blog_WP/)
+- 文章聚合页：主目录新增`.nojekyll`，`index.html`，`_sidebar.md`文件，引入文档生成工具 docsify，将博客文章聚合在一个页面，方便快速定位和位置管理。示例：[https://rockbenben.github.io/Blog_WP/](https://rockbenben.github.io/Blog_WP/)。
 
   ![](http://tc.seoipo.com/2022-05-26-20-12-56.png)
+
+接下来，想在 md 文件中指定发布时间。试过在`main.py`中添加`post_date`参数，但报错，后续研究下 XMLRPC 的 post 参数。
 
 ## 使用流程
 
