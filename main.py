@@ -260,8 +260,7 @@ def main():
             link = sha1_key.split(".")[0]
             content = markdown.markdown(content + href_info("https://"+domain_name+"/p/"+link+"/"), extensions=['tables', 'fenced_code'])
             # 如果文章无 id，则直接新建
-            # 删除链接尾部的/号比对，原本为 if(("https://"+domain_name+"/p/"+link+"/" in link_id_dic.keys()) == False):
-            if(("https://"+domain_name+"/p/"+link in link_id_dic.keys()) == False):
+            if(("https://"+domain_name+"/p/"+link+"/" in link_id_dic.keys()) == False):
                 new_post(title, content, link, post_status, terms_names_post_tag, terms_names_category)
             # 如果文章有 id, 则更新文章
             else:
