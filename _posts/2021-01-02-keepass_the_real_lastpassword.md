@@ -19,8 +19,7 @@ tags:
 
 KeePass 的密码保存在本地的`.kdbx`数据库中，让你真正掌握自己的账号密码。搭配坚果云或同步盘的 KeePass，能实现密码多端同步，让手机与电脑使用同一密码库。
 
-KeePass 官网下载：<https://keepass.info/download.html>
-安卓推荐`Keepass2Android`，iOS 推荐`Strongbox`或`KeePassium`。
+KeePass 官网下载（Windows）：<https://keepass.info/download.html>。安卓推荐`Keepass2Android`，iOS 推荐`Strongbox`或`KeePassium`。
 
 以下会逐步介绍 KeePass 的配置和插件。小白可直接看文章底部，下载懒人包，开包即用。
 
@@ -95,6 +94,7 @@ WebAutoType 是很多人的推荐插件，启动密码热键后会自动匹配�
 ### [KeePassRpc](https://github.com/kee-org/keepassrpc/releases/)
 
 KeePassRpc 搭配浏览器插件 Kee，能实现**自动填充密码并登录**。
+
 其他插件不能自动登录，只有 Kee 能做到该功能。使用 Kee 的自动登录功能后，少数页面会出现循环登录，需暂停 Kee 扩展来停止循环错误。
 
 ![Kee 设置](http://tc.seoipo.com/2022-05-05-14-29-32.png)
@@ -102,6 +102,7 @@ KeePassRpc 搭配浏览器插件 Kee，能实现**自动填充密码并登录**�
 ### [KeePassNatMsg](https://github.com/smorks/keepassnatmsg)
 
 浏览器插件 KeePassHttp-Connector 已不再更新，有段时间甚至不兼容新版 KeePass。
+
 如果遇到不兼容，可使用 KeePassNatMsg 和 KeePassXC-Browser 连接浏览器，本方案不支持搜狗浏览器。
 
 > 如果报错「proxy download error」，备份并删除文件夹 C:\Users\%Username%\AppData\Local\KeePassNatMsg，然后重新加载 Native Messaging Host
@@ -109,17 +110,21 @@ KeePassRpc 搭配浏览器插件 Kee，能实现**自动填充密码并登录**�
 ## 常见问题
 
 - 同一密码能不能同时匹配多个网站？
+
   不能，但可以在「高级 - 标记」上添加多个表格，用英文的逗号隔开。标记在全局匹配中可用于搜索。
 
 - 同一网站有多个账户密码，如何将其中一个账户密码前置？
+
   无法默认选择指定账户，但可通过插件 keepasshttp、keepassnatmsg，按 username 或 title 对账户进行排序。
 
 - Keepassxc 有官方浏览器插件，界面也比 KeePass 美观，为什么不推荐使用？
+
   Keepassxc 是 KeePass 的衍生版。虽然 KeePass 配置比 Keepassxc 复杂，但操控性更强。长期使用，个人推荐 Keepass 原版。
 
 ## KeePass 懒人包
 
 懒人包下载：<https://wwz.lanzouf.com/i8m0804lxp7g>
+
 KeePass 懒人包为绿色版，集成了常用插件，建立数据库即可使用 KeePass。
 
 **建立数据库：**
