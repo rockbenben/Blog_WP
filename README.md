@@ -4,7 +4,7 @@
 
 ---start---
 
-## 目录 (2022 年 06 月 21 日更新)
+## 目录 (2022 年 06 月 28 日更新)
 
 [集自动发布、本地管理于一身：WordPress 博客管理方案分享](https://newzone.top/p/2022-06-07-blog_md_to_wordpress/)
 
