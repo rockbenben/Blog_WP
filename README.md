@@ -140,7 +140,6 @@
 
 - 文章后缀必须为「.md」，不支持「.markdown」或其他后缀格式。
 - 进入 repo 页面中的`Actions`，检查最近一次的 update 是否正确。
-
   ![](http://tc.seoipo.com/2022-05-26-20-36-56.png)
 
 ### Error: git denied to github-actions[bot]
@@ -151,7 +150,9 @@
 
 ### Error: Process completed with exit code 1
 
-遇到 GitHub Actions 报错：`Error: Process completed with exit code 1`，检查服务器是否开启了防火墙，含代码的文章容易被误认为木马。暂时关闭服务器防火墙，如 Nginx 防火墙、宝塔系统加固，可解决该问题。
+遇到 GitHub Actions 报错：`Error: Process completed with exit code 1`，可能是文章内容触发了服务器的安全规则，拒绝了文章的同步。
+
+如果出现该项报错，暂时关闭服务器防火墙，可解决问题。同步完成后，记得重新开启防火墙。
 
 ### 无法覆盖更新原文章 ​
 
@@ -172,7 +173,8 @@
 
 文章中设定的编号是`3`，但同步到 WordPress 后，变成了`1`。
 
-Markdown 转 WordPRess 文章时，默认规则无法识别缩进级别。
+有序列表中穿插了图片、段落，编号就会重置到`1`。去除图片与旧序列的空行，就能识别正确编号。
 
-- 有序列表中穿插了图片、段落，编号就会重置到`1`。
-- 多层级列表只会显示一个层级，其他层级的列表都被提到第一层级。
+#### 无序列表只有一个层级
+
+Markdown 转 WordPRess 文章时，默认规则无法识别缩进级别。多层级列表只会显示一个层级，其他层级的列表都被提到第一层级。
