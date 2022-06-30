@@ -4,7 +4,7 @@
 
 ---start---
 
-## 目录 (2022 年 06 月 28 日更新)
+## 目录 (2022 年 06 月 30 日更新)
 
 [集自动发布、本地管理于一身：WordPress 博客管理方案分享](https://newzone.top/p/2022-06-07-blog_md_to_wordpress/)
 
@@ -28,7 +28,7 @@
 
 [普通人的生活原则－批评与自我批评](https://newzone.top/p/2021-05-31-principles_criticism_and_self-criticism/)
 
-[直播入门攻略：从直播小白到网红达人](https://newzone.top/p/2021-03-22-live_streaming/)
+[直播新手攻略：从小白入门到网红达人](https://newzone.top/p/2021-03-22-live_streaming/)
 
 [Jekyll 博客迁移－从 Markdown 到 WordPress](https://newzone.top/p/2021-01-27-blog_jekyll_to_wordpress/)
 
