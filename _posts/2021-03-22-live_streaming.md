@@ -37,15 +37,17 @@ tags:
 
 手机充当摄像头，在室外直播中使用较多。如果室内没有桌面摄像头又希望用电脑直播，可以参考下方的 Camo、NDI、IP Webcam 介绍。
 
-- [Camo](https://apps.apple.com/app/reincubate-camo/id1514199064?platform=iphone) 专用于 iOS 设备，连接数据线后能将 iPhone 或 iPad 变为直播摄像头。
-- NDI 最为稳定，能自由调节拍摄参数。
-  - 打开 NDI 应用，需等待 NDI 界面周边出现绿框或红框，OBS 才可以识别到摄像头。
-  - NDI 是收费应用，安卓测试可使用 [NDI 调试 APK](https://wwe.lanzoup.com/iQCMh00b946b)。
-- **IP Webcam** 推流稳定性一般，但 [免费版 IP Webcam APK](https://wwz.lanzouf.com/iT6pH01tj7yb) 足够个人使用。
-  - IP Webcam 设置网页将流质量调整至 90%，能有效减少卡顿。IP camera 耗电低，适合手机长时间直播，支持视频与浏览器等方式。
-  - OBS `场景 - 来源 - 视频源`，「输入」项中填入 IP Webcam 视频地址，例如`http://192.168.2.234:8080/video`。
-  - OBS `场景 - 来源 - 添加浏览器`，「URL」项中填入 IP Webcam 浏览器全屏地址，例如`http://192.168.2.234:8080/jsfs.html`。注意：浏览器退流，容易出现闪屏。
-- 无他伴侣（不推荐）：国内大量教程介绍它，但使用中出现非常多的问题，如：摄影角度很难控制；无法使用 FaceRig 等变脸应用；直播 10 分钟后，摄像头经常自动与 OBS 断开连接；直播 2 小时后，OBS 无法检测到无他伴侣。
+[Camo](https://apps.apple.com/app/reincubate-camo/id1514199064?platform=iphone) 专用于 iOS 设备，连接数据线后能将 iPhone 或 iPad 变为直播摄像头。
+
+**NDI** 最为稳定，能自由调节拍摄参数。打开 NDI 应用，需等待 NDI 界面周边出现绿框或红框，OBS 才可以识别到摄像头。不过 NDI 是收费应用，安卓测试可使用 [NDI 调试 APK](https://wwe.lanzoup.com/iQCMh00b946b)。
+
+**IP Webcam** 推流稳定性一般，但 [免费版 IP Webcam APK](https://wwz.lanzouf.com/iT6pH01tj7yb) 足够个人使用。
+
+- IP Webcam 设置网页将流质量调整至 90%，能有效减少卡顿。IP camera 耗电低，适合手机长时间直播，支持视频与浏览器等方式。
+- OBS `场景 - 来源 - 视频源`，「输入」项中填入 IP Webcam 视频地址，例如`http://192.168.2.234:8080/video`。
+- OBS `场景 - 来源 - 添加浏览器`，「URL」项中填入 IP Webcam 浏览器全屏地址，例如`http://192.168.2.234:8080/jsfs.html`。注意：浏览器退流，容易出现闪屏。
+
+无他伴侣（不推荐），虽然国内大量教程介绍无他伴侣，但使用中出现非常多的问题，如：摄影角度很难控制；无法使用 FaceRig 等变脸应用；直播 10 分钟后，摄像头经常自动与 OBS 断开连接；直播 2 小时后，OBS 无法检测到无他伴侣。
 
 #### 相机
 
@@ -240,12 +242,11 @@ MorphVOX Pro、神舌等软件变声器对使用者的语气要求较高。
 
 ### 淘宝直播
 
-1. [淘宝直播官网](https://market.m.taobao.com/app/mtb/live-portal/download/index.html) 下载客户端。
-2. 打开淘宝直播客户端，点击「我要开播」，进入直播间界面。
+- [淘宝直播官网](https://market.m.taobao.com/app/mtb/live-portal/download/index.html) 下载客户端。
+- 打开淘宝直播客户端，点击「我要开播」，进入直播间界面。
+  ![](http://tc.seoipo.com/2022-06-29-22-23-26.png)
 
-   ![](http://tc.seoipo.com/2022-06-29-22-23-26.png)
-
-3. 左侧依次点击`添加元素-摄像头`，选择「OBS-Camera」，即可同步 OBS 直播画面。淘宝直播客户端也是基于 OBS，但不支持推流直播，只能通过虚拟摄像头同步画面。
+- 左侧依次点击`添加元素 - 摄像头`，选择「OBS-Camera」，即可同步 OBS 直播画面。淘宝直播客户端也是基于 OBS，但不支持推流直播，只能通过虚拟摄像头同步画面。
 
 除客户端外，我们也能通过 [直播中控台](https://liveplatform.taobao.com/restful/index/home/) 来设置淘宝直播间。
 
@@ -254,7 +255,6 @@ MorphVOX Pro、神舌等软件变声器对使用者的语气要求较高。
 1. 电脑端下载 [直播伴侣](https://www.douyin.com/falcon/webcast_openpc/pages/streamingtool_download/index.html)，适配西瓜视频、抖音、抖音火山版的直播。
 
 2. 左侧依次点击`添加元素-采集`，选择「OBS-Camera」(摄像头较多时，可下滑选择)，设置采集自定义音频设备为「OBS-Audio」，声音改为单声道，推流延迟 20s。
-
    ![](http://tc.seoipo.com/2022-06-29-23-59-02.png)
 
 以上为新手的直播步骤，如果抖音粉丝在一万以上，可直接使用 [OBS 模式推流](http://streamingtool.douyin.com/docs/guide/96319/)。
