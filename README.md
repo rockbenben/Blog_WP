@@ -2,14 +2,14 @@
 
 > 盛年不重来，一日难再晨。
 
-<!-- TABLE OF CONTENTS -->
+<!-- TABLE OF CONTENTS 有序为<ol>，无序为<ul> -->
 <details>
   <summary>Table of Contents</summary>
-  <ol>
-    <li><a href="#项目说明">项目说明</a></li>
-    <li><a href="#使用流程">使用流程</a></li>
-    <li><a href="#使用问题">使用问题</a></li>
-  </ol>
+  <ul>
+    <li><a href="#-项目说明">✨ 项目说明</a></li>
+    <li><a href="#-使用流程">🍥 使用流程</a></li>
+    <li><a href="#-使用问题">🤔 使用问题</a></li>
+  </ul>
 </details>
 
 ---start---
@@ -112,7 +112,7 @@
 
 ---end---
 
-## 项目说明
+## ✨ 项目说明
 
 [WordPressXMLRPCTools](https://github.com/zhaoolee/WordPressXMLRPCTools) 能用 Markdown 生成博客，推送更新到 Github 后，通过 Github Actions 自动将文章更新到 WordPress，并将 WordPress 网站的文章索引更新到 Github 仓库的 README.md，供搜索引擎收录。​
 
@@ -133,7 +133,7 @@
 
 接下来，想在 md 文件中指定发布时间。试过在`main.py`中添加`post_date`参数，但报错，后续研究下 XMLRPC 的 post 参数。
 
-## 使用流程
+## 🍥 使用流程
 
 1. 进入项目页面，选择 [原版](https://github.com/zhaoolee/WordPressXMLRPCTools) 或 [修改版](https://github.com/rockbenben/Blog_WP)，点击「Use this template」，复制模板文件。
 2. 回到你新建的 repo，删除 \_post 文件夹中的所有文件，参照主目录下`example_article.md`的格式编辑文章。
@@ -142,7 +142,7 @@
    - `index.html`修改 docsify 网页标题、描述和关键词。
    - `_sidebar.md`修改 docsify 网页侧边栏，加入博客文章的标题和位置。
 
-## 使用问题
+## 🤔 使用问题
 
 ### 文章发布不成功
 
