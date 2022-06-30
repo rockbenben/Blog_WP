@@ -2,6 +2,16 @@
 
 > 盛年不重来，一日难再晨。
 
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li><a href="#项目说明">项目说明</a></li>
+    <li><a href="#使用流程">使用流程</a></li>
+    <li><a href="#使用问题">使用问题</a></li>
+  </ol>
+</details>
+
 ---start---
 
 ## 目录 (2022 年 06 月 30 日更新)
@@ -102,7 +112,7 @@
 
 ---end---
 
-## 同步工具说明
+## 项目说明
 
 [WordPressXMLRPCTools](https://github.com/zhaoolee/WordPressXMLRPCTools) 能用 Markdown 生成博客，推送更新到 Github 后，通过 Github Actions 自动将文章更新到 WordPress，并将 WordPress 网站的文章索引更新到 Github 仓库的 README.md，供搜索引擎收录。​
 
