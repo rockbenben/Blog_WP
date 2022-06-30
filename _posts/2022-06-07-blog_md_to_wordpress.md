@@ -146,7 +146,7 @@ tags:
 ```ini
 ;将 Runany 主目录下的 RunAny.ini 文件内的「编辑」模块替换为下方命令
 -编辑(&Edit)
- --编程|cmd bat md ahk html js css json
+ --编程|cmd bat md ahk html js css json yml yaml py
  vscode|Code.exe
 ```
 
