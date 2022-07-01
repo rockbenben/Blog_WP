@@ -10,7 +10,7 @@
 - [想要独一无二的微信红包，你也可以自己做](_posts/2022-01-23-wechat_lucky_money_cover.md)
 - [RSS 完结篇：节省千元服务费，RSSHub、Huginn 转移 NAS](_posts/2021-10-23-nas_with_rsshub_and_huginn.md)
 - [普通人的生活原则－批评与自我批评](_posts/2021-05-31-principles_criticism_and_self-criticism.md)
-- [直播入门攻略：从直播小白到网红达人](_posts/2021-03-22-live_streaming.md)
+- [直播新手攻略：从小白入门到网红达人](_posts/2021-03-22-live_streaming.md)
 - [Jekyll 博客迁移－从 Markdown 到 WordPress](_posts/2021-01-27-blog_jekyll_to_wordpress.md)
 - [抛弃 Lastpass，拥抱 KeePass-免费开源的绿色密码管理软件](_posts/2021-01-02-keepass_the_real_lastpassword.md)
 - [减肥日志：4 周 15 斤](_posts/2020-12-17-weight_log.md)

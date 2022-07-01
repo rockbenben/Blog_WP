@@ -207,9 +207,9 @@ def insert_index_info_in_readme():
         (content, metadata) = read_md(md)
         title = metadata.get("title", "")
         insert_info = insert_info + "[" + title +"](" + "https://"+domain_name + "/p/" + os.path.basename(md).split(".")[0] +"/" + ")\n\n"
-    # 替换 ---start--- 到 ---end--- 之间的内容
+    # 替换 ---start--- 到 ---end--- 之间的内容，调整目录标题格式
 
-    insert_info = "---start---\n\n## 目录 (" + time.strftime('%Y 年 %m 月 %d 日') + "更新)" +"\n\n" + insert_info + "---end---"
+    insert_info = "---start---\n\n_" + time.strftime('%Y 年 %m 月 %d 日') + "更新_" +"\n\n" + "## 📜 文章目录\n\n" + insert_info + "---end---"
 
     # 获取 README.md 内容
     with open (os.path.join(os.getcwd(), "README.md"), 'r', encoding='utf-8') as f:
