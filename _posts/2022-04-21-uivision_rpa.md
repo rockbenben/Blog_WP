@@ -88,15 +88,24 @@ UI.Vision RPA 没有使用门槛。只需打开 UI.Vision 插件，点击右上�
 
 ## 常见问题
 
-1. 如何在浏览器外使用 UI.Vision RPA？
+### 录制脚本无法使用
 
-   1. 地址栏输入 `chrome://extensions/`，找到扩展 UI.Vision RPA，点击按钮「详情」，启用「允许访问文件网址」。
-   2. 右键点击指定脚本，点击「Create autorun HTML」，将自动输出两个 html 文件。
-   3. 点击与脚本同名的 html 即可启动脚本。
+如果脚本中使用了热键，这是无法被录制的，需要你手工添加`XType`命令。
 
-2. 本地运行自动化文件，报错`No tab with id`。
-   这是自动化内存泄漏造成的报错，需要手动点击右上角的「Play Macro」按钮执行命令。
-   如果你不想手动执行，可以用编辑器打开与脚本同名的 html 文件，找到`href="ui.vision.html?direct=1`，在这后面加入参数`&continueInLastUsedTab=0`。
+如果脚本点击不成功，可以将对映步骤的`Click`命令改为`XClick`。
+
+### 浏览器外使用 RPA
+
+1. 地址栏输入 `chrome://extensions/`，找到扩展 UI.Vision RPA，点击按钮「详情」，启用「允许访问文件网址」。
+2. 右键点击指定脚本，点击「Create autorun HTML」，将自动输出两个 html 文件。
+3. 点击与脚本同名的 html 即可启动脚本。
+
+### 本地运行自动化报错
+
+本地运行自动化文件，报错`No tab with id`。
+
+这是自动化内存泄漏造成的报错，需要手动点击右上角的「Play Macro」按钮执行命令。
+如果你不想手动执行，可以用编辑器打开与脚本同名的 html 文件，找到`href="ui.vision.html?direct=1`，在这后面加入参数`&continueInLastUsedTab=0`。
 
 ## 总结
 
