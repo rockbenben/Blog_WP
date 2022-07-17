@@ -131,7 +131,6 @@ _2022.07.17 更新_
 - 草稿箱：`_post`路径内新建`TEMP`文件夹，用于存放文章草稿。WordPress 推送程序会忽略`_post`子文件夹的内容，换言之，`TEMP`文件夹不会发布到 WordPress 网站。
 
 - 文章聚合页：主目录新增`.nojekyll`，`index.html`，`_sidebar.md`文件，引入文档生成工具 docsify，将博客文章聚合在一个页面，方便快速定位和位置管理。示例：[https://rockbenben.github.io/Blog_WP/](https://rockbenben.github.io/Blog_WP/)。
-
   ![](http://tc.seoipo.com/2022-05-26-20-12-56.png)
 
 接下来，想在 md 文件中指定发布时间。试过在`main.py`中添加`post_date`参数，但报错，后续研究下 XMLRPC 的 post 参数。
@@ -140,7 +139,7 @@ _2022.07.17 更新_
 
 1. 进入项目页面，选择 [原版](https://github.com/zhaoolee/WordPressXMLRPCTools) 或 [修改版](https://github.com/rockbenben/Blog_WP)，点击「Use this template」，复制模板文件。
 2. 回到你新建的 repo，删除 \_post 文件夹中的所有文件，参照主目录下`example_article.md`的格式编辑文章。
-3. 按[WordPressXMLRPCTools 安装步骤](https://github.com/zhaoolee/WordPressXMLRPCTools#%E7%94%A8github-actions%E5%86%99markdown%E6%96%87%E7%AB%A0%E8%87%AA%E5%8A%A8%E6%9B%B4%E6%96%B0%E5%88%B0wordpress)执行，如遇报错，查看下方使用问题。
+3. 按 [WordPressXMLRPCTools 安装步骤](https://github.com/zhaoolee/WordPressXMLRPCTools#%E7%94%A8github-actions%E5%86%99markdown%E6%96%87%E7%AB%A0%E8%87%AA%E5%8A%A8%E6%9B%B4%E6%96%B0%E5%88%B0wordpress) 执行，如遇报错，查看下方使用问题。
 4. 修改主目录下的`index.html`和`_sidebar.md`，调整 docsify 网页设置。
    - `index.html`修改 docsify 网页标题、描述和关键词。
    - `_sidebar.md`修改 docsify 网页侧边栏，加入博客文章的标题和位置。
