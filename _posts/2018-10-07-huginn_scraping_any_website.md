@@ -23,23 +23,14 @@ tags:
 
 ## Huginn 准备工作
 
-1. 准备一台 Debian/Ubuntu 环境的服务器
-2. 按[Qi 大的攻略](https://wzfou.com/huginn/)搭建 Huginn，也可以直接看[Huginn 官方搭建攻略](https://github.com/huginn/huginn/blob/master/doc/manual/installation.md)
-
-准备工作完成后，我们已经可以使用 Huginn 抓取页面了。但很多网站都是用 JS 加载动态内容，需要通过 **PhantomJs Cloud** 抓取页面 JS 缓存。
-
-————
+1. 准备 NAS 或服务器；
+2. 参考 [Docer 搭建 Huginn](https://github.com/huginn/huginn/blob/master/doc/docker/install.md)、[手动搭建攻略](https://github.com/huginn/huginn/blob/master/doc/manual/installation.md) 或 [Qi 大的攻略](https://wzfou.com/huginn/) 来搭建 Huginn。
+3. 注册 [PhantomJs Cloud](https://phantomjscloud.com/) ,然后将 API key 保存在 Huginn 的 Credentials 中。很多网站是用 JS 加载动态内容，因此需要 **PhantomJs Cloud** 来抓取页面 JS 缓存。免费版每天限制抓取 500 次页面，需求不大可建立多个账号使用不同 API key，足够个人使用。
+   ![](http://tc.seoipo.com/20181006010447.png)
 
 ## Huginn + PhantomJs Cloud 全网页抓取
 
-### Phantom Js Cloud API key 获取
-
-注册 [PhantomJs Cloud](https://phantomjscloud.com/) ,然后将 API key 保存在 Huginn 的 Credentials 中。免费版每天限制抓取 500 次页面，需求不大可建立多个账号使用不同 API key，足够个人使用。
-
-![](http://tc.seoipo.com/20181006010447.png)
-
-新建 Huginn 任务组 Scenario「国内应急新闻」，抓取链接 <http://www.cneb.gov.cn/guoneinews/>
-
+新建 Huginn 任务组 Scenario「国内应急新闻」，样例抓取链接为`http://www.cneb.gov.cn/guoneinews/`。
 ![](http://tc.seoipo.com/20181008131549.png)
 
 ### Phantom Js Cloud Agent 抓取页面缓存
@@ -58,57 +49,31 @@ _Schedule: Every 1h_
 
 1. 使用火狐浏览器打开抓取页面
 2. 按下`F12`, 然后点击 _Developer Tools_ 左上角的*检查指针*。
-
    ![](http://tc.seoipo.com/20181008114911.png)
-
 3. 选中要抓取的部分。
-
    ![](http://tc.seoipo.com/20181008113925.png)
-
 4. 回到 _Developer Tools_ 窗口，右键选中的蓝色部分，获取 css path、Xpath。这里以 css path 为例。
-
    ![](http://tc.seoipo.com/20181008114207.png)
+5. 处理 css path 路径：
+   - 初始获取的路径为`html body div.area.areabg1 div.area-half.right div.tabBox div.tabContents.active table tbody tr td.red a`；
+   - css path 原始路径过长，删去不带 `.` 或 `#` 的节点（节点间以空格“ ”分割），并删去每个节点在 `.` 或 `#`前的第一个标签，得到：`.area.areabg1 .area-half.right .tabBox .tabContents.active .red a`；
+   - 前半部分对节点定位无用，继续省略（比如：中国上海，省略掉中国，大家也知道上海在哪），获得短路径`.tabContents.active .red a`。
 
-5. 处理 css path 路径。
+**特殊路径处理**：
 
-   ```css
-   html body div.area.areabg1 div.area-half.right div.tabBox div.tabContents.active table tbody tr td.red a
-   ```
-
-   css path 原始路径过长，删去不带 `.` 或 `#` 的节点（节点间以空格“ ”分割），并删去每个节点在 `.` 或 `#`前的第一个标签，得到：
-
-   ```css
-   .area.areabg1 .area-half.right .tabBox .tabContents.active .red a;
-   ```
-
-   前半部分对节点定位无用，继续省略（比如：中国上海，省略掉中国，大家也知道上海在哪）
-
-   ```css
-   .tabContents.active .red a;
-   ```
-
-   **非常规情况处理**：
-   a. 有些路径中的**节点带空格**，如`<div class="packery-item article">`,路径中的空格由`.`代替，截取为`.packery-item.article`
-   b. 当抓取**多种 css path 规则**时，用逗号，分割
-
-   ```css
-   "css":".focus-title.currenta,.stressh2a", ;
-   ```
+- 有些路径中的**节点带空格**，如`<div class="packery-item article">`,路径中的空格由`.`代替，截取为`.packery-item.article`。
+- 当抓取**多种 css path 规则**时，用逗号分割，比如`"css": ".focus-title .current a , .stress h2 a",`。
 
 ### DataOutputAgent 导出 RSS
 
 _Name: 国内应急新闻 #3 排序生成 RSS_
 _Propagate immediately: Yes_
-
 ![](http://tc.seoipo.com/20181008130943.png)
 
-回到 Scenarios，点击最后一步的 Actions - Show，复制导出的 xml 链接 `http://xxx.xxxxxx/users/1/web_requests/xxx/xxxx.xml`
-
+回到 Scenarios，点击 Data Output Agent 旁的按钮「Actions - Show」，复制导出的 xml 链接`http://xxx.xxx/users/1/web_requests/xxx/xxxx.xml`。
 ![](http://tc.seoipo.com/20181008131059.png)
 
-详细设置的使用文件-[百度网盘下载](https://pan.baidu.com/s/1JdsFkLN9kczR9C92tKi83A)
-
-其他问题，查看官方说明-[PhantomJs Cloud 英文使用攻略](https://github.com/huginn/huginn/wiki/Browser-Emulation-Using-PhantomJs-Cloud)
+国内应急新闻的详细设置进入[百度网盘下载](https://pan.baidu.com/s/1JdsFkLN9kczR9C92tKi83A)，导入到 Huginn 即可使用。其他问题参考 [PhantomJs Cloud 英文使用攻略](https://github.com/huginn/huginn/wiki/Browser-Emulation-Using-PhantomJs-Cloud)。
 
 ## RSS 合集
 
