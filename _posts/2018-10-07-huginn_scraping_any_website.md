@@ -51,11 +51,9 @@ tags:
    ![](http://tc.seoipo.com/20181008113925.png)
 3. 回到 _Developer Tools_ 窗口，右键选中的蓝色部分，获取 css path、Xpath。这里以 css path 为例。
    ![](http://tc.seoipo.com/20181008114207.png)
-4. 处理 css path 路径：
-
-   - 初始获取的路径为 `html body div.area.areabg1 div.area-half.right div.tabBox div.tabContents.active table tbody tr td.red a`；
-   - css path 原始路径过长，删去不带 `.` 或 `#` 的节点（节点间以空格“ ”分割），并删去每个节点在 `.` 或 `#` 前的第一个标签，得到：`.area.areabg1 .area-half.right .tabBox .tabContents.active .red a`；
-   - 前半部分对节点定位无用，继续省略（比如：中国上海，省略掉中国，大家也知道上海在哪），获得短路径 `.tabContents.active .red a`。
+4. 初始 css path 路径，`html body div.area.areabg1 div.area-half.right div.tabBox div.tabContents.active table tbody tr td.red a`。
+5. css path 原始路径过长，删去不带 `.` 或 `#` 的节点（节点间以空格“ ”分割），并删去每个节点在 `.` 或 `#` 前的第一个标签，得到 `.area.areabg1 .area-half.right .tabBox .tabContents.active .red a`。
+6. 前半部分对节点定位无用，继续省略（比如：中国上海，省略掉中国，大家也知道上海在哪），获得短路径 `.tabContents.active .red a`。
 
 **特殊路径处理**：
 
