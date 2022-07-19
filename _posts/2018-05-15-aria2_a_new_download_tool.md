@@ -78,7 +78,7 @@ bt-enable-lpd=true
 enable-peer-exchange=true
 ```
 
-在最后添加 BT trackers，配置列表时重新获取 [最新 trackers](https://raw.githubusercontent.com/ngosang/trackerslist/master/trackers_best.txt), tracker 中用`，`隔开。
+在最后添加 BT trackers，配置列表时重新获取 [最新 trackers](https://raw.githubusercontent.com/ngosang/trackerslist/master/trackers_best.txt), tracker 中用「,」隔开。
 
 ```bash
 # bt-tracker 更新，解决 Aria2 BT 下载速度慢没速度的问题

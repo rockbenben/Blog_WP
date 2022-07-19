@@ -24,10 +24,10 @@ Jekyll 环境官方安装指南：<https://www.jekyll.com.cn/docs/quickstart/>
 
 3. 进入 jekyll 网站，执行命令行，生成 Jekyll 静态网页
 
-   ```bash
-   cd /www/wwwroot/blog
-   jekyll build  #生成静态页面，否则无法显示最新内容
-   ```
+```bash
+cd /www/wwwroot/blog
+jekyll build  #生成静态页面，否则无法显示最新内容
+```
 
 4. 网站的执行目录需要指定在 `_site`，这是 Jekyll 生成的静态页面目录。之后每次更新博客，都需要进入服务器执行一次 `jekyll build`，重新生成静态页面。
 
