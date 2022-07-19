@@ -29,7 +29,7 @@ Windows 下载：[`scrcpy-win64-v1.24.zip`](https://github.com/Genymobile/scrcpy
 1. 确保 PC 和手机处于同一局域网中
 2. 打开 PowerShell (~ cmd)，依次操作并输入代码
 
-   ```PowerShell
+   ```bash
    # a.将代码目录定位到 scrcpy 文件夹。
    cd D:\Libraries\Desktop\scrcpy-win64-v1.24
    # WIN11 在 scrcpy 文件夹中右键「在终端中打开」，将自动定位。
@@ -59,7 +59,7 @@ Windows 下载：[`scrcpy-win64-v1.24.zip`](https://github.com/Genymobile/scrcpy
 
 打开 PowerShell (~ cmd)，依次操作并输入代码
 
-```PowerShell
+```bash
 # 将代码目录定位到 scrcpy 文件夹
 cd D:\Libraries\Desktop\scrcpy-win64-v1.24
 ​
@@ -85,7 +85,7 @@ cd D:\Libraries\Desktop\scrcpy-win64-v1.24
 
 - `ERROR: Exception on thread Thread[main,5,main]` 此项错误多为手机不兼容 scrcpy 默认分辨率设置。解决方位为，按下方修改 scrcpy 启动代码，使用较低的分辨率。
 
-  ```PowerShell
+  ```bash
   # 三项设置，任选其一
   .\scrcpy -m 1920
   .\scrcpy -m 1024

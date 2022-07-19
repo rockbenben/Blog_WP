@@ -50,45 +50,44 @@ Aria2 真·懒人包无需配置，下载即用，适合不想折腾的人。
 2. 把懒人包解压到常用的存放目录，我放在 `D:\Aria2`。
 
 3. 官网下载 [Aria2 程序](https://github.com/aria2/aria2/releases), Win10 系统选择 [aria2-1.35.0-win-64bit-build1.zip](https://github.com/aria2/aria2/releases/download/release-1.35.0/aria2-1.35.0-win-64bit-build1.zip)，然后解压到懒人包目录中，替代懒人包的 `aria2c.exe` 程序。
-
    ![](http://tc.seoipo.com/20191210232831.png)
 
 4. 点击 `aria2.exe` , 启动 aria2，该程序会在任务栏中植入图标。
 
 5. 修改`aria2.conf`，更多设置参考 [Aria2 & YAAW 使用说明](http://aria2c.com/usage.html)。
 
-   - 修改默认下载目录。
+修改默认下载目录：
 
-   ```bash
-   # 文件的保存路径 (可使用绝对路径或相对路径), 默认：当前启动位置
-   dir=D:\Download  #D:\Download 是我的默认下载目录
-   ```
+```bash
+# 文件的保存路径 (可使用绝对路径或相对路径), 默认：当前启动位置
+dir=D:\Download  #D:\Download 是我的默认下载目录
+```
 
-   - 修改服务器默认连接数
+修改服务器默认连接数：
 
-   ```bash
-   # 同一服务器连接数，添加时可指定，默认:1
-   max-connection-per-server=16
-   ```
+```bash
+# 同一服务器连接数，添加时可指定，默认:1
+max-connection-per-server=16
+```
 
-   - 开启 BT 下列设置
+开启 BT 下列设置：
 
-   ```bash
-   enable-dht=true
-   bt-enable-lpd=true
-   enable-peer-exchange=true
-   ```
+```bash
+enable-dht=true
+bt-enable-lpd=true
+enable-peer-exchange=true
+```
 
-   - 在最后添加 BT trackers，配置列表时重新获取 [最新 trackers](https://raw.githubusercontent.com/ngosang/trackerslist/master/trackers_best.txt), tracker 中用`，`隔开
+在最后添加 BT trackers，配置列表时重新获取 [最新 trackers](https://raw.githubusercontent.com/ngosang/trackerslist/master/trackers_best.txt), tracker 中用`，`隔开。
 
-   ```bash
-   # bt-tracker 更新，解决 Aria2 BT 下载速度慢没速度的问题
-   bt-tracker=udp://tracker.coppersurfer.tk:6969/announce,udp://tracker.leechers-paradise.org:6969/announce,udp://tracker.opentrackr.org:1337/announce,udp://p4p.arenabg.com:1337/announce,udp://9.rarbg.to:2710/announce,udp://9.rarbg.me:2710/announce,udp://tracker.openbittorrent.com:80/announce,udp://exodus.desync.com:6969/announce,udp://tracker.tiny-vps.com:6969/announce,udp://retracker.lanta-net.ru:2710/announce,udp://open.stealth.si:80/announce,udp://tracker.moeking.me:6969/announce,udp://denis.stalker.upeer.me:6969/announce,udp://tracker.torrent.eu.org:451/announce,udp://tracker.cyberia.is:6969/announce,udp://open.demonii.si:1337/announce,udp://ipv4.tracker.harry.lu:80/announce,udp://explodie.org:6969/announce,udp://xxxtor.com:2710/announce,udp://valakas.rollo.dnsabr.com:2710/announce
-   ```
+```bash
+# bt-tracker 更新，解决 Aria2 BT 下载速度慢没速度的问题
+bt-tracker=udp://tracker.coppersurfer.tk:6969/announce,udp://tracker.leechers-paradise.org:6969/announce,udp://tracker.opentrackr.org:1337/announce,udp://p4p.arenabg.com:1337/announce,udp://9.rarbg.to:2710/announce,udp://9.rarbg.me:2710/announce,udp://tracker.openbittorrent.com:80/announce,udp://exodus.desync.com:6969/announce,udp://tracker.tiny-vps.com:6969/announce,udp://retracker.lanta-net.ru:2710/announce,udp://open.stealth.si:80/announce,udp://tracker.moeking.me:6969/announce,udp://denis.stalker.upeer.me:6969/announce,udp://tracker.torrent.eu.org:451/announce,udp://tracker.cyberia.is:6969/announce,udp://open.demonii.si:1337/announce,udp://ipv4.tracker.harry.lu:80/announce,udp://explodie.org:6969/announce,udp://xxxtor.com:2710/announce,udp://valakas.rollo.dnsabr.com:2710/announce
+```
 
-   还有很多设置，有时间可以逐个修改。
+还有很多设置，有时间可以逐个修改。
 
-6. 开始下载
+注意：
 
 - Aira2 没有软件界面，程序员可以用代码执行任务，但普通用户怎样添加下载任务呢？
 - 打开浏览器，输入网址 `aria2c.com` 就可以打开操作界面了。可以把这个网址放到书签中，方便使用。

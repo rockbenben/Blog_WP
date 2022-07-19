@@ -20,11 +20,7 @@ Jekyll 环境官方安装指南：<https://www.jekyll.com.cn/docs/quickstart/>
 
 1. 使用 RVM 安装 Ruby (rvm -> ruby -> gem 网上大量教程就不赘述了)
 
-2. 安装 jekyll
-
-   ```bash
-   gem install jekyll
-   ```
+2. 安装 jekyll：`gem install jekyll`。
 
 3. 进入 jekyll 网站，执行命令行，生成 Jekyll 静态网页
 
