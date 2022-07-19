@@ -90,9 +90,9 @@ UI.Vision RPA 没有使用门槛。只需打开 UI.Vision 插件，点击右上�
 
 ### 录制脚本无法使用
 
-如果脚本中使用了热键，这是无法被录制的，需要你手工添加`XType`命令。
+如果脚本中使用了热键，这是无法被录制的，需要你手工添加 `XType` 命令。
 
-如果脚本点击不成功，可以将对映步骤的`Click`命令改为`XClick`。
+如果脚本点击不成功，可以将对映步骤的 `Click` 命令改为 `XClick`。
 
 ### 浏览器外使用 RPA
 
@@ -102,10 +102,10 @@ UI.Vision RPA 没有使用门槛。只需打开 UI.Vision 插件，点击右上�
 
 ### 本地运行自动化报错
 
-本地运行自动化文件，报错`No tab with id`。
+本地运行自动化文件，报错 `No tab with id`。
 
 这是自动化内存泄漏造成的报错，需要手动点击右上角的「Play Macro」按钮执行命令。
-如果你不想手动执行，可以用编辑器打开与脚本同名的 html 文件，找到`href="ui.vision.html?direct=1`，在这后面加入参数`&continueInLastUsedTab=0`。
+如果你不想手动执行，可以用编辑器打开与脚本同名的 html 文件，找到 `href="ui.vision.html?direct=1`，在这后面加入参数 `&continueInLastUsedTab=0`。
 
 ## 总结
 

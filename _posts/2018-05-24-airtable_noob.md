@@ -21,23 +21,21 @@ Airtable 是新型的表格制作工具，可以把文字、图片、链接、�
 
 ## 建立空白 Airtable
 
-1. 注册并登录[Airtable](https://airtable.com/)。
+1. 注册并登录 [Airtable](https://airtable.com/)。
 
 2. 点击「Add a base」, 然后选择「Start from scratch」, 从空白表格启动。
-
    ![](http://tc.seoipo.com/20180524095238.png)
 
 3. 进入刚刚新建的表格，界面跟 Excel 蛮像的。
-
    ![](http://tc.seoipo.com/20180524095557.png)
 
 4. 在第一栏单击右键，唤出 field 栏目选项，可以更改 filed 栏目类型和名称。
-
    ![](http://tc.seoipo.com/20180524095935.png)
 
-5. filed 栏目类型可以设为文本、链接、附件、单选多选等多种玩法，在使用中可以多试试。[官方说明文档](https://support.airtable.com/hc/en-us/articles/203229705)介绍的非常详细。
-
+5. filed 栏目类型可以设为文本、链接、附件、单选多选等多种玩法，在使用中可以多试试。
    ![](http://tc.seoipo.com/20180524100437.png)
+
+更多玩法，参考 [官方说明文档](https://support.airtable.com/hc/en-us/articles/203229705)。
 
 ## 应用 Airtable
 
@@ -50,17 +48,12 @@ Airtable 是新型的表格制作工具，可以把文字、图片、链接、�
 因此，我需要一个能汇集「入门学习资源」的资料库。
 
 1. 按资源需求，列出应用名、资源说明、链接、进度。
-
    ![](http://tc.seoipo.com/20180524102247.png)
 
-   上方表格和 Excel 一模一样，那我们为什么要用 Airtable？
-
 2. 点击「Group」，按类别重组表格。
-
    ![](http://tc.seoipo.com/20180524102641.png)
 
    选定后，表格会按类型分开显示，界面简洁许多。（Group 是我个人最爱的功能，太漂亮了）。
-
    ![](http://tc.seoipo.com/20180524102740.png)
 
    当表格越来越多后，我们可以使用「Hide fields」和「Filter」来只显示需要的元素。

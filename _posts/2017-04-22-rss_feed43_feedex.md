@@ -99,7 +99,7 @@ Define output format，一般情况下前面三个会已经写好，后三个就
 
 ## 6. 全文抓取
 
-feed43 导出的条目必须点击链接才能看到内容。在 rss 展示全文，需要通过 FeedEx 再转一次。注意：feed43 免费用户过多，**需在浏览器中打开一次才能得到真实链接** (一般为 [http://node2.feed43.com](http://node2.feed43.com/))，FeedEx 需使用真实链接，一般 3 分钟内转换好。
+feed43 导出的条目必须点击链接才能看到内容。在 rss 展示全文，需要通过 FeedEx 再转一次。注意：feed43 免费用户过多，**需在浏览器中打开一次才能得到真实链接** (一般为 `http://node2.feed43.com`)，FeedEx 需使用真实链接，一般 3 分钟内转换好。
 
 FeedEx：[https://feedex.net/](https://feedex.net/)
 

@@ -19,7 +19,7 @@ koolproxy 是可以运行在路由器上的广告屏蔽软件，跟其他最大�
 
 这是我们需要进入路由器后台，对证书地址进行操作。
 
-进入路由器后台，一般设置-Tools-Run Cmd ,运行命令`iptables -t nat -I PREROUTING -d 110.110.110.110 -p tcp --dport 80 -j REDIRECT --to 3000`。重启后，该命令失效。
+进入路由器后台，一般设置-Tools-Run Cmd ,运行命令 `iptables -t nat -I PREROUTING -d 110.110.110.110 -p tcp --dport 80 -j REDIRECT --to 3000`。重启后，该命令失效。
 
 ![](http://tc.seoipo.com/20180610143928.png)
 

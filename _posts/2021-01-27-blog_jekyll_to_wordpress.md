@@ -26,11 +26,11 @@ Jekyll 用着太舒服，不知不觉就过了三年。但随着文章越来越�
 
 这里迁移的是 Jekyll 的 [Hux blog 模板](https://github.com/Huxpro/huxpro.github.io)，Hexo 或其他 Jekyll 博客可以参照微调。
 
-1. 复制博客主目录下的`feed.xml`文件，重命名为`feed-wp.xml`。如果目录内不存在`feed.xml`，可尝试`rss.xml`或`atom.xml`。
+1. 复制博客主目录下的 feed.xml 文件，重命名为「feed-wp.xml」。如果目录内不存在 feed.xml，可尝试 rss.xml 或 atom.xml。
 
-2. 修改`feed-wp.xml`文件中的`for post in site.posts limit:100 %`，该项为 rss 最低生成量，我们导出所有文章，因此将该值修改为 100。
+2. 修改 feed-wp.xml 文件中的 `for post in site.posts limit:100 %`，该项为 rss 最低生成量，我们导出所有文章，因此将该值修改为 100。
 
-3. 参照下方内容，按 WordPress 所需 rss 格式修改`feed-wp.xml`文件的`item`部分，并在文件顶部的`<rss>`元素内添加`xmlns:content="http://purl.org/rss/1.0/modules/content/"`，避免 xml 格式报错。
+3. 参照下方内容，按 WordPress 所需 rss 格式修改 feed-wp.xml 文件的 `item` 部分，并在文件顶部的 `<rss>` 元素内添加 `xmlns:content="http://purl.org/rss/1.0/modules/content/"`，避免 xml 格式报错。
 
    ```xml
    <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
@@ -45,8 +45,7 @@ Jekyll 用着太舒服，不知不觉就过了三年。但随着文章越来越�
 
 4. 登录 WordPress 后台，工具－导入－安装并启用插件 **FeedWordPress** 。自带 RSS 导入器许久不更新，极易报错，不推荐。
 
-5. 后台－Syndication－添加 rss 源如`xxx.com/feed-wp.xml`，`xxx.com`为你的博客地址。然后导入`feed-wp.xml`。
-
+5. 后台－Syndication－添加 rss 源如 `xxx.com/feed-wp.xml`，其中的 `xxx.com` 为网站地址。
    ![](http://tc.seoipo.com/20210128120956.gif)
 
 **参考资料**：

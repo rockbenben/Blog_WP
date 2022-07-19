@@ -26,7 +26,7 @@ tags:
 
 ## 为什么选择 Aria2？
 
-- 优点：比较全能，HTTP 下载和 BT 下载都有，性能也相当不错，**速度不比迅雷慢**
+- 优点：比较全能，HTTP 下载和 BT 下载都有，性能也相当不错，**速度不比迅雷慢**。
 - 缺点：无 UI，需要自备；配置麻烦，上手较难。
 
 真·懒人包：<https://www.seoipo.com/software/Aria2/>
@@ -59,21 +59,21 @@ Aria2 真·懒人包无需配置，下载即用，适合不想折腾的人。
 
    - 修改默认下载目录。
 
-   ```
+   ```bash
    # 文件的保存路径 (可使用绝对路径或相对路径), 默认：当前启动位置
    dir=D:\Download  #D:\Download 是我的默认下载目录
    ```
 
    - 修改服务器默认连接数
 
-   ```
+   ```bash
    # 同一服务器连接数，添加时可指定，默认:1
    max-connection-per-server=16
    ```
 
    - 开启 BT 下列设置
 
-   ```
+   ```bash
    enable-dht=true
    bt-enable-lpd=true
    enable-peer-exchange=true
@@ -81,7 +81,7 @@ Aria2 真·懒人包无需配置，下载即用，适合不想折腾的人。
 
    - 在最后添加 BT trackers，配置列表时重新获取 [最新 trackers](https://raw.githubusercontent.com/ngosang/trackerslist/master/trackers_best.txt), tracker 中用`，`隔开
 
-   ```
+   ```bash
    # bt-tracker 更新，解决 Aria2 BT 下载速度慢没速度的问题
    bt-tracker=udp://tracker.coppersurfer.tk:6969/announce,udp://tracker.leechers-paradise.org:6969/announce,udp://tracker.opentrackr.org:1337/announce,udp://p4p.arenabg.com:1337/announce,udp://9.rarbg.to:2710/announce,udp://9.rarbg.me:2710/announce,udp://tracker.openbittorrent.com:80/announce,udp://exodus.desync.com:6969/announce,udp://tracker.tiny-vps.com:6969/announce,udp://retracker.lanta-net.ru:2710/announce,udp://open.stealth.si:80/announce,udp://tracker.moeking.me:6969/announce,udp://denis.stalker.upeer.me:6969/announce,udp://tracker.torrent.eu.org:451/announce,udp://tracker.cyberia.is:6969/announce,udp://open.demonii.si:1337/announce,udp://ipv4.tracker.harry.lu:80/announce,udp://explodie.org:6969/announce,udp://xxxtor.com:2710/announce,udp://valakas.rollo.dnsabr.com:2710/announce
    ```
@@ -91,7 +91,7 @@ Aria2 真·懒人包无需配置，下载即用，适合不想折腾的人。
 6. 开始下载
 
 - Aira2 没有软件界面，程序员可以用代码执行任务，但普通用户怎样添加下载任务呢？
-- 打开浏览器，输入网址`aria2c.com`就可以打开操作界面了。可以把这个网址放到书签中，方便使用。
+- 打开浏览器，输入网址 `aria2c.com` 就可以打开操作界面了。可以把这个网址放到书签中，方便使用。
 
 ## Aria2 进阶
 
@@ -123,10 +123,10 @@ chrome 新版目前无法直接安装 crx，国内搬运需将文件解压到新
 Aria2 启动需要分别打开下载界面和 exe 应用文件，比较麻烦。我用 ahk 做了个启动器，可以检测 exe 应用运行状态并一键打开下载界面。
 启动器下载：<https://wwi.lanzoui.com/inbO5entf3e>
 
-将启动器到 Aria2 运行目录，如`D:\Aria2`。
+将启动器到 Aria2 运行目录，如 `D:\Aria2`。
 
-**Aria2c 启动器**：使用`http://aria2c.com/`作为默认下载界面，不需要多余设置。
-**AriaNg 启动器**：使用 AriaNg 作为下载界面，需将 AriaNg 解压到 Aria2 运行目录，如`D:\Aria2\AriaNg`。
+**Aria2c 启动器**：使用 `http://aria2c.com/` 作为默认下载界面，不需要多余设置。
+**AriaNg 启动器**：使用 AriaNg 作为下载界面，需将 AriaNg 解压到 Aria2 运行目录，如 `D:\Aria2\AriaNg`。
 
 参考资料：
 

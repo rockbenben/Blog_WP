@@ -17,9 +17,9 @@ tags:
 
 之后，尝试了 1Password、Bitwarden、Enpass、Remembear 多种密码管理软件，最终选择**开源免费且自动填充超强**的 KeePass。
 
-KeePass 的密码保存在本地的`.kdbx`数据库中，让你真正掌握自己的账号密码。搭配坚果云或同步盘的 KeePass，能实现密码多端同步，让手机与电脑使用同一密码库。
+KeePass 的密码保存在本地的 `.kdbx` 数据库中，让你真正掌握自己的账号密码。搭配坚果云或同步盘的 KeePass，能实现密码多端同步，让手机与电脑使用同一密码库。
 
-KeePass 官网下载（Windows）：<https://keepass.info/download.html>。安卓推荐`Keepass2Android`，iOS 推荐`Strongbox`或`KeePassium`。
+KeePass 官网下载（Windows）：<https://keepass.info/download.html>。安卓推荐 `Keepass2Android`，iOS 推荐 `Strongbox` 或 `KeePassium`。
 
 以下会逐步介绍 KeePass 的配置和插件。小白可直接看文章底部，下载懒人包，开包即用。
 
@@ -36,15 +36,15 @@ KeePass 官网下载（Windows）：<https://keepass.info/download.html>。安�
 
 ### 自动输入规则
 
-选中左侧的数据库，右键点击「编辑群组」-「自动输入」，替换默认规则为`^{SPACE}{DELAY 100}{CLEARFIELD}{USERNAME}{TAB}{PASSWORD}{DELAY 100}{ENTER}^{SPACE}`。
+选中左侧的数据库，右键点击「编辑群组」-「自动输入」，替换默认规则为 `^{SPACE}{DELAY 100}{CLEARFIELD}{USERNAME}{TAB}{PASSWORD}{DELAY 100}{ENTER}^{SPACE}`。
 
-`^{SPACE}`即`Ctrl+Space`，该热键能关闭或启用当前输入法。关闭输入法后，默认为美式键盘输入。
+`^{SPACE}` 即 `Ctrl+Space`，该热键能关闭或启用当前输入法。关闭输入法后，默认为美式键盘输入。
 
-`Ctrl+Space`需在输入法编辑状态下才能生效，而密码区都禁用输入法编辑。因此，输入密码完成后，可能输入法并未重置，要按`Ctrl+Space`才能正常启用输入法。
+`Ctrl+Space` 需在输入法编辑状态下才能生效，而密码区都禁用输入法编辑。因此，输入密码完成后，可能输入法并未重置，要按 `Ctrl+Space` 才能正常启用输入法。
 
 ## 必备插件
 
-连接浏览器、密码自动输入等主要功能，KeePass 均需配置插件。下载插件并放入指定文件夹`\Plugins`，重启 KeePass 即可使插件生效。
+连接浏览器、密码自动输入等主要功能，KeePass 均需配置插件。下载插件并放入指定文件夹 `\Plugins`，重启 KeePass 即可使插件生效。
 
 ### [KeePassHttp](https://raw.github.com/pfn/keepasshttp/master/KeePassHttp.plgx)
 
@@ -59,7 +59,7 @@ KPEnhancedEntryView 增强视觉效果，为达到最佳显示效果，按以下
 
 ### [AutoTypeSearch](https://keepass.info/plugins.html#atsearch)
 
-AutoTypeSearch 提供全局框，输入热键`Ctrl+Shift+A`后，搜索关键词输入密码。
+AutoTypeSearch 提供全局框，输入热键 `Ctrl+Shift+A` 后，搜索关键词输入密码。
 
 ![AutoTypeSearch 通用设置](http://tc.seoipo.com/20191013083950.png)
 
@@ -129,9 +129,9 @@ KeePass 懒人包为绿色版，集成了常用插件，建立数据库即可使
 
 **建立数据库：**
 
-1. 解压懒人包，打开程序`KeePass.exe`。
+1. 解压懒人包，打开程序 `KeePass.exe`。
 2. 屏幕右下角托盘处，打开 KeePass。
-3. 依次点击`菜单栏 - 文件 - 新建`，建立属于你的密码数据库。
+3. 依次点击 `菜单栏 - 文件 - 新建`，建立属于你的密码数据库。
 
    ![KeePass 懒人包设置](https://tc.seoipo.com/KeePass_new_kdbx.gif)
 

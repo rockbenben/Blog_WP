@@ -26,7 +26,7 @@ tags:
 
 [winget](https://docs.microsoft.com/zh-cn/windows/package-manager/winget/) 是 Windows 程序包管理器的命令行工具。在 Windows 10 和 Windows 11 计算机上，使用 winget 命令行工具来发现、安装、升级、删除和配置应用程序。
 
-早期版本的 Windows 不支持 winget，需在 [winget 官方链接](https://github.com/microsoft/winget-cli/releases) 下载后缀为`.msixbundle`的应用安装程序。
+早期版本的 Windows 不支持 winget，需在 [winget 官方链接](https://github.com/microsoft/winget-cli/releases) 下载后缀为 `.msixbundle` 的应用安装程序。
 
 国内搬运地址：[https://wwz.lanzouf.com/ixZL701smc4d](https://wwz.lanzouf.com/ixZL701smc4d)
 
@@ -42,13 +42,13 @@ tags:
 
 #### winget search appName
 
-当未找到或不确定 appName 时，使用 winget search 可以锁定程序名称。以「飞书」为例，飞书不支持中文锁定，搜索后发现有国内版「Feishu」和海外版「Lark」两个版本，国内版使用命令`winget install feishu`。
+当未找到或不确定 appName 时，使用 winget search 可以锁定程序名称。以「飞书」为例，飞书不支持中文锁定，搜索后发现有国内版「Feishu」和海外版「Lark」两个版本，国内版使用命令 `winget install feishu`。
 
 ![](http://tc.seoipo.com/2022-05-05-17-13-45.png)
 
 #### winget upgrade --all
 
-`winget upgrade --all`会静默升级所有支持 winget 的程序，适合更新强迫症患者。不过，该升级流程暂时没有筛选办法，无法单独剔除应用。
+`winget upgrade --all` 会静默升级所有支持 winget 的程序，适合更新强迫症患者。不过，该升级流程暂时没有筛选办法，无法单独剔除应用。
 
 ![](http://tc.seoipo.com/2022-05-05-17-14-00.png)
 
@@ -58,7 +58,7 @@ tags:
 
 Microsoft Store 不支持 winget 官方源，因此 winget 不能使用应用名称安装商店应用。winget 安装 Microsoft Store 应用前**，**需要 `winget search` 命令找到应用 id 和来源。
 
-msstore 源指 Miscrosoft Store，其使用唯一标识符作为程序包的“Id”。因此，snipaste 安装命令为`winget install 9P1WXPKB68KX -s msstore`。
+msstore 源指 Miscrosoft Store，其使用唯一标识符作为程序包的“Id”。因此，snipaste 安装命令为 `winget install 9P1WXPKB68KX -s msstore`。
 
 ![](http://tc.seoipo.com/2022-05-05-17-14-23.png)
 

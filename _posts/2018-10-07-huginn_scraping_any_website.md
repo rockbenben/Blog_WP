@@ -28,7 +28,7 @@ tags:
 
 ## PhantomJs 网页抓取
 
-新建 Huginn 任务组 Scenario「国内应急新闻」，样例抓取链接为`http://www.cneb.gov.cn/guoneinews/`。
+新建 Huginn 任务组 Scenario「国内应急新闻」，样例抓取链接为 `http://www.cneb.gov.cn/guoneinews/`。
 ![](http://tc.seoipo.com/20181008131549.png)
 
 ### js 页面缓存
@@ -45,7 +45,7 @@ tags:
 
 使用火狐浏览器打开目标页面，获取 css path 路径。
 
-1. 按下`F12`, 然后点击 _Developer Tools_ 左上角的*检查指针*。
+1. 按下 `F12`, 然后点击 _Developer Tools_ 左上角的*检查指针*。
    ![](http://tc.seoipo.com/20181008114911.png)
 2. 选中要抓取的部分。
    ![](http://tc.seoipo.com/20181008113925.png)
@@ -53,21 +53,21 @@ tags:
    ![](http://tc.seoipo.com/20181008114207.png)
 4. 处理 css path 路径：
 
-   - 初始获取的路径为`html body div.area.areabg1 div.area-half.right div.tabBox div.tabContents.active table tbody tr td.red a`；
-   - css path 原始路径过长，删去不带 `.` 或 `#` 的节点（节点间以空格“ ”分割），并删去每个节点在 `.` 或 `#`前的第一个标签，得到：`.area.areabg1 .area-half.right .tabBox .tabContents.active .red a`；
-   - 前半部分对节点定位无用，继续省略（比如：中国上海，省略掉中国，大家也知道上海在哪），获得短路径`.tabContents.active .red a`。
+   - 初始获取的路径为 `html body div.area.areabg1 div.area-half.right div.tabBox div.tabContents.active table tbody tr td.red a`；
+   - css path 原始路径过长，删去不带 `.` 或 `#` 的节点（节点间以空格“ ”分割），并删去每个节点在 `.` 或 `#` 前的第一个标签，得到：`.area.areabg1 .area-half.right .tabBox .tabContents.active .red a`；
+   - 前半部分对节点定位无用，继续省略（比如：中国上海，省略掉中国，大家也知道上海在哪），获得短路径 `.tabContents.active .red a`。
 
 **特殊路径处理**：
 
-- 有些路径中的**节点带空格**，如`<div class="packery-item article">`,路径中的空格由`.`代替，截取为`.packery-item.article`。
-- 当抓取**多种 css path 规则**时，用逗号分割，比如`"css": ".focus-title .current a , .stress h2 a",`。
+- 有些路径中的**节点带空格**，如 `<div class="packery-item article">`,路径中的空格由 `.` 代替，截取为 `.packery-item.article`。
+- 当抓取**多种 css path 规则**时，用逗号分割，比如 `"css": ".focus-title .current a , .stress h2 a",`。
 
 ### 导出 RSS
 
 使用 DataOutputAgent，将抓取内容导出为 RSS。
 ![](http://tc.seoipo.com/20181008130943.png)
 
-回到 Scenarios，点击 Data Output Agent 旁的按钮「Actions - Show」，复制导出的 xml 链接`http://xxx.xxx/users/1/web_requests/xxx/xxxx.xml`。
+回到 Scenarios，点击 Data Output Agent 旁的按钮「Actions - Show」，复制导出的 xml 链接 `http://xxx.xxx/users/1/web_requests/xxx/xxxx.xml`。
 ![](http://tc.seoipo.com/20181008131059.png)
 
 [点击网盘下载](https://pan.baidu.com/s/1JdsFkLN9kczR9C92tKi83A) 国内应急新闻的详细设置，导入到 Huginn 即可使用。其他问题参考 [PhantomJs Cloud 英文攻略](https://github.com/huginn/huginn/wiki/Browser-Emulation-Using-PhantomJs-Cloud)。

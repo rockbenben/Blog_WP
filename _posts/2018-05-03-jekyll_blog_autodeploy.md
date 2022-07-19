@@ -17,7 +17,7 @@ tags:
 
 Github 上搭建 Jekyll 是最方便的，空间免费、流量免费、部署简单。但 Github 属于被墙状态，将博客部署在那，速度实在太慢。在玩了几天后，我开始在服务器上直接搭建 Jekyll 博客。
 
-服务器搭建需要人工执行`jekyll build`, 完全背离了最开始搭建博客的初衷-**方便**。之后结合了网络上多个自动化方案，选定入门成本最低的 `Github` -> `Travis CI` -> `Docker`-> `VPS`。
+服务器搭建需要人工执行 `jekyll build`, 完全背离了最开始搭建博客的初衷-**方便**。之后结合了网络上多个自动化方案，选定入门成本最低的 `Github` -> `Travis CI` -> `Docker`-> `VPS`。
 
 ## 搭建思路
 
@@ -44,7 +44,7 @@ Travis CI 对于开源项目完全免费，并且能自动感知到 Github 的 c
 
 Travis CI push 静态文件到 Github 通过 Github 的 token 实现授权，push 代码如下
 
-```
+```bash
 after_success:
   - git clone https://github.com/rockbenben/rockbenben.github.io.git
   - cd rockbenben.github.io && rm -rf * && cp -r ../_site/* .
@@ -67,9 +67,9 @@ Travis CI 提供了存放加密文件的方式，参考[官方文档](https://do
 
 ## Dockerfiles 设置
 
-在 Github 中新建一个 repository，可以命名为`dockerfiles`, 专门用来存储 Docker 镜像的设置文件。在`dockerfiles`新建文件夹 `jekyll` ，并在 `jekyll` 中新建文件`Dockerfile`, 放入以下代码：
+在 Github 中新建一个 repository，可以命名为 `dockerfiles`, 专门用来存储 Docker 镜像的设置文件。在 `dockerfiles` 新建文件夹 `jekyll` ，并在 `jekyll` 中新建文件 `Dockerfile`, 放入以下代码：
 
-```
+```bash
 FROM nginx:1.13.9-alpine
 
 LABEL maintainer="Benson <qingwhat@gmail.com>"
@@ -100,26 +100,26 @@ WORKDIR /usr/share/nginx/html
 
 ## Docker 镜像设置
 
-注册并登录 [Docker Hub](https://hub.docker.com)，点击`Create - Create Automated Build - Create Auto-build Github`, 选择之前新建的 `dockerfiles` repository。
+注册并登录 [Docker Hub](https://hub.docker.com)，点击 `Create - Create Automated Build - Create Auto-build Github`, 选择之前新建的 `dockerfiles` repository。
 
 建立 Automated Build 镜像后，进入 `Build Seeting`, 点击 Trigger，建立第一个 Docker 镜像。
 
 ![](http://tc.seoipo.com/20180504161016.png)
 
-然后在`Building Settings - Build Triggers - Activate Triggers` ，复制 Trigger URL。
+然后在 `Building Settings - Build Triggers - Activate Triggers` ，复制 Trigger URL。
 
 ![](http://tc.seoipo.com/20180504161245.png)
 
 然后在服务器上执行下列代码，拉取并**启动 Docker 镜像**。
 
-```
+```bash
 docker pull rockben/jekyll
 docker stop jekyll_blog
 docker rm jekyll_blog
 docker run --name=jekyll_blog -d -p 39100:80 --privileged=true rockben/jekyll:latest
 ```
 
---name=jekyll_blog 中的 `jekyll_blog`是对容器的命名，方便后续操作。
+--name=jekyll_blog 中的 `jekyll_blog` 是对容器的命名，方便后续操作。
 
 -d 让容器在后台运行。
 
@@ -127,15 +127,15 @@ docker run --name=jekyll_blog -d -p 39100:80 --privileged=true rockben/jekyll:la
 
 --privileged=true 关闭安全权限，否则你容器操作文件夹没有权限。
 
---`rockben/jekyll:latest`是容器名称，可省略 `:latest`。
+--`rockben/jekyll:latest` 是容器名称，可省略 `:latest`。
 
-运行容器后，访问 `seoipo.com:39100`就可以看到镜像网页。如果每次用端口访问，可以在域名 DNS 中设置显性 URL，将二级域名 `blog.seoipo.com` 指向 `seoipo.com:39100`
+运行容器后，访问 `seoipo.com:39100` 就可以看到镜像网页。如果每次用端口访问，可以在域名 DNS 中设置显性 URL，将二级域名 `blog.seoipo.com` 指向 `seoipo.com:39100`
 
 ### Docker 扩展阅读
 
 **Docker 命令符**：
 
-```
+```bash
 docker ps // 查看所有正在运行容器
 docker stop containerId // containerId 是容器的 ID
 
@@ -148,7 +148,7 @@ docker rm $(docker ps -a -q) //   remove 删除所有容器
 
 **`docker run` 进阶设置**
 
-```
+```bash
 docker run --name=jekyll_blog -d -p 39100:80 -v /www/wwwroot/jekyll:/jekyll --privileged=true rockben/jekyll:latest /bin/bash
 ```
 
@@ -161,7 +161,7 @@ Travis 不能利用用户名和密码登陆，我们只有利用**SSH 免密登�
 
 **1、生成公钥/私钥对**
 
-```
+```bash
 cd ~/.ssh  # 切换 .ssh 目录，目录的第一个字符如果是 `.` 表示改文件夹是隐藏文件夹
 mkdir ~/.ssh  #如果 .ssh 文件夹不存在，可以执行指令自行创建。如果 .ssh 文件已经存在，该命令会指出 .ssh 目录：/root/.ssh
 ssh-keygen -t rsa     # 生成 RSA 密钥对，后面所有的直接以默认就行，passphase 一定要为空
@@ -169,21 +169,21 @@ ssh-keygen -t rsa     # 生成 RSA 密钥对，后面所有的直接以默认就
 
 **2、将生成的公钥添加为受信列表**
 
-```
+```bash
 cd ~/.ssh  # 切换.ssh 目录
 cat id_rsa.pub >> authorized_keys #将公钥内容输出到 authorized_keys 中
 ```
 
 **3、在.ssh 目录下新增配置文件 config**
 
-```
+```bash
 cd ~/.ssh  # 切换 .ssh 目录
 vim config  #新建并打开目录
 ```
 
-点击`i`进入编辑状态，输入下列代码。完毕后，点击`Esc`退出编辑状况，然后输入`:wq!`强制保存后离开文件
+点击 `i` 进入编辑状态，输入下列代码。完毕后，点击 `Esc` 退出编辑状况，然后输入 `:wq!` 强制保存后离开文件
 
-```
+```bash
 Host test
 HostName 99.99.99.99(你的服务器 ip)
 #登陆的用户名
@@ -199,14 +199,14 @@ IdentityFile ~/.ssh/id_rsa
 
 **5、服务器创建空白`.travis.yml`文件**
 
-```
+```bash
 mkdir /home/travis #新建 travis 文件夹
 touch /home/travis/.travis.yml #在 travis 文件夹里创建空白 .travis.yml 文件
 ```
 
 **6、服务器登录 Travis，添加加密的私钥至代码仓库**
 
-```
+```bash
 cd /home/travis  #进入 .travis.yml 所在文件夹
 travis login     #用 GitHub 账户登陆 travis
 
@@ -225,16 +225,15 @@ before_install:
 
 **成功加密后，会提示**
 
-```
+```bash
 Make sure to add id_rsa.enc to the git repository.
 Make sure not to add ~/.ssh/id_rsa to the git repository.
 Commit all changes to your .travis.yml.
 ```
 
-- **将新生成的`id_rsa.enc`文件上传到 Github 源文件 repository 中**
+- **将新生成的 `id_rsa.enc` 文件上传到 Github 源文件 repository 中**
 
-- 将`.travis.yml`中的`openssl aes-256-cbc -K $encrypted_5c280379e96c_key -iv $encrypted_5c280379e96c_iv -in id_rsa.enc -out ~/.ssh/id_rsa -d` 放入最终的`.travis.yml`文件中。
-
+- 将 `.travis.yml` 中的 `openssl aes-256-cbc -K $encrypted_5c280379e96c_key -iv $encrypted_5c280379e96c_iv -in id_rsa.enc -out ~/.ssh/id_rsa -d` 放入最终的 `.travis.yml` 文件中。
   ![](http://tc.seoipo.com/20180504184508.png)
 
 ## travis.yml 配置
@@ -245,7 +244,7 @@ Commit all changes to your .travis.yml.
 
 `.travis.yml` 配置文件内容样例如下：
 
-```
+```bash
 language: ruby
 rvm:
 - 2.3.3

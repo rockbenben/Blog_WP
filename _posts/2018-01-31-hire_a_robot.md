@@ -28,7 +28,7 @@ tags:
 
 > RSS(Really Simple Syndication) 是一种描述和同步网站内容的格式，是使用最广泛的 XML 应用。简易信息聚合（也叫聚合内容）是一种 RSS 基于 XML 标准，在互联网上被广泛采用的内容包装和投递协议。
 
-- [ ] 增加`Alfred`搜索
+- [ ] 增加 `Alfred` 搜索
 
 **直到遇到了我的第一个机器人雇员 [Huginn](https://github.com/huginn/huginn)**
 
