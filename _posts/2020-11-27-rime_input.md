@@ -26,6 +26,8 @@ tags:
 
 安装时建议不要修改用户文件夹位置，后续定制输入法容易出错。安装完成后，右键点击任务栏小狼毫图标，选「输入法设定」，只勾选一个「朙月拼音·简化字」，再选一个喜欢的皮肤就好，接着就可以正常使用小狼毫输入法了。
 
+不推荐安装「四叶草」等集成方案，而推荐以「朙月拼音·简化字」为基础定制你自己的输入法。这样即使出现 bug 也不会对你的输入法设置产生过大影响。小狼毫的魅力就在于定制、可控。
+
 如果想让小狼毫输入法能更加完美，则查看下方的进阶指南。
 
 ## 进阶指南
@@ -34,14 +36,14 @@ tags:
 
 **官方文档**：[定制指南](https://github.com/rime/home/wiki/CustomizationGuide)、[文件配置说明](https://github.com/rime/home/wiki/RimeWithSchemata#rime-%E4%B8%AD%E7%9A%84%E6%95%B8%E6%93%9A%E6%96%87%E4%BB%B6%E5%88%86%E4%BD%88%E5%8F%8A%E4%BD%9C%E7%94%A8)、[emoji 集成](https://github.com/rime/rime-emoji)、[模糊音设置](https://github.com/rime/home/wiki/CustomizationGuide#%E6%A8%A1%E7%B3%8A%E9%9F%B3)
 
-[同步用户资料](https://github.com/rime/home/wiki/UserGuide#%E5%90%8C%E6%AD%A5%E7%94%A8%E6%88%B6%E8%B3%87%E6%96%99)：打开用户文件夹中的`installation.yaml`，将设备名称`installation_id`从长字符串修改为方便识别的名称，并在文件最下方添加`sync_dir: 'D:\Sync\RIME'`，此处为用户资料同步位置。
+[同步用户资料](https://github.com/rime/home/wiki/UserGuide#%E5%90%8C%E6%AD%A5%E7%94%A8%E6%88%B6%E8%B3%87%E6%96%99)：打开用户文件夹中的 `installation.yaml`，将设备名称 `installation_id` 从长字符串修改为方便识别的名称，并在文件最下方添加 `sync_dir: 'D:\Sync\RIME'`，此处为用户资料同步位置。
 
-输入法更新：下载 [librime](https://github.com/rime/librime/releases) 替换小狼毫目录中的 rime.dll 就可完成输入法更新。librime 是 rime 输入法的核心库，小小狼毫主版本长年未更新，更新 librime 文件可以替代更新。
+**输入法更新**：下载 [librime](https://github.com/rime/librime/releases) 替换小狼毫目录中的 rime.dll 就可完成输入法更新。librime 是 rime 输入法的核心库，小小狼毫主版本长年未更新，更新 librime 文件可以替代更新。
 
 注意：
 
 - 同步文件夹路径中不能出现中文。
-- 打字习惯会保存在`<词典名>.userdb.txt`、`<词典名>.userdb.kct.snapshot`，还原时手工导入词典。
+- 打字习惯会保存在 `<词典名>.userdb.txt`、 `<词典名>.userdb.kct.snapshot`，还原时手工导入词典。
 
 ## 扩充词库
 
@@ -53,9 +55,7 @@ tags:
 
 从容量上来说，SuperRime 词库 > BetterRime 词库 > Rime 擴充詞庫，但词库越大错误收录也越多，按你的实际需求来选择词库。
 
-词库解压后，修改`luna_pinyin.extended.dict.yaml`，选择启用词库范围。`mysymbols.yaml`对全角和半角符号都做了优化，有问题的话可以按自己需求修改。
-
-另外，不推荐安装「四叶草」等集成方案，而推荐以「朙月拼音·简化字」为基础定制你自己的输入法。这样即使出现 bug 也不会对你的输入法设置产生过大影响。小狼毫的魅力就在于定制、可控。
+词库解压后，修改 `luna_pinyin.extended.dict.yaml`，选择启用词库范围。`mysymbols.yaml` 对全角和半角符号都做了优化，有问题的话可以按自己需求修改。
 
 ## 双拼方案
 
@@ -65,25 +65,25 @@ tags:
 - 设置好后，右键点击任务栏小狼毫图标，选「输入法设定」，只勾选一个「小鹤双拼」。
 - 默认方案为繁体，可使用按键 F5 (部分版本是 F4)，将配置默认为简体。
 
-如果想在双拼中实现自定义短语，可参考 [小狼毫自定义短语-Rime-双拼](https://blog.csdn.net/neninee/article/details/83692270)。如果设定后，无法使用简体输入，将`double_pinyin_flypy.schema.yaml` 中的 filters 模块转移到 translators 模块上方。
+如果想在双拼中实现自定义短语，可参考 [小狼毫自定义短语-Rime-双拼](https://blog.csdn.net/neninee/article/details/83692270)。如果设定后，无法使用简体输入，将 `double_pinyin_flypy.schema.yaml` 中的 filters 模块转移到 translators 模块上方。
 
 ## 常见问题
 
 ### 开机后不能输出中文
 
-有时开机后，不能正常输出中文，这是由于`WeaselServer.exe`未正常启动的原因。
+有时开机后，不能正常输出中文，这是由于 `WeaselServer.exe` 未正常启动的原因。
 
-此时，我们只需打开程序文件夹中的`WeaselServer.exe`即可解决问题，该程序默认位置为`C:\Program Files (x86)\Rime\weasel-0.14.3\WeaselServer.exe`。不要直接将`WeaselServer.exe`放入开启启动程序，会导致程序报错。
+此时，我们只需打开程序文件夹中的 `WeaselServer.exe` 即可解决问题，该程序默认位置为 `C:\Program Files (x86)\Rime\weasel-0.14.3\WeaselServer.exe`。不要直接将 `WeaselServer.exe` 放入开启启动程序，会导致程序报错。
 
-不愿手动启动`WeaselServer.exe`的话，可以使用 [WeaselServerAutostart](https://github.com/rockbenben/rime-WeaselServer) 脚本工具来启动。首先把脚本放置于小狼毫「程序文件夹」内，然后将脚本的快捷方式移动至开机启动目录（`%AppData%\Microsoft\Windows\Start Menu\Programs\Startup`）。当开机时，检测到小狼毫未正常启动，脚本会自动启动对应程序。
+不愿手动启动 `WeaselServer.exe` 的话，可以使用 [WeaselServerAutostart](https://github.com/rockbenben/rime-WeaselServer) 脚本工具来启动。首先把脚本放置于小狼毫「程序文件夹」内，然后将脚本的快捷方式移动至开机启动目录 `%AppData%\Microsoft\Windows\Start Menu\Programs\Startup`。当开机时，检测到小狼毫未正常启动，脚本会自动启动对应程序。
 
 WeaselServerAutostart 脚本国内下载：[https://wwx.lanzoux.com/if3znkka01g](https://wwx.lanzoux.com/if3znkka01g)
 
 ### 输入法报错
 
-将用户文件夹置为同步文件夹后，提示`有错误，请查看日志%TEMP%\rime.weasel.*.INFO`。这是由于用户文件夹置为同步文件夹后导致的进程冲突。日志中有提示`另一个程序正在使用此文件，进程无法访问`。
+将用户文件夹置为同步文件夹后，提示 `有错误，请查看日志%TEMP%\rime.weasel.*.INFO`。这是由于用户文件夹置为同步文件夹后导致的进程冲突。日志中有提示 `另一个程序正在使用此文件，进程无法访问`。
 
-遇到报错后，关闭任务管理器中的`WeaselServer.exe`进程，然后重新执行小狼毫算法服务。
+遇到报错后，关闭任务管理器中的 `WeaselServer.exe` 进程，然后重新执行小狼毫算法服务。
 
 ### 输入法候选框闪烁
 
@@ -93,7 +93,7 @@ WeaselServerAutostart 脚本国内下载：[https://wwx.lanzoux.com/if3znkka01g]
 
 ### 指定程序中默认输入法
 
-如果想在特定程序中默认使用英文输入法，在`.\weasel.custom.yaml` 中加入下列代码即可。
+如果想在特定程序中默认使用英文输入法，在 `.\weasel.custom.yaml` 中加入下列代码即可。
 
 ```yaml
 patch:
@@ -117,7 +117,7 @@ patch:
 
 ### 用户文档位置
 
-`%APPDATA%\Rime`是小狼毫默认的用户文档位置。
+`%APPDATA%\Rime` 是小狼毫默认的用户文档位置。
 
 如果安装时修改过用户文档位置，则可以右键点击任务栏小狼毫图标，选「用户文件夹」，即可出现修修改后的用户文档位置。
 
@@ -129,7 +129,7 @@ patch:
 
 ### 无法触发词库的特殊符号
 
-SuperRime 词库自带的标点及特殊表情设置有问题，需在`luna_pinyin_simp.custom.yaml`中，植入以下代码。
+SuperRime 词库自带的标点及特殊表情设置有问题，需在 `luna_pinyin_simp.custom.yaml` 中，植入以下代码。
 
 ```yaml
 patch:
