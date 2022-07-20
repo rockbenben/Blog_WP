@@ -32,17 +32,16 @@ Jekyll 用着太舒服，不知不觉就过了三年。但随着文章越来越�
 
 3. 参照下方内容，按 WordPress 所需 rss 格式修改 feed-wp.xml 文件的 `item` 部分，并在文件顶部的 `<rss>` 元素内添加 `xmlns:content="http://purl.org/rss/1.0/modules/content/"`，避免 xml 格式报错。
 
-    ```
-    <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-      …
-      <item>
-        <title>标题</title>
-        <pubDate>发布日期</pubDate>
-        <content:encoded>内容</content:encoded>
-        <category>标签/目录 (该项将全部转为目录)</category>
-      </item>
-    </rss>
-    ```
+   ```html
+   <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" >
+     <item>
+       <title>标题</title>
+       <pubDate>发布日期</pubDate>
+       <content:encoded>内容</content:encoded>
+       <category>标签/目录 (该项将全部转为目录)</category>
+     </item>
+   </rss>
+   ```
 
 4. 登录 WordPress 后台，工具－导入－安装并启用插件 **FeedWordPress** 。自带 RSS 导入器许久不更新，极易报错，不推荐。
 
