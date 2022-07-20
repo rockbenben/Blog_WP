@@ -261,7 +261,7 @@ def main():
             link = sha1_key.split(".")[0]
             # 修改 3: 文章头部添加编辑时间
             # 从 markdown 改为 markdown2，并去除 markdown 的 extensions
-            content = markdown2.markdown("<pre>更新于 "+ time.strftime('%Y-%m-%d %H:%M:%S')+" UTC</pre>\n"+ content + href_info("https://"+domain_name+"/p/"+link+"/"))
+            content = "<pre>更新于 "+ time.strftime('%Y-%m-%d %H:%M:%S')+" UTC</pre>\n"+ markdown2.markdown(content) + href_info("https://"+domain_name+"/p/"+link+"/")
             #content = markdown.markdown("<pre>更新于 "+ time.strftime('%Y-%m-%d %H:%M:%S')+" UTC</pre>\n"+ content + href_info("https://"+domain_name+"/p/"+link+"/"), extensions=['tables', 'fenced_code'])
             # 如果文章无 id，则直接新建
             # 修改 1:去掉链接尾部的/符号，原本为 if(("https://"+domain_name+"/p/"+link+"/" in link_id_dic.keys()) == False):
