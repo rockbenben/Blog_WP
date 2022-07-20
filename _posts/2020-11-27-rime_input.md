@@ -52,6 +52,7 @@ tags:
 - BetterRime 词库：[https://github.com/Chernfalin/better-rime-dict](https://github.com/Chernfalin/better-rime-dict)
 - SuperRime 拓展词库：[https://github.com/Chernfalin/SuperRimeDict](https://github.com/Chernfalin/SuperRimeDict)
 - 自定义词库：[自定义短语](https://gist.github.com/lotem/5440677)、[Rime 擴充詞庫](https://github.com/rime-aca/dictionaries)
+- [Squirrel 鼠须管配置](https://github.com/ssnhd/rime)：比较成熟的配置，虽然针对的是 Mac，但可以参考其中的配置来修改。
 
 从容量上来说，SuperRime 词库 > BetterRime 词库 > Rime 擴充詞庫，但词库越大错误收录也越多，按你的实际需求来选择词库。
 
@@ -64,6 +65,7 @@ tags:
 - 将官方配置库中的 [double_pinyin_flypy.schema.yaml](https://github.com/rime/rime-double-pinyin/blob/master/double_pinyin_flypy.schema.yaml) 下载到用户文件夹。
 - 设置好后，右键点击任务栏小狼毫图标，选「输入法设定」，只勾选一个「小鹤双拼」。
 - 默认方案为繁体，可使用按键 F5 (部分版本是 F4)，将配置默认为简体。
+- 双拼只不会显示当前输出字母，可按下方配置修改 [使用双拼时如何同时显示按下的键以及双拼对应的拼音](https://github.com/rime/rime-double-pinyin/issues/6#issuecomment-754367706)。
 
 如果想在双拼中实现自定义短语，可参考 [小狼毫自定义短语-Rime-双拼](https://blog.csdn.net/neninee/article/details/83692270)。如果设定后，无法使用简体输入，将 `double_pinyin_flypy.schema.yaml` 中的 filters 模块转移到 translators 模块上方。
 
