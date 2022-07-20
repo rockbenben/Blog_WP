@@ -121,8 +121,9 @@ _2022.07.20 更新_
 
 基于 WordPressXMLRPCTools，我做了三点修改：​
 
-- 发布设置：修改 `main.py` 文件。
+- 发布设置：修改 `main.py`、`Pipfile` 文件。
 
+  - 将 markdown 转 HTML 模块从 markdown 换为 markdown2。
   - 修复无法覆盖更新文章的 bug。
   - 调整项目页的目录标题和时间格式。
   - 页首添加文章编辑时间，默认为格林尼治标准时间，比北京晚 8 小时。

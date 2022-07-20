@@ -32,7 +32,7 @@ Jekyll 用着太舒服，不知不觉就过了三年。但随着文章越来越�
 
 3. 参照下方内容，按 WordPress 所需 rss 格式修改 feed-wp.xml 文件的 `item` 部分，并在文件顶部的 `<rss>` 元素内添加 `xmlns:content="http://purl.org/rss/1.0/modules/content/"`，避免 xml 格式报错。
 
-    ```html
+    ```
     <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
       …
       <item>
