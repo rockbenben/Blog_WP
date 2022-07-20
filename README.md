@@ -133,7 +133,10 @@ _2022.07.19 更新_
 - 文章聚合页：主目录新增 `.nojekyll`，`index.html`，`_sidebar.md` 文件，引入文档生成工具 docsify，将博客文章聚合在一个页面，方便快速定位和位置管理。示例：[https://rockbenben.github.io/Blog_WP/](https://rockbenben.github.io/Blog_WP/)。
   ![](http://tc.seoipo.com/2022-05-26-20-12-56.png)
 
-接下来，想在 md 文件中指定发布时间。试过在 `main.py` 中添加 `post_date` 参数，但报错，后续研究下 XMLRPC 的 post 参数。
+接下来的修改方向：
+
+- 修复 md 转 wordpress 中的层级丢失，这是 XMLRPC 中的问题吗？
+- 在 md 文件中指定发布时间。试过在 `main.py` 中添加 `post_date` 参数，但报错，后续研究下 XMLRPC 的 post 参数。
 
 ## 🍥 使用流程
 
