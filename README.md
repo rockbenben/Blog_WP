@@ -136,6 +136,7 @@ _2022.07.19 更新_
 接下来的修改方向：
 
 - 修复 md 转 wordpress 中的层级丢失，这是 XMLRPC 中的问题吗？
+  - 参考文章：[Python 自动发布 markdown 文章到 WordPress 网站](https://blog.csdn.net/linyusen_com/article/details/82887216)
 - 在 md 文件中指定发布时间。试过在 `main.py` 中添加 `post_date` 参数，但报错，后续研究下 XMLRPC 的 post 参数。
 
 ## 🍥 使用流程
