@@ -18,6 +18,8 @@ jobs:
           python-version: 3.7
       - name: Install pipenv
         run: pip install pipenv
+      - name: Install markdown2
+        run: pip install markdown2
       - name: Install dependecies
         run:  |
           pipenv  install  --dev
