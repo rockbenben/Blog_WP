@@ -139,6 +139,7 @@ _2022.07.20 更新_
 - 修复 md 转 wordpress 中的层级丢失，这是 markdown 转换中的问题。^[[Python 自动发布 markdown 文章到 WordPress 网站](https://blog.csdn.net/linyusen_com/article/details/82887216)]
   - 测试将 markdown 转为 markdown2 没看到区别，待后续测试。根据 markdown2 issue，它 7 月初已经修复了，但还没同步到发布版本。
   - 很多人说 markdown 有更强的扩展性，是否要换回来
+  - 考虑用 [markdown-it](https://github.com/markdown-it/markdown-it) 来解析 html
 - 在 md 文件中指定发布时间。试过在 `main.py` 中添加 `post_date` 参数，但报错，后续研究下 XMLRPC 的 post 参数。
 
 ## 🍥 使用流程

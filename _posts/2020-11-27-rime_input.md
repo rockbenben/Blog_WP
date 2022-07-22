@@ -20,9 +20,7 @@ tags:
 
 之后尝试各类输入法，百度、讯飞、手心等依旧是键盘记录器，影子输入法开源但不够稳定，谷歌拼音停止更新，微软拼音词库收录慢且难以转移。唯有小狼毫开源，且方便多设备同步词库。
 
-官网下载：<https://github.com/rime/weasel/releases/download/0.14.3/weasel-0.14.3.0-installer.exe>
-
-国内搬运：<https://wwi.lanzoui.com/iDyF4pdzmni>
+下载小狼毫：[官方渠道](https://github.com/rime/weasel/releases/download/0.14.3/weasel-0.14.3.0-installer.exe)，[国内搬运](https://wwi.lanzoui.com/iDyF4pdzmni)。
 
 安装时建议不要修改用户文件夹位置，后续定制输入法容易出错。安装完成后，右键点击任务栏小狼毫图标，选「输入法设定」，只勾选一个「朙月拼音·简化字」，再选一个喜欢的皮肤就好，接着就可以正常使用小狼毫输入法了。
 
@@ -131,13 +129,12 @@ patch:
 
 ### 无法触发词库的特殊符号
 
-SuperRime 词库自带的标点及特殊表情设置有问题，需在 `luna_pinyin_simp.custom.yaml` 中，植入以下代码。
+SuperRime 词库自带的标点及特殊表情设置有问题，需在 `luna_pinyin_simp.custom.yaml` 中，植入触发标点及特殊表情的代码。
 
 ```yaml
 patch:
-#标点及特殊表情
-"punctuator/import_preset": mysymbols
-"recognizer/patterns/punct": "^/([a-z]+|[0-9])$"
+  "punctuator/import_preset": mysymbols
+  "recognizer/patterns/punct": "^/([a-z]+|[0-9])$"
 ```
 
 参考资料：
