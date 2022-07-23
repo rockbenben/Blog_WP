@@ -43,9 +43,11 @@ jobs:
         uses: andstor/copycat-action@v3
         with:
           personal_token: ${{ secrets.PERSONAL_TOKEN }}
-          src_path: _posts
-          dst_path: docs/blog
+          src_path: _posts/.
+          dst_path: docs/blog/
           dst_owner: rockbenben
           dst_repo_name: LearnData
           dst_branch: main
           src_branch: main
+          exclude: */TEMP/*
+          file_filter: *.md
