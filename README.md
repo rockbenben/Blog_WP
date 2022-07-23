@@ -131,8 +131,10 @@ _2022.07.22 更新_
 
 - 草稿箱：`_post` 路径内新建 `TEMP` 文件夹，用于存放文章草稿。WordPress 推送程序会忽略 `_post` 子文件夹的内容，换言之，`TEMP` 文件夹不会发布到 WordPress 网站。
 
-- 文章聚合页：主目录新增 `.nojekyll`，`index.html`，`_sidebar.md` 文件，引入文档生成工具 docsify，将博客文章聚合在一个页面，方便快速定位和位置管理。示例：[https://rockbenben.github.io/Blog_WP/](https://rockbenben.github.io/Blog_WP/)。
+- 文章聚合页：主目录新增 `.nojekyll`，`index.html`，`_sidebar.md` 文件，引入文档生成工具 docsify，将博客文章聚合在一个页面，方便快速定位和位置管理。示例：<https://rockbenben.github.io/Blog_WP/>。
   ![](http://tc.seoipo.com/2022-05-26-20-12-56.png)
+
+- `.github/workflows/main.yml`：将博客文章复制到另一个笔记 repo，方便以 VuePress 形式来管理文章知识。这步与 docsify 类似，不想折腾 VuePress 的可以删除「copy blog」命令。示例：<https://newzone.top/notes/>
 
 接下来的修改方向：
 

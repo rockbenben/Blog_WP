@@ -37,3 +37,15 @@ jobs:
           git add .md_sha1 README.md
           git commit -m "Github Action auto Updated"
           git push
+
+      # 将文章复制到笔记页，以 VuePress 形式来管理文章知识
+      - name: Copy blog
+        uses: andstor/copycat-action@v3
+        with:
+          personal_token: ${{ secrets.PERSONAL_TOKEN }}
+          src_path: _posts
+          dst_path: docs/blog
+          dst_owner: rockbenben
+          dst_repo_name: LearnData
+          dst_branch: main
+          src_branch: main
