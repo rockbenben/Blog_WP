@@ -49,5 +49,5 @@ jobs:
           dst_repo_name: LearnData
           dst_branch: main
           src_branch: main
-          exclude: */TEMP/*
-          file_filter: *.md
+          exclude: "*/TEMP/*"
+          file_filter: "*.md"
