@@ -119,29 +119,39 @@ _2022.07.23 更新_
 
 [WordPressXMLRPCTools](https://github.com/zhaoolee/WordPressXMLRPCTools) 能用 Markdown 生成博客，推送更新到 Github 后，通过 Github Actions 自动将文章更新到 WordPress，并将 WordPress 网站的文章索引更新到 Github 仓库的 README.md，供搜索引擎收录。​
 
-基于 WordPressXMLRPCTools，我做了三点修改：​
+基于 WordPressXMLRPCTools，我做了三点修改。
 
-- 发布设置：修改 `main.py`、`Pipfile` 文件。
+### 发布样式
 
-  - 修复无法覆盖更新文章的 bug；
-  - 调整项目页的目录标题和时间格式；
-  - 页首添加文章编辑时间，默认为格林尼治标准时间，比北京晚 8 小时；
-  - 将文章页尾部的本文永久更新地址从标题格式调整为常规字母；
-  - 将 markdown 转 HTML 的模块，从 markdown 换为 markdown2，效果待后续确认。
+针对发布设置，修改了 `main.py` 和 `Pipfile` 文件。
 
-- 草稿箱：`_post` 路径内新建 `TEMP` 文件夹，用于存放文章草稿。WordPress 推送程序会忽略 `_post` 子文件夹的内容，换言之，`TEMP` 文件夹不会发布到 WordPress 网站。
+- 修复无法覆盖更新文章的 bug；
+- 调整项目页的目录标题和时间格式；
+- 页首添加文章编辑时间，默认为格林尼治标准时间，比北京晚 8 小时；
+- 将文章页尾部的本文永久更新地址从标题格式调整为常规字母；
+- 将 markdown 转 HTML 的模块，从 markdown 换为 markdown2，效果待后续确认。
 
-- 文章聚合页：主目录新增 `.nojekyll`，`index.html`，`_sidebar.md` 文件，引入文档生成工具 docsify，将博客文章聚合在一个页面，方便快速定位和位置管理。示例：<https://rockbenben.github.io/Blog_WP/>。
-  ![](http://tc.seoipo.com/2022-05-26-20-12-56.png)
+### 草稿箱
 
-- `.github/workflows/main.yml`：将博客文章复制到另一个笔记 repo，方便以 VuePress 形式来管理文章知识。这步与 docsify 类似，不想折腾 VuePress 的可以删除「copy blog」命令。示例：<https://newzone.top/notes/>
+`_post` 路径内新建 `TEMP` 文件夹，用于存放文章草稿。
 
-接下来的修改方向：
+WordPress 推送程序会忽略 `_post` 子文件夹的内容，换言之，`TEMP` 文件夹不会发布到 WordPress 网站。
+
+### 文章聚合页
+
+文章聚合页有两套方案，分别使用了 docsify 和 VuePress 两种网站生成工具。两者都是将博客文章聚合在一个页面，能对文章进行快速定位和管理。docsify 门槛较低，推荐小白用户选择。
+
+**docsify 方案**在主目录新增 `.nojekyll`，`index.html`，`_sidebar.md` 文件。docsify 示例：<https://rockbenben.github.io/Blog_WP/>。
+![](http://tc.seoipo.com/2022-05-26-20-12-56.png)
+
+**VuePress 方案**修改了 `.github/workflows/main.yml`，将博客文章复制到另一个 VuePress 笔记的 repo，以 VuePress 静态网站架构来管理文章知识。VuePress 与 docsify 效果类似，不想折腾 VuePress 的话删除「copy blog」命令即可。VuePress 示例：<https://newzone.top/notes/>。
+
+### 后续修改方向
 
 - 修复 md 转 wordpress 中的层级丢失，这是 markdown 转换中的问题。^[[Python 自动发布 markdown 文章到 WordPress 网站](https://blog.csdn.net/linyusen_com/article/details/82887216)]
   - 测试将 markdown 转为 markdown2 没看到区别，待后续测试。根据 markdown2 issue，它 7 月初已经修复了，但还没同步到发布版本。
-  - 很多人说 markdown 有更强的扩展性，是否要换回来
-  - 考虑用 [markdown-it](https://github.com/markdown-it/markdown-it) 来解析 html
+  - 很多人说 markdown 有更强的扩展性，考虑是否要换回来。
+  - 考虑用 [markdown-it](https://github.com/markdown-it/markdown-it) 来解析 html。
 - 在 md 文件中指定发布时间。试过在 `main.py` 中添加 `post_date` 参数，但报错，后续研究下 XMLRPC 的 post 参数。
 
 ## 🍥 使用流程
