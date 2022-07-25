@@ -1,16 +1,12 @@
 ---
-layout: post
-title: "抛弃 Lastpass，拥抱 KeePass-免费开源的绿色密码管理软件"
-subtitle: "我的最后一款密码管理器"
+title: 抛弃 Lastpass，拥抱 KeePass-免费开源的绿色密码管理软件
+subtitle: 我的最后一款密码管理器
 date: 2021-01-02
-author: "Benson"
-header-img: img/post-bg-20180108.jpg
-header-mask: 0.3
-catalog: true
-categories:
+category:
   - 工具
-tags:
+tag:
   - KeePass
+order: -34
 ---
 
 用了 5 年的 Lastpass，但随着网站密码的增加，遇到的 bug 也越来越多。有次误操作，合并了 Lastpass 密码库，丢失了一大批密码，对云端密码库的信任度直接降为零。

@@ -1,17 +1,12 @@
 ---
-layout: post
-title: "抛弃迅雷，Aria2 新手入门"
-subtitle: ""
+title: 抛弃迅雷，Aria2 新手入门
 date: 2018-05-15
-author: "Benson"
-header-img: img/post-bg-20180108.jpg
-header-mask: 0.3
-catalog: true
-categories:
+category:
   - 工具
-tags:
+tag:
   - Aria2
   - 迅雷
+order: -17
 ---
 
 迅雷已经用了 10 年，一直把它看作是速度最快也最方便的下载工具。迅雷会员也是我必续的服务。

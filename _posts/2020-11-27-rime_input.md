@@ -1,17 +1,12 @@
 ---
-layout: post
-title: "小狼毫 3 分钟入门及进阶指南"
-subtitle: ""
+title: 小狼毫 3 分钟入门及进阶指南
 date: 2020-11-27
-author: "Benson"
-header-img: img/post-bg-20180108.jpg
-header-mask: 0.3
-catalog: true
-categories:
+category:
   - 工具
-tags:
+tag:
   - 小狼毫
   - 输入法
+order: -32
 ---
 
 常年使用搜狗输入法，备份时发现搜狗词库高达 27 万条，其中 99% 的内容是垃圾词条，即使偶尔输入过一次的内容也被输入法记录。更可怕的是，这次词库无法从云端删除，只要你输入过一次，搜狗就永远记住了。

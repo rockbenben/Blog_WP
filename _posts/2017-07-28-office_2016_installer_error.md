@@ -1,16 +1,11 @@
 ---
-layout: post
-title: "office 2016 安装程序报错解决办法"
-subtitle: ""
+title: office 2016 安装程序报错解决办法
 date: 2017-07-28 11:02:00
-author: "Benson"
-header-img: img/post-bg-20180108.jpg
-header-mask: 0.3
-catalog: true
-categories:
+category:
   - 系统
-tags:
+tag:
   - office 2016
+order: -3
 ---
 
 重新安装 Office 系统或更改安装组件时，经常提示：「找不到有效的安装源」，但实际这些文件都能在安装包内找到。

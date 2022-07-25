@@ -1,19 +1,14 @@
 ---
-layout: post
-title: "光猫改造 篇二：光猫 + 路由器，实现端口映射"
-subtitle: ""
+title: 光猫改造 篇二：光猫 + 路由器，实现端口映射
 date: 2017-10-18 22:00:00
-author: "Benson"
-header-img: img/post-bg-20180108.jpg
-header-mask: 0.3
-catalog: true
-categories:
+category:
   - 网络
-tags:
+tag:
   - 光猫
+order: -8
 ---
 
-光猫默认没有管理权限，需要先获得光猫的超管密码，参考[光猫改造 篇一：超级管理员密码破解（E8-C-EPON RG201O-CA_V1A2）](https://newzone.top/p/2017-10-18-Light_cat_E8-C-EPON_admin/)
+光猫默认没有管理权限，需要先获得光猫的超管密码，参考 [光猫改造 篇一：超级管理员密码破解（E8-C-EPON RG201O-CA_V1A2）](https://newzone.top/_posts/2017-10-18-Light_cat_E8-C-EPON_admin.html)。
 
 **光猫端口映射步骤：**
 

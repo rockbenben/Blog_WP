@@ -1,16 +1,11 @@
 ---
-layout: post
-title: "真·DPC_WATCHDOG_VIOLATION 蓝屏解决方案"
-subtitle: ""
+title: 真·DPC_WATCHDOG_VIOLATION 蓝屏解决方案
 date: 2020-10-25
-author: "Benson"
-header-img: img/post-bg-20180108.jpg
-header-mask: 0.3
-catalog: true
-categories:
+category:
   - 系统
-tags:
+tag:
   - 蓝屏
+order: -30
 ---
 
 DPC_WATCHDOG_VIOLATION 多为硬件驱动出现问题。当驱动大规模报错时，厂家会更新并推送解决方法。所以，不要继续尝试其他人的解决方案，你的问题是独一无二的。分析 dmp 日志才是能百分百解决蓝屏的方法。

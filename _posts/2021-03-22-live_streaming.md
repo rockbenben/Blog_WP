@@ -1,16 +1,12 @@
 ---
-layout: post
-title: "直播新手攻略：从小白入门到网红达人"
-subtitle: "新手如何开直播？"
+title: 直播新手攻略：从小白入门到网红达人
+subtitle: 新手如何开直播？
 date: 2021-03-26
-author: "Benson"
-header-img: img/post-bg-20180108.jpg
-header-mask: 0.3
-catalog: true
-categories:
+category:
   - 工具
-tags:
+tag:
   - 直播
+order: -36
 ---
 
 直播已成为主流媒体，几乎所有行业都会涉及直播。

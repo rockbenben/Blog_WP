@@ -1,16 +1,11 @@
 ---
-layout: post
-title: "光猫改造 篇一：超级管理员密码破解（E8-C-EPON RG201O-CA_V1A2)"
-subtitle: ""
+title: 光猫改造 篇一：超级管理员密码破解（E8-C-EPON RG201O-CA_V1A2)
 date: 2017-10-18 18:28:00
-author: "Benson"
-header-img: img/post-bg-20180108.jpg
-header-mask: 0.3
-catalog: true
-categories:
+category:
   - 网络
-tags:
+tag:
   - 光猫
+order: -7
 ---
 
 ## 为什么要获得光猫超级密码？

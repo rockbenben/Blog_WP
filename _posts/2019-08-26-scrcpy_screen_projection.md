@@ -1,17 +1,12 @@
 ---
-layout: post
-title: "scrcpy - 手机无线投屏到电脑"
-subtitle: ""
+title: scrcpy - 手机无线投屏到电脑
 date: 2019-08-26
-author: "Benson"
-header-img: img/post-bg-20180108.jpg
-header-mask: 0.3
-catalog: true
-categories:
+category:
   - 工具
-tags:
+tag:
   - scrcpy
   - 投屏
+order: -26
 ---
 
 **scrcpy** 是免费开源的投屏软件，支持将安卓手机屏幕投放在 Windows、macOS、GNU/Linux 上，并可直接借助鼠标在投屏窗口中进行交互和录制。

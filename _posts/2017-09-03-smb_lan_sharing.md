@@ -1,16 +1,11 @@
 ---
-layout: post
-title: "加速 SMB 协议，让 PC 变身小型 NAS"
-subtitle: ""
+title: 加速 SMB 协议，让 PC 变身小型 NAS
 date: 2017-09-03 20:57:00
-author: "Benson"
-header-img: img/post-bg-20180108.jpg
-header-mask: 0.3
-catalog: true
-categories:
+category:
   - 系统
-tags:
+tag:
   - smb
+order: -6
 ---
 
 Windows 系统开启 SMB 协议：

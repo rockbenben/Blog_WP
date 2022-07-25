@@ -1,17 +1,13 @@
 ---
-layout: post
-title: "这些全网卖爆的“必备”品，我劝你别买……"
-subtitle: "断舍离：10 件不值得买的「毒草」"
+title: 这些全网卖爆的“必备”品，我劝你别买……
+subtitle: 断舍离：10 件不值得买的「毒草」
 date: 2020-11-01
-author: "Benson"
-header-img: img/post-bg-20180108.jpg
-header-mask: 0.3
-catalog: true
-categories:
+category:
   - 购物
-tags:
+tag:
   - 断舍离
   - 健身器材
+order: -31
 ---
 
 受疫情政策的影响，双十一价格普遍比往年实惠，但有些爆款价格再低也值得买。

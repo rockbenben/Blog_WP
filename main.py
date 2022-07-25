@@ -255,8 +255,8 @@ def main():
             (content, metadata) = read_md(md)
             # 获取 title
             title = metadata.get("title", "")
-            terms_names_post_tag = metadata.get("tags",  domain_name)
-            terms_names_category = metadata.get("categories", domain_name)
+            terms_names_post_tag = metadata.get("tag",  domain_name)
+            terms_names_category = metadata.get("category", domain_name)
             post_status = "publish"
             link = sha1_key.split(".")[0]
             # 修改 3: 文章头部添加编辑时间

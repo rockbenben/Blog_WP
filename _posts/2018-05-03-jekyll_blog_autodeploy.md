@@ -1,18 +1,13 @@
 ---
-layout: post
-title: "Jekyll 篇二：自动部署服务器博客"
-subtitle: ""
+title: Jekyll 篇二：自动部署服务器博客
 date: 2018-05-03
-author: "Benson"
-header-img: img/post-bg-20180108.jpg
-header-mask: 0.3
-catalog: true
-categories:
+category:
   - 博客
-tags:
+tag:
   - Jekyll
   - Travis CI
   - Docker
+order: -15
 ---
 
 Github 上搭建 Jekyll 是最方便的，空间免费、流量免费、部署简单。但 Github 属于被墙状态，将博客部署在那，速度实在太慢。在玩了几天后，我开始在服务器上直接搭建 Jekyll 博客。

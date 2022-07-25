@@ -1,16 +1,11 @@
 ---
-layout: post
-title: "提早晚餐，饿死算逑"
-subtitle: ""
+title: 提早晚餐，饿死算逑
 date: 2018-03-06 22:06:00
-author: "Benson"
-header-img: img/post/wallhaven-586105.jpg
-header-mask: 0.3
-catalog: true
-categories:
+category:
   - 健康
-tags:
+tag:
   - 减肥
+order: -11
 ---
 
 上大学后，每天晚上都打游戏点「叉鸭例牌 + 两碗米饭」，体重成功上到 85KG。后来减肥在 13 年达到历史低点 75KG，但后来持续上升，在 18 年春节达到顶点，93KG，比婚前胖了**38 斤**。

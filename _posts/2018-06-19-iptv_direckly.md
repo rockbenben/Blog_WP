@@ -1,16 +1,11 @@
 ---
-layout: post
-title: "客厅、书房、卧室，任意收看 IPTV 直播！（上海电信）"
-subtitle: ""
+title: 客厅、书房、卧室，任意收看 IPTV 直播！（上海电信）
 date: 2018-06-19
-author: "Benson"
-header-img: img/post-bg-20180108.jpg
-header-mask: 0.3
-catalog: true
-categories:
+category:
   - 网络
-tags:
+tag:
   - IPTV
+order: -21
 ---
 
 **回放服务器已屏蔽公网 IP 的访问，仅限 vlan85 的 B 平面专网 IP 访问，本文章已失效！**

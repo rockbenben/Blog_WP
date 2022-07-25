@@ -1,17 +1,12 @@
 ---
-layout: post
-title: "疫情封控两个月后，我对自己开始 24 小时的自我监控录像"
-subtitle: "录屏软件大对比"
+title: 疫情封控两个月后，我对自己开始 24 小时的自我监控录像
 date: 2022-05-22
-author: "Benson"
-header-img: img/post-bg-20180108.jpg
-header-mask: 0.3
-catalog: true
-categories:
+category:
   - 头脑驿站
-tags:
+tag:
   - 录屏
   - 自我管理
+order: -46
 ---
 
 疫情封控两个月后，人变得愈发懒散，每天的成果只有吃饭睡觉。为了摆脱这种状态，我决定在书房对自己进行 24 小时的监控录像，督促自己提升效率。

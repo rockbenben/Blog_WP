@@ -1,17 +1,12 @@
 ---
-layout: post
-title: "怎么用 Adobe Audition 快速剪切音频？"
-subtitle: ""
+title: 怎么用 Adobe Audition 快速剪切音频？
 date: 2018-05-04
-author: "Benson"
-header-img: img/post-bg-20180108.jpg
-header-mask: 0.3
-catalog: true
-categories:
+category:
   - 工具
-tags:
+tag:
   - Audition
   - 音频
+order: -16
 ---
 
 很久没剪音频了，突然被朋友拜托，才发现 Audition 剪切音频有多非人性，操作跟 10 年前的软件相比，没任何进步。

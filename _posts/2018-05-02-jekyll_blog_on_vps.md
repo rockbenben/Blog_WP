@@ -1,17 +1,12 @@
 ---
-layout: post
-title: "Jekyll 扩展篇：服务器搭建 Jekyll 博客"
-subtitle: ""
+title: Jekyll 扩展篇：服务器搭建 Jekyll 博客
 date: 2018-05-02
-author: "Benson"
-header-img: img/post-bg-20180108.jpg
-header-mask: 0.3
-catalog: true
-categories:
+category:
   - 博客
-tags:
+tag:
   - Jekyll
   - 建站
+order: -14
 ---
 
 Github 墙得太厉害，就想在服务器上自建 Jekyll 环境，用上 Travis CI 和 Docker 后才发现完全没必要。。

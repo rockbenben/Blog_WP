@@ -1,17 +1,12 @@
 ---
-layout: post
-title: "不想学 Python，零基础也能用的自动化工具-UI.Vision RPA"
-subtitle: ""
+title: 不想学 Python，零基础也能用的自动化工具-UI.Vision RPA
 date: 2022-04-21
-author: "Benson"
-header-img: img/post-bg-20180108.jpg
-header-mask: 0.3
-catalog: true
-categories:
+category:
   - 自动化
-tags:
+tag:
   - 浏览器插件
   - UI.Vision RPA
+order: -45
 ---
 
 > 无需懂编程代码，只需安装浏览器插件，3 分钟速成爬虫攻略。

@@ -1,16 +1,11 @@
 ---
-layout: post
-title: "联想黑金超核会员情报分享"
-subtitle: ""
+title: 联想黑金超核会员情报分享
 date: 2022-03-09
-author: "Benson"
-header-img: img/post-bg-20180108.jpg
-header-mask: 0.3
-catalog: true
-categories:
+category:
   - 购物
-tags:
+tag:
   - 联想
+order: -41
 ---
 
 **不要买联想黑金卡！不要买联想黑金卡！不要买联想黑金卡！**

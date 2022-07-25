@@ -1,17 +1,12 @@
 ---
-layout: post
-title: "普通人的生活原则－批评与自我批评"
-subtitle: ""
+title: 普通人的生活原则－批评与自我批评
 date: 2021-05-31
-author: "Benson"
-header-img: img/post-bg-20180108.jpg
-header-mask: 0.3
-catalog: true
-categories:
+category:
   - 头脑驿站
-tags:
+tag:
   - 原则
   - 批评与自我批评
+order: -37
 ---
 
 读 Ray Dalio 的《原则》时，联想到「党的三大作风」，两者理论类似，都是在强调「拥抱现实，应对现实」。所以，在读《原则》的同时，把党建理论也翻出来看了一遍，并将其中的理论与积极心理学一起融入到个人生活中。试行过程中，发现对自身的认知、目标都得到明显的提升。
@@ -104,9 +99,9 @@ tags:
 
 **公开记录**：
 
-- [学习笔记](https://newzone.top/notes/#/)：将对工具、工作方式和生活的思考记录发布在公开页面，欢迎大家的点评。
+- [学习笔记](https://newzone.top/)：将对工具、工作方式和生活的思考记录发布在公开页面，欢迎大家的点评。
 
-- 工作视频：[自我监控视频](https://newzone.top/p/2022-05-22-surveillance_video_for_myself)，记录私密工作状态，方便当日回顾。
+- 工作视频：[自我监控视频](https://newzone.top/_posts/2022-05-22-surveillance_video_for_myself.html)，记录私密工作状态，方便当日回顾。
 
 - 微习惯视频：监督运动习惯。拍摄视频时，使用关键句「切掉/保留」，配合 Quickcut 快速剪辑视频。
 

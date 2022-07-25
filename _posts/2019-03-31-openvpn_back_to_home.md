@@ -1,17 +1,12 @@
 ---
-layout: post
-title: "OpenVPN 随时随地回家的路"
-subtitle: ""
+title: OpenVPN 随时随地回家的路
 date: 2019-03-31
-author: "Benson"
-header-img: img/post-bg-20180108.jpg
-header-mask: 0.3
-catalog: true
-categories:
+category:
   - 网络
-tags:
+tag:
   - OpenVPN
   - 内网穿透
+order: -24
 ---
 
 有时在外面需要访问家里的文件，或直接利用家中网络设置翻墙。为此，利用路由器 OpenVPN 搭建了一条回家的路。
@@ -26,7 +21,7 @@ tags:
 
 电信分配的公网 IP 经常会更换，每次都需要重定向子域名。在路由器 koolshare - 软件中心中安装 Aliddns，帮助更新家的公网 IP。插件中输入定向子域名和阿里云的 appkey，配置就完成了。如果没有自动在阿里云解析，可以先手动解析设置。
 
-光猫设置参考 [光猫改造 篇三：百卓 GP1700 进阶设置 - 端口映射](https://newzone.top/p/2018-06-08-Baizhuo_GP1700/)。
+光猫设置参考 [光猫改造 篇三：百卓 GP1700 进阶设置 - 端口映射](https://newzone.top/_posts/2018-06-08-Baizhuo_GP1700.html)。
 
 ## OpenVPN 配置
 

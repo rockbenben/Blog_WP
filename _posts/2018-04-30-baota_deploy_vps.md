@@ -1,17 +1,12 @@
 ---
-layout: post
-title: "新手建站神器 - 宝塔面板"
-subtitle: ""
+title: 新手建站神器 - 宝塔面板
 date: 2018-04-30
-author: "Benson"
-header-img: img/post-bg-20180108.jpg
-header-mask: 0.3
-catalog: true
-categories:
+category:
   - 服务器
-tags:
+tag:
   - 宝塔面板
   - 建站
+order: -12
 ---
 
 新手建站最大的痛苦就是代码太多，无法轻松管理。

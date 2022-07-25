@@ -2,6 +2,10 @@
 
 > 盛年不重来，一日难再晨。
 
+博客已迁移至 [LearnData](https://github.com/rockbenben/LearnData)，以 VuePress 静态网站形式发布，避免 Markdown 转 HTML 总出现格式 bug。
+
+如果需要 Markdown 同步 WordPress，代码依旧可用，后续更新可参考 [WordPressXMLRPCTools](https://github.com/zhaoolee/WordPressXMLRPCTools)。
+
 <!-- TABLE OF CONTENTS 有序为<ol>，无序为<ul> -->
 <details>
   <summary>Table of Contents</summary>
@@ -19,99 +23,99 @@ _2022.07.23 更新_
 
 ## 📜 文章目录
 
-[集自动发布、本地管理于一身：WordPress 博客管理方案分享](https://newzone.top/p/2022-06-07-blog_md_to_wordpress/)
+[集自动发布、本地管理于一身：WordPress 博客管理方案分享](https://newzone.top/_posts/2022-06-07-blog_md_to_wordpress.html)
 
-[疫情封控两个月后，我对自己开始 24 小时的自我监控录像](https://newzone.top/p/2022-05-22-surveillance_video_for_myself/)
+[疫情封控两个月后，我对自己开始 24 小时的自我监控录像](https://newzone.top/_posts/2022-05-22-surveillance_video_for_myself.html)
 
-[不想学 Python，零基础也能用的自动化工具-UI.Vision RPA](https://newzone.top/p/2022-04-21-uivision_rpa/)
+[不想学 Python，零基础也能用的自动化工具-UI.Vision RPA](https://newzone.top/_posts/2022-04-21-uivision_rpa.html)
 
-[上海没吃的？割裂的城市，我真的生活在上海吗？](https://newzone.top/p/2022-04-20-survivorship_bias_in_shanghai_2022/)
+[上海没吃的？割裂的城市，我真的生活在上海吗？](https://newzone.top/_posts/2022-04-20-survivorship_bias_in_shanghai_2022.html)
 
-[一键安装 99 个程序，Windows 最强软件管理器](https://newzone.top/p/2022-03-21-winget_the_strongest_software_manager_for_windows/)
+[一键安装 99 个程序，Windows 最强软件管理器](https://newzone.top/_posts/2022-03-21-winget_the_strongest_software_manager_for_windows.html)
 
-[RSS 汇总篇：RSS 永久链接合集，拒绝 RSS 失效](https://newzone.top/p/2022-03-17-rss_persistent_link_collection/)
+[RSS 汇总篇：RSS 永久链接合集，拒绝 RSS 失效](https://newzone.top/_posts/2022-03-17-rss_persistent_link_collection.html)
 
-[联想黑金超核会员情报分享](https://newzone.top/p/2022-03-09-lenovo_black_card_member/)
+[联想黑金超核会员情报分享](https://newzone.top/_posts/2022-03-09-lenovo_black_card_member.html)
 
-[Windows 应用商店 (Microsoft store) 打不开？100% 解决方法 - 兼容 Win10、Win11](https://newzone.top/p/2022-02-19-microsoft_store_fixed/)
+[Windows 应用商店 (Microsoft store) 打不开？100% 解决方法 - 兼容 Win10、Win11](https://newzone.top/_posts/2022-02-19-microsoft_store_fixed.html)
 
-[想要独一无二的微信红包，你也可以自己做](https://newzone.top/p/2022-01-23-wechat_lucky_money_cover/)
+[想要独一无二的微信红包，你也可以自己做](https://newzone.top/_posts/2022-01-23-wechat_lucky_money_cover.html)
 
-[RSS 完结篇：节省千元服务费，RSSHub、Huginn 转移 NAS](https://newzone.top/p/2021-10-23-nas_with_rsshub_and_huginn/)
+[RSS 完结篇：节省千元服务费，RSSHub、Huginn 转移 NAS](https://newzone.top/_posts/2021-10-23-nas_with_rsshub_and_huginn.html)
 
-[普通人的生活原则－批评与自我批评](https://newzone.top/p/2021-05-31-principles_criticism_and_self-criticism/)
+[普通人的生活原则－批评与自我批评](https://newzone.top/_posts/2021-05-31-principles_criticism_and_self-criticism.html)
 
-[直播新手攻略：从小白入门到网红达人](https://newzone.top/p/2021-03-22-live_streaming/)
+[直播新手攻略：从小白入门到网红达人](https://newzone.top/_posts/2021-03-22-live_streaming.html)
 
-[Jekyll 博客迁移－从 Markdown 到 WordPress](https://newzone.top/p/2021-01-27-blog_jekyll_to_wordpress/)
+[Jekyll 博客迁移－从 Markdown 到 WordPress](https://newzone.top/_posts/2021-01-27-blog_jekyll_to_wordpress.html)
 
-[抛弃 Lastpass，拥抱 KeePass-免费开源的绿色密码管理软件](https://newzone.top/p/2021-01-02-keepass_the_real_lastpassword/)
+[抛弃 Lastpass，拥抱 KeePass-免费开源的绿色密码管理软件](https://newzone.top/_posts/2021-01-02-keepass_the_real_lastpassword.html)
 
-[减肥日志：4 周 15 斤](https://newzone.top/p/2020-12-17-weight_log/)
+[减肥日志：4 周 15 斤](https://newzone.top/_posts/2020-12-17-weight_log.html)
 
-[小狼毫 3 分钟入门及进阶指南](https://newzone.top/p/2020-11-27-rime_input/)
+[小狼毫 3 分钟入门及进阶指南](https://newzone.top/_posts/2020-11-27-rime_input.html)
 
-[这些全网卖爆的“必备”品，我劝你别买……](https://newzone.top/p/2020-11-01-gym_equipment_throw_away/)
+[这些全网卖爆的“必备”品，我劝你别买……](https://newzone.top/_posts/2020-11-01-gym_equipment_throw_away.html)
 
-[真·DPC_WATCHDOG_VIOLATION 蓝屏解决方案](https://newzone.top/p/2020-10-25-dpc_watchdog_violation/)
+[真·DPC_WATCHDOG_VIOLATION 蓝屏解决方案](https://newzone.top/_posts/2020-10-25-dpc_watchdog_violation.html)
 
-[无线路由调整，加快 WIFI 速度](https://newzone.top/p/2020-09-13-wifi_speed_up/)
+[无线路由调整，加快 WIFI 速度](https://newzone.top/_posts/2020-09-13-wifi_speed_up.html)
 
-[RSS 速成篇 2：RSSHub 自部署](https://newzone.top/p/2020-03-25-rsshub_on_vps/)
+[RSS 速成篇 2：RSSHub 自部署](https://newzone.top/_posts/2020-03-25-rsshub_on_vps.html)
 
-[这些「医院护肤品」你买了吗？](https://newzone.top/p/2019-10-04-fake_aka_hospital_skin_care_products/)
+[这些「医院护肤品」你买了吗？](https://newzone.top/_posts/2019-10-04-fake_aka_hospital_skin_care_products.html)
 
-[scrcpy - 手机无线投屏到电脑](https://newzone.top/p/2019-08-26-scrcpy_screen_projection/)
+[scrcpy - 手机无线投屏到电脑](https://newzone.top/_posts/2019-08-26-scrcpy_screen_projection.html)
 
-[RSS 速成篇：RSSHub 捡现成的轮子](https://newzone.top/p/2019-04-01-rsshub_noob/)
+[RSS 速成篇：RSSHub 捡现成的轮子](https://newzone.top/_posts/2019-04-01-rsshub_noob.html)
 
-[OpenVPN 随时随地回家的路](https://newzone.top/p/2019-03-31-openvpn_back_to_home/)
+[OpenVPN 随时随地回家的路](https://newzone.top/_posts/2019-03-31-openvpn_back_to_home.html)
 
-[等了十年，PC 端能用的语音输入方案来了](https://newzone.top/p/2018-12-28-voice_input_try/)
+[等了十年，PC 端能用的语音输入方案来了](https://newzone.top/_posts/2018-12-28-voice_input_try.html)
 
-[RSS 进阶篇：Huginn - 真·为任意网页定制 RSS 源（PhantomJs 抓取）](https://newzone.top/p/2018-10-07-huginn_scraping_any_website/)
+[RSS 进阶篇：Huginn - 真·为任意网页定制 RSS 源（PhantomJs 抓取）](https://newzone.top/_posts/2018-10-07-huginn_scraping_any_website.html)
 
-[客厅、书房、卧室，任意收看 IPTV 直播！（上海电信）](https://newzone.top/p/2018-06-19-iptv_direckly/)
+[客厅、书房、卧室，任意收看 IPTV 直播！（上海电信）](https://newzone.top/_posts/2018-06-19-iptv_direckly.html)
 
-[koolproxy 无法下载 https 证书？](https://newzone.top/p/2018-06-10-koolproxy_https/)
+[koolproxy 无法下载 https 证书？](https://newzone.top/_posts/2018-06-10-koolproxy_https.html)
 
-[光猫改造 篇三：百卓 GP1700 进阶设置 - 端口映射](https://newzone.top/p/2018-06-08-baizhuo_gp1700/)
+[光猫改造 篇三：百卓 GP1700 进阶设置 - 端口映射](https://newzone.top/_posts/2018-06-08-baizhuo_gp1700.html)
 
-[真· Airtable 3 分钟菜鸟入门](https://newzone.top/p/2018-05-24-airtable_noob/)
+[真· Airtable 3 分钟菜鸟入门](https://newzone.top/_posts/2018-05-24-airtable_noob.html)
 
-[抛弃迅雷，Aria2 新手入门](https://newzone.top/p/2018-05-15-aria2_a_new_download_tool/)
+[抛弃迅雷，Aria2 新手入门](https://newzone.top/_posts/2018-05-15-aria2_a_new_download_tool.html)
 
-[怎么用 Adobe Audition 快速剪切音频？](https://newzone.top/p/2018-05-04-audition_cut_mp3/)
+[怎么用 Adobe Audition 快速剪切音频？](https://newzone.top/_posts/2018-05-04-audition_cut_mp3.html)
 
-[Jekyll 篇二：自动部署服务器博客](https://newzone.top/p/2018-05-03-jekyll_blog_autodeploy/)
+[Jekyll 篇二：自动部署服务器博客](https://newzone.top/_posts/2018-05-03-jekyll_blog_autodeploy.html)
 
-[Jekyll 扩展篇：服务器搭建 Jekyll 博客](https://newzone.top/p/2018-05-02-jekyll_blog_on_vps/)
+[Jekyll 扩展篇：服务器搭建 Jekyll 博客](https://newzone.top/_posts/2018-05-02-jekyll_blog_on_vps.html)
 
-[Jekyll 篇一：3 分钟搭建 Github Pages 博客](https://newzone.top/p/2018-05-01-jekyll_blog_on_github_pages/)
+[Jekyll 篇一：3 分钟搭建 Github Pages 博客](https://newzone.top/_posts/2018-05-01-jekyll_blog_on_github_pages.html)
 
-[新手建站神器 - 宝塔面板](https://newzone.top/p/2018-04-30-baota_deploy_vps/)
+[新手建站神器 - 宝塔面板](https://newzone.top/_posts/2018-04-30-baota_deploy_vps.html)
 
-[提早晚餐，饿死算逑](https://newzone.top/p/2018-03-06-no_more_dinner/)
+[提早晚餐，饿死算逑](https://newzone.top/_posts/2018-03-06-no_more_dinner.html)
 
-[雇个机器人帮你干活](https://newzone.top/p/2018-01-31-hire_a_robot/)
+[雇个机器人帮你干活](https://newzone.top/_posts/2018-01-31-hire_a_robot.html)
 
-[小型网站管理员，快放弃 CDN！](https://newzone.top/p/2018-01-19-forget_the_cdn/)
+[小型网站管理员，快放弃 CDN！](https://newzone.top/_posts/2018-01-19-forget_the_cdn.html)
 
-[光猫改造 篇二：光猫 + 路由器，实现端口映射](https://newzone.top/p/2017-10-18-light_cat_port_forwarding/)
+[光猫改造 篇二：光猫 + 路由器，实现端口映射](https://newzone.top/_posts/2017-10-18-light_cat_port_forwarding.html)
 
-[光猫改造 篇一：超级管理员密码破解（E8-C-EPON RG201O-CA_V1A2)](https://newzone.top/p/2017-10-18-light_cat_e8-c-epon_admin/)
+[光猫改造 篇一：超级管理员密码破解（E8-C-EPON RG201O-CA_V1A2)](https://newzone.top/_posts/2017-10-18-light_cat_e8-c-epon_admin.html)
 
-[加速 SMB 协议，让 PC 变身小型 NAS](https://newzone.top/p/2017-09-03-smb_lan_sharing/)
+[加速 SMB 协议，让 PC 变身小型 NAS](https://newzone.top/_posts/2017-09-03-smb_lan_sharing.html)
 
-[电脑关机了，第二天一看确又开着的？让系统正常关机！](https://newzone.top/p/2017-09-02-forced_shutdown/)
+[电脑关机了，第二天一看确又开着的？让系统正常关机！](https://newzone.top/_posts/2017-09-02-forced_shutdown.html)
 
-[OneNote 2016 无法登陆问题解决](https://newzone.top/p/2017-07-29-onenote_2016_cannot_be_logged_in/)
+[OneNote 2016 无法登陆问题解决](https://newzone.top/_posts/2017-07-29-onenote_2016_cannot_be_logged_in.html)
 
-[office 2016 安装程序报错解决办法](https://newzone.top/p/2017-07-28-office_2016_installer_error/)
+[office 2016 安装程序报错解决办法](https://newzone.top/_posts/2017-07-28-office_2016_installer_error.html)
 
-[RSS 入门篇：Feed43&FeedEx-为静态网页定制 RSS 源](https://newzone.top/p/2017-04-22-rss_feed43_feedex/)
+[RSS 入门篇：Feed43&FeedEx-为静态网页定制 RSS 源](https://newzone.top/_posts/2017-04-22-rss_feed43_feedex.html)
 
-[电脑上实现微信双开，无需网页版或第三方软件](https://newzone.top/p/2017-04-18-wechat_multi_open/)
+[电脑上实现微信双开，无需网页版或第三方软件](https://newzone.top/_posts/2017-04-18-wechat_multi_open.html)
 
 ---end---
 
@@ -121,15 +125,21 @@ _2022.07.23 更新_
 
 基于 WordPressXMLRPCTools，我做了三点修改。
 
-### 发布样式
+### 发布设置
 
-针对发布设置，修改了 `main.py` 和 `Pipfile` 文件。
+针对发布功能设置，修改了 `main.py` 和 `Pipfile` 文件。
+
+功能性调整：
 
 - 修复无法覆盖更新文章的 bug；
-- 调整项目页的目录标题和时间格式；
-- 页首添加文章编辑时间，默认为格林尼治标准时间，比北京晚 8 小时；
-- 将文章页尾部的本文永久更新地址从标题格式调整为常规字母；
 - 将 markdown 转 HTML 的模块，从 markdown 换为 markdown2，效果待后续确认。
+
+文章样式修改：
+
+- 调整项目页的目录标题和时间格式；
+- 将文章 meta 标签从 categories 和 tags 改为更通用的 category 和 tag；
+- 文章上方添加文章编辑时间，默认为格林尼治标准时间，比北京晚 8 小时；
+- 将文章页尾部的本文永久更新地址从标题格式调整为常规字母；
 
 ### 草稿箱
 

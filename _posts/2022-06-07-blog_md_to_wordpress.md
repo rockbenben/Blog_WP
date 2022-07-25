@@ -1,18 +1,14 @@
 ---
-layout: post
-title: "集自动发布、本地管理于一身：WordPress 博客管理方案分享"
-subtitle: "18 年博客探索总结"
+title: 集自动发布、本地管理于一身：WordPress 博客管理方案分享
+subtitle: 18 年博客探索总结
 date: 2022-06-07
-author: "Benson"
-header-img: img/post-bg-20180108.jpg
-header-mask: 0.3
-catalog: true
-categories:
+category:
   - 博客
-tags:
+tag:
   - blog
   - github
   - WordPress
+order: -47
 ---
 
 ## 博客探索

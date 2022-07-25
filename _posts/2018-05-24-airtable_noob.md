@@ -1,16 +1,11 @@
 ---
-layout: post
-title: "真· Airtable 3 分钟菜鸟入门"
-subtitle: ""
+title: 真· Airtable 3 分钟菜鸟入门
 date: 2018-05-24
-author: "Benson"
-header-img: img/post-bg-20180108.jpg
-header-mask: 0.3
-catalog: true
-categories:
+category:
   - 工具
-tags:
+tag:
   - Airtable
+order: -18
 ---
 
 Airtable 是新型的表格制作工具，可以把文字、图片、链接、文档等各种资料聚合在一起，成为我们的**私人定制资料库**。

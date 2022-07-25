@@ -1,17 +1,13 @@
 ---
-layout: post
-title: "上海没吃的？割裂的城市，我真的生活在上海吗？"
-subtitle: "疫情中的幸存者偏差思考及压抑情绪"
+title: 上海没吃的？割裂的城市，我真的生活在上海吗？
+subtitle: 疫情中的幸存者偏差思考及压抑情绪
 date: 2022-04-20
-author: "Benson"
-header-img: img/post-bg-20180108.jpg
-header-mask: 0.3
-catalog: true
-categories:
+category:
   - 观察随笔
-tags:
+tag:
   - 幸存者偏差
   - 疫情
+order: -44
 ---
 
 _够吃吗？还能买到东西吗？_

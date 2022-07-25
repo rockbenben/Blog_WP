@@ -1,24 +1,19 @@
 ---
-layout: post
-title: "RSS 完结篇：节省千元服务费，RSSHub、Huginn 转移 NAS"
-subtitle: ""
+title: RSS 完结篇：节省千元服务费，RSSHub、Huginn 转移 NAS
 date: 2021-10-23
-author: "Benson"
-header-img: img/post-bg-20180108.jpg
-header-mask: 0.3
-catalog: true
-categories:
+category:
   - 自动化
-tags:
+tag:
   - nas
   - rss
+order: -38
 ---
 
 作为重度 RSS 用户，90% 的讯息来自 rss。RSSHub 生成主流媒体 rss，Huginn 定制个性化 rss，TinyTinyRSS 过滤 rss，这帮我**从 3 小时的阅读时间节省到只需 1 小时**。
 
 这些服务原本托管在 1 核 1G 的低配服务器上，不过配置过低，频繁重启，维护成本持续上升。接着尝试了国外 2 核 4G 的低端服务器，超售严重，性能极度不稳定。买国外的低端服务器 (特别是**俄罗斯服务器**)，就是把钱丢水里了。
 
-**比起花钱升级和不靠谱的国外 VPS，NAS 成为一个高性价比的选择。**当然，面临的问题并不少，我们一步步去解决。
+比起花钱升级和不靠谱的国外 VPS，NAS 成为一个高性价比的选择。当然，面临的问题并不少，我们一步步去解决。
 
 ## 事前准备
 
@@ -83,14 +78,14 @@ RSS 系列的初衷是，2017 年算法推送的愈加泛滥，定制化 rss 变
 
 汇总的 RSS 永久订阅 feeds，均通过 RSSHub 和 Huginn 制作。如果有兴趣自制 RSS，可参考以下教程。
 
-- [RSS 入门篇：FEED43&FeedEx-为静态网页定制 RSS 源](https://newzone.top/p/2017-04-22-rss_feed43_feedex)
+- [RSS 入门篇：FEED43&FeedEx-为静态网页定制 RSS 源](https://newzone.top/_posts/2017-04-22-rss_feed43_feedex.html)
 
-- [RSS 进阶篇：Huginn - 真·为任意网页定制 RSS 源（PhantomJs 抓取）](https://newzone.top/p/2018-10-07-huginn_scraping_any_website)
+- [RSS 进阶篇：Huginn - 真·为任意网页定制 RSS 源（PhantomJs 抓取）](https://newzone.top/_posts/2018-10-07-huginn_scraping_any_website.html)
 
-- [RSS 速成篇：RSSHub 捡现成的轮子](https://newzone.top/p/2019-04-01-rsshub_noob)
+- [RSS 速成篇：RSSHub 捡现成的轮子](https://newzone.top/_posts/2019-04-01-rsshub_noob.html)
 
-- [RSS 速成篇 2：RSSHub 自部署](https://newzone.top/p/2020-03-25-rsshub_on_vps)
+- [RSS 速成篇 2：RSSHub 自部署](https://newzone.top/_posts/2020-03-25-rsshub_on_vps.html)
 
-- [RSS 完结篇：节省千元服务费，RSSHub、Huginn 转移 NAS](https://newzone.top/p/2021-10-23-nas_with_rsshub_and_huginn)
+- [RSS 完结篇：节省千元服务费，RSSHub、Huginn 转移 NAS](https://newzone.top/_posts/2021-10-23-nas_with_rsshub_and_huginn.html)
 
-- [RSS 汇总篇：RSS 永久链接合集，拒绝 RSS 失效](https://newzone.top/p/2022-03-17-rss_persistent_link_collection)
+- [RSS 汇总篇：RSS 永久链接合集，拒绝 RSS 失效](https://newzone.top/_posts/2022-03-17-rss_persistent_link_collection.html)

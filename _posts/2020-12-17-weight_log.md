@@ -1,16 +1,11 @@
 ---
-layout: post
-title: "减肥日志：4 周 15 斤"
-subtitle: ""
+title: 减肥日志：4 周 15 斤
 date: 2020-12-17
-author: "Benson"
-header-img: img/post-bg-20180108.jpg
-header-mask: 0.3
-catalog: true
-categories:
+category:
   - 健康
-tags:
+tag:
   - 减肥
+order: -33
 ---
 
 **巅峰时刻 190 斤，一个半月后 170 斤**，最大的心得是**控制吃**。

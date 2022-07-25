@@ -1,16 +1,11 @@
 ---
-layout: post
-title: "koolproxy 无法下载 https 证书？"
-subtitle: ""
+title: koolproxy 无法下载 https 证书？
 date: 2018-06-10
-author: "Benson"
-header-img: img/post-bg-20180108.jpg
-header-mask: 0.3
-catalog: true
-categories:
+category:
   - 网络
-tags:
+tag:
   - koolproxy
+order: -20
 ---
 
 koolproxy 是可以运行在路由器上的广告屏蔽软件，跟其他最大的区别就是支持 https , 能有效屏蔽最新的视频应用广告（播个 10 分钟视频，广告 60 秒。。。）

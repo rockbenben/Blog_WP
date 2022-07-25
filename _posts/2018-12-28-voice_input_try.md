@@ -1,16 +1,12 @@
 ---
-layout: post
-title: "等了十年，PC 端能用的语音输入方案来了"
-subtitle: "解放双手，加速打字，电脑端语音录入方案"
+title: 等了十年，PC 端能用的语音输入方案来了
+subtitle: 解放双手，加速打字，电脑端语音录入方案
 date: 2018-12-28
-author: "Benson"
-header-img: img/post-bg-20180108.jpg
-header-mask: 0.3
-catalog: true
-categories:
+category:
   - 自动化
-tags:
+tag:
   - 语音输入
+order: -23
 ---
 
 从 XP 时代开始，我幻想用语音转文字。后来，手机提前实现了这功能，电脑端的语音录入却一直没进展。

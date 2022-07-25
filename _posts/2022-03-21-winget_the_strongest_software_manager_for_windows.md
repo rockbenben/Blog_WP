@@ -1,17 +1,12 @@
 ---
-layout: post
-title: "一键安装 99 个程序，Windows 最强软件管理器"
-subtitle: ""
+title: 一键安装 99 个程序，Windows 最强软件管理器
 date: 2022-03-21
-author: "Benson"
-header-img: img/post-bg-20180108.jpg
-header-mask: 0.3
-catalog: true
-categories:
+category:
   - 系统
-tags:
+tag:
   - winget
   - winstall
+order: -43
 ---
 
 矿难、WIN11、DDR5、40 代显卡纷至沓来，更换电脑的高峰期马上来临。可惜我的生产力工具等不了，只能 49 年入国军，隔离期间装配上 i7+3080Ti 主机。

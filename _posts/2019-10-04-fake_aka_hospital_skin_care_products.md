@@ -1,16 +1,11 @@
 ---
-layout: post
-title: "这些「医院护肤品」你买了吗？"
-subtitle: ""
+title: 这些「医院护肤品」你买了吗？
 date: 2019-10-04
-author: "Benson"
-header-img: img/post-bg-20180108.jpg
-header-mask: 0.3
-catalog: true
-categories:
+category:
   - 购物
-tags:
+tag:
   - 化妆品
+order: -27
 ---
 
 日常购买中，国货比例越来越高，护肤品也逐渐想用国货替代。研究过程中，发现国内有许多药妆打着医院研发旗号。

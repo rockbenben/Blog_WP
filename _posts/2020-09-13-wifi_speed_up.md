@@ -1,16 +1,11 @@
 ---
-layout: post
-title: "无线路由调整，加快 WIFI 速度"
-subtitle: ""
+title: 无线路由调整，加快 WIFI 速度
 date: 2020-09-13
-author: "Benson"
-header-img: img/post-bg-20180108.jpg
-header-mask: 0.3
-catalog: true
-categories:
+category:
   - 网络
-tags:
+tag:
   - WIFI
+order: -29
 ---
 
 拖慢 WIFI 速度的最大元凶是**无线信号合并**。

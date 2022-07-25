@@ -1,17 +1,12 @@
 ---
-layout: post
-title: "雇个机器人帮你干活"
-subtitle: ""
+title: 雇个机器人帮你干活
 date: 2018-01-31 22:51:00
-author: "Benson"
-header-img: img/post/wallhaven-586105.jpg
-header-mask: 0.3
-catalog: true
-categories:
+category:
   - 自动化
-tags:
+tag:
   - Huginn
   - rss
+order: -10
 ---
 
 > 机器人会取代你工作！
